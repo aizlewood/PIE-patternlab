@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+//Brand Colours
+$brand-green : #8EC617;
+$brand-green-dark : #7AAA13;
+$brand-green-light : #F8FBF3;
+$brand-purple : #504353;
+$brand-purple-dark : #3F3242;
+$brand-blue : #4A90E2;
+$canvas : #F9F9F9;
+$canvas-dark : #F2F2F2;
+$canvas-dark-border : #E3E3E3;
+
+//Tag Colours
+$fulltime : #917298;
+$parttime : #E15886;
+$fixedterm : #739ABE;
+$freelance : #DFA65E;
+$other : #76B4B2;
+
+
+//Support Colours
+$grey : #808080;
+$grey-light : #e4e4e4;
+$grey-light-1 : #bbb;
+$grey-light-2 : #eee;
+$grey-light-3 : #ddd;
+
+$light : #ccc; 
+$mid : #999;
+$dark : #222;
+$nav : #4A4A4A;
+
+$price-border : #726774;
+
+$grey-med : #666;
+$grey-dark : #333;
+$grey-dark-2 : #131313;
+
+$white : #fff;
+$black : #000;
+$dim : rgba(0,0,0,0.5);
+$error : #FF0000;
+$disabled : #D4DAC6;
+$valid : #089e00;
+$warning : #fff664;
+$information : #000db5;
+
+
+//Typography
+$font : "Lato", sans-serif;
+$font-header : "Montserrat", sans-serif;
+$font-serif : "Georgia", Times, "Times New Roman", serif;
+
+$font-size-tiny : 0.65em;
+$font-size-small : 0.85em;
+$font-size-small-2 : 0.675em;
+$font-size-med : 1em;
+$font-size-med-2: 1.0625em;
+$font-size-large : 1.4375em;
+$font-size-large-2 : 2.5em;
+
+
+//Layout
+$max-width: 72em;
+
+//Defaults
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-triple : $space*3;
+$space-quad : $space*4;
+$space-half : $space/2;
+$pad : 1em;
+$pad-and-bit : $pad*1.1;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-triple : $pad*3;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+//Borders
+$border-med: 3px;
+$border-thick: 7px;
+
+
+//Breakpoints
+$bp-small : 24em;
+$bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+$bp-med : 46.8em;
+$bp-med-2 : 48em;
+$bp-large : 50em;
+$bp-large-2 : 66em;
+$bp-xl : 73em;
+$bp-xxl : 89em;
+$bp-xxxl : 93em;
+
+//

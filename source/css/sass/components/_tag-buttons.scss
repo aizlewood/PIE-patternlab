@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    $TAG BUTTONS
+\*------------------------------------*/
+.tag-btn {
+	display: inline-block;
+	color: $dark;
+	border-radius: 5px;
+	line-height: 1;
+	font-size: $font-size-small-2;
+	padding: 0.5em 1em;
+	border: 1px solid $dark;
+	text-align: center;
+
+	&.fulltime {
+		border: 1px solid $fulltime;
+		color: $fulltime;
+	}
+
+	&.fulltime:hover, &.fulltime:focus {
+		background: $fulltime;
+		color: $white;
+	}	
+
+	&.parttime {
+		border: 1px solid $parttime;
+		color: $parttime;
+	}	
+
+	&.parttime:hover, &.parttime:focus {
+		background: $parttime;
+		color: $white;
+	}	
+
+	&.fixedterm {
+		border: 1px solid $fixedterm;
+		color: $fixedterm;
+	}
+
+	&.fixedterm:hover, &.fixedterm:focus {
+		background: $fixedterm;
+		color: $white;
+	}	
+
+	&.freelance {
+		border: 1px solid $freelance;
+		color: $freelance;
+	}
+
+	&.freelance:hover, &.freelance:focus {
+		background: $freelance;
+		color: $white;
+	}	
+
+	&.other {
+		border: 1px solid $other;
+		color: $other;
+	}
+
+	&.other:hover, &.other:focus {
+		background: $other;
+		color: $white;
+	}	
+}

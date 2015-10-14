@@ -1,0 +1,90 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>All Jobs</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+		<div class="filter-search-nav">
+			<div class="inner">
+
+				<div class="g g-4up">
+						<div class="gi">
+						    <div class="field-container">
+					        <label for="search">Search</label>
+					        <input id="search" type="search" placeholder="Enter Search Term">
+					    </div>
+					</div>
+					<div class="gi">
+					    <div class="field-container">
+					        <label for="search">Search</label>
+					        <input id="search" type="search" placeholder="Enter Search Term">
+					    </div>
+					</div>
+					<div class="gi">
+						<fieldset>
+						    <div class="field-container">
+						        <label for="select">Select</label>
+						        <select id="select">
+						            <optgroup label="Option Group">
+						                <option>Option One</option>
+						                <option>Option Two</option>
+						                <option>Option Three</option>
+						            </optgroup>
+						        </select>
+						    </div>
+						</fieldset>
+					</div>
+					<div class="gi">
+						<a href="#" class="btn">Search Jobs</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="utility-nav">
+			<div class="inner">
+
+				<div class="g g-2up">
+					<div class="gi">
+						<legend>Filter by type</legend>
+					</div>
+					<div class="gi">
+						<form action="#">
+						    <fieldset class="options">
+						        <ul>
+						            <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Fulltime</label></li>
+						            <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Part-time</label></li>
+						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Fixed term</label></li>
+						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Freelance</label></li>
+						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Other</label></li>       
+						        </ul>
+						    </fieldset>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<div role="main">
+
+		<div class="listings top-shelf">
+			<h4>Top shelf listings</h4>
+			{{> organisms-job-listing }}
+		</div>
+
+		<div class="listings">
+			<h4>Showing 1,234 jobs</h4>
+			{{> organisms-job-listing }}
+		</div>
+
+
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

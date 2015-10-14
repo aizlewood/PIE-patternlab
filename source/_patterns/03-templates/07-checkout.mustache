@@ -1,0 +1,67 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>Checkout</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+
+		<div class="utility-nav">
+			<div class="inner">
+
+				<div class="g g-2up">
+					<div class="gi">
+						<p>Success! You added the 'XX' package to your cart</p>
+					</div>
+					<div class="gi">
+						<div class="right-skinny">
+							<a href="#" class="btn">Add more listings</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<div role="main">
+
+			<div class="inner">
+
+				<div class="g g-2up">
+					<div class="gi gi-2-3">
+						<form method="post" action="{{ url }}" class="comment-form">
+							<fieldset>
+								<div class="field-container">
+									<label for="comment-name">Name</label>
+									<input id="comment-name" type="text" placeholder="Enter Your Name" />
+								</div>
+								<div class="field-container">
+									<label for="comment-email">Email</label>
+									<input id="comment-email" type="email" placeholder="Your email address" />
+								</div>
+								<div class="field-container">
+									<label for="comment-url">URL</label>
+									<input id="comment-url" type="url" placeholder="Website if you got one" />
+								</div>
+								<div class="field-container">
+									<label for="comment-field">Comment</label>
+									<textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+								</div>
+							</fieldset>
+						</form>
+
+						<p><a href="#" class="btn">Apply for this Job</a></p>
+
+					</div>
+					<div class="gi gi-1-3">{{> molecules-price-block }}</div>
+				</div>
+			</div>	
+
+
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

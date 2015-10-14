@@ -1,0 +1,39 @@
+//Article
+.article-header {
+	h1 {
+		font-size: 3em;
+	}
+}
+
+.byline {
+	font-size: $font-size-med-2;
+	color: $mid;
+	margin-bottom: $space-half;
+}
+
+//Social Share
+.social-share {
+	overflow: hidden;
+
+	li {
+		float: left;
+		margin-right: $space-half;
+	}
+
+	li.share-title {
+		text-transform: uppercase;
+		font-size: $font-size-small;
+		color: $mid;
+		letter-spacing: 1px;
+		margin-top: 0.15em;
+	}
+
+	a {
+		color: $dark;
+		display: block;
+
+		&:hover {
+			color: $brand-green;
+		}
+	}
+}

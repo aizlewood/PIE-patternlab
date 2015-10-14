@@ -1,0 +1,32 @@
+<section class="section job-meta">
+	
+	<div class="g g-2up">
+		<div class="gi">
+			<div class="employer-logo">
+				<a href="{{ url }}">
+				    <div class="employer-logo-thumb">
+						{{> atoms-square }}
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gi">
+			<p class="employer-link"><a href="{{ url }}">{{ employer.site }}</a></p>
+			<p class="employer-link"><a href="{{ url }}">{{ employer.twitter }}</a></p>
+			<p class="employer-link"><a href="{{ url }}">{{ employer.linkedin }}</a></p>
+		</div>
+	</div>	
+
+	<ul class="job-meta-list">
+		<li><span class="kicker">Job Title</span><br><p>{{ job.title }}</a></p></li>
+		<li><span class="kicker">Company name</span><br><p>{{ job.employer }}</p></li>
+		<li><span class="kicker">Location</span><br><p>{{ job.location }}</p></li>
+		<li><span class="kicker">Date posted</span><br><p>{{ job.date }}</p></li>
+		<li><span class="kicker">Category</span><br><p>{{ job.category }}</p></li>
+		<li><span class="kicker">Job type</span><br><p><a href="#" class="tag-btn fulltime">Full Time</a></p></li>
+		<li><span class="kicker">Salary</span><br><p>{{ job.salary }}</p></li>
+		<li><span class="kicker">Language skills required</span><br><p>{{ job.langs }}</p></li>
+		<li><span class="kicker">Bonus/Commission</span><br><p>{{ job.bonus }}</p></li>
+		<li><span class="kicker">See more positions from</span><br><p><a href="{{ url }}">{{ job.employer }}</a></p></li>
+	</ul>
+</section>

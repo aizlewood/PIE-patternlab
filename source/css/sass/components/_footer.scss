@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+	clear: both;
+	overflow: hidden;
+	background: $brand-purple;
+	color: $white;
+	line-height: 1.2;
+
+	a {
+		color: $grey-light;
+	}
+}
+
+.footer .g {
+	margin: $space-and-half 0;
+}
+
+//Footer Nav
+.nav-footer {
+	margin: 0;
+
+	li {
+		border-bottom: 1px solid $grey-dark;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		font-size: $font-size-small;
+
+		@media all and (min-width: $bp-med) {
+			border: 0;
+			float: none;
+		}
+	}
+
+	a {
+		display: block;
+		padding: $pad-half;
+		color: $white;
+	}
+}
+
+.copyright {
+	@media all and (min-width: $bp-med) {
+		float: left;
+		font-size: $font-size-small;
+	}
+
+}
+
+.terms-conditions {
+	@media all and (min-width: $bp-med) {
+		float: right;
+		font-size: $font-size-small;		
+	}	
+}

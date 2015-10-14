@@ -1,0 +1,43 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha   {
+	font-family: $font-header;
+	font-size: 3.5em; 
+	line-height: 1.2;
+	letter-spacing: -2px;
+	color: $brand-purple;
+}
+
+h2, .beta    { 
+	font-family: $font-header;	
+	font-size: 3em;
+	line-height: 1.2;
+	color: $brand-purple;	
+}
+
+h3, .gamma   { 
+	font-family: $font-header;	
+	line-height: 1.2;
+	color: $brand-purple;	
+}
+
+h4, .delta   {
+	font-family: $font-header;
+	color: $brand-purple;	
+}
+
+h5, .epsilon { 
+	font-family: $font-header;	
+	color: $brand-purple;	
+}
+
+h6, .zeta    { 
+	font-family: $font-header;	
+	color: $brand-purple;	
+}
+
+/* Subheadings */
+.subheading {
+	font-family: $font-serif;
+	font-weight: normal;
+}

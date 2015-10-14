@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+	width: 100%;
+	display: inline-block;
+	background: $brand-green;
+	color: $white;
+	border-radius: 5px;
+	line-height: 1;
+	font-weight: bold;
+	font-size: $font-size-small;
+	padding: $pad-and-half $pad-double;
+	border: 0;
+	text-align: center;
+	
+	&:hover, &:focus {
+		background: $brand-green-dark;
+		color: $white;
+	}
+
+	&.cta {
+		width: 100%;
+		background: $brand-green;
+		text-transform: uppercase;
+		color: $white;	
+		padding: $pad-and-half $pad-triple;
+	}	
+
+	&.cta:hover, &.cta:focus {
+		background: $brand-green-dark;
+		color: $white;
+	}
+
+	&.disabled {
+		width: 100%;
+		background: $disabled;
+		color: $white;
+	}
+
+	&.alt {
+		background: $white;
+		border: 1px solid $grey-light-3;
+		color: $mid;		
+	}	
+
+	&.alt:hover, &.alt:focus {
+		border: 1px solid $grey-light-1;
+	}
+
+	&.prefooter-cta {
+		width: 100%;
+		background: $white;
+		color: $brand-green;
+		font-size: $font-size-med-2;
+	}	
+
+	&.prefooter-cta:hover, &.prefooter-cta:focus {
+		color: $brand-green-dark;
+	}
+
+}
+
+.btn-small {
+	padding: $pad-half;
+}
+
+.btn-large {
+	width: 100%;
+	padding: $pad-half;
+	text-transform: uppercase;
+	background: $grey;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+
+.text-btn {
+	font-style: italic;
+}

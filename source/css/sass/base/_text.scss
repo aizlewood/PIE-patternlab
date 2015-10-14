@@ -1,0 +1,35 @@
+/* Text-Related Elements */ 
+p {
+	margin-bottom: $space;
+}
+
+/* Blockquote */
+blockquote {
+    font-style:italic;
+    font-family: $font-serif;
+    border-left: 1px solid $grey;
+    color: $grey;
+	padding-left: $pad;
+	margin-bottom: $space;
+}
+
+/* Horizontal Rule */ 
+hr {
+	border: 0;
+    height: 2px;
+    background: $grey-light-2;
+    margin: $space-double 0;
+}
+
+hr.footer {
+    border: 0;
+    height: 1px;
+    background: $white;
+    opacity: 0.2;
+    margin: $space 0;
+}
+
+abbr {
+    border-bottom: 1px dotted $grey;
+    cursor: help;
+}

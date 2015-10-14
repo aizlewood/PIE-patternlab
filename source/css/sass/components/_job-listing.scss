@@ -1,0 +1,40 @@
+.employer-logo {
+	
+}
+
+.job-info {
+
+}
+
+.job-info h3 {
+	font-family: $font;
+
+	a {
+		color: $dark;
+	}
+}
+
+.job-info a {
+	color: $mid;
+}
+
+span.recency-badge {
+	text-transform: uppercase;
+	font-size: $font-size-tiny;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.job-location {
+	text-transform: uppercase;
+	font-size: $font-size-small;
+}
+
+.job-location-detail {
+	padding: 2em 0;
+}
+
+.job-type {
+	margin-top: $space;
+	text-align: center;
+}

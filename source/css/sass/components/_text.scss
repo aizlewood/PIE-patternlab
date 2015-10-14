@@ -1,0 +1,82 @@
+//Intro text
+.intro {
+	font-size: $font-size-large;
+	font-weight: normal;
+	padding-bottom: $space;
+	border-bottom: 1px solid $canvas-dark-border;
+}
+
+//Contact text
+.contact {
+	font-size: $font-size-med-2;
+	text-align: center;
+	border: 1px solid $grey-light-3;
+	border-width: 1px 0;
+	margin: $space-and-half;
+	padding: $space;
+}
+
+//Price text
+.total-price {
+	font-family: $font-header;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-size: $font-size-large-2;
+	line-height: 1;
+	margin-bottom: 0.25em;
+	text-align: left;
+}
+
+//Pullquote
+.pullquote {
+	font-family: $font-serif;
+	font-size: $font-size-large;
+}
+
+//Caption 
+.caption {
+	font-style: italic;
+}
+
+//Kicker 
+span.kicker {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: $font-size-tiny;
+	color: $mid;
+}
+
+cite.citation {
+	font-family: $font;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: $font-size-small-2;
+}
+
+//Time
+time {
+	font-size: $font-size-small-2;
+	color: $grey-light-1;
+}
+
+//Passages of text
+.text {
+	ul {
+		list-style: disc;
+		margin: 0 0 $space 1.2em;
+
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 $space 1.5em;
+
+		ol {
+			margin-bottom: 0;
+		}
+	}
+}

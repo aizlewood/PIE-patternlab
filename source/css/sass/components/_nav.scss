@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+	
+	a {
+		display: block;
+		padding: $pad;
+		border-top: 1px solid $grey-light-2;
+		font-weight: bold;
+		color: $nav;
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		clear: none;
+
+		li {
+			float: left;
+			margin-bottom: 0;
+		}
+
+		a {
+			border: 0;
+		}
+		
+	}
+
+	a.btn {
+		color: $white;
+	}
+}
+
+ul.nav-list {
+	float: left;
+	margin-left: $space;
+	overflow: hidden;
+}
+
+ul.nav-controls {
+	float: right;
+	overflow: hidden;	
+}
+
+ul.nav-controls li.create-account {
+	margin-top: 0.5em;
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+		border-right: 1px solid $grey-light-2;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+		color: $dark;
+	}
+}

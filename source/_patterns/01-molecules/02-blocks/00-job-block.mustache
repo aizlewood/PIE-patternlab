@@ -1,0 +1,29 @@
+<div class="block job-block">
+
+	<div class="g g-job-listing">
+
+		<div class="gi employer-logo">
+			<a href="{{ url }}">
+			    <div class="employer-logo-thumb">
+					{{> atoms-square }}
+				</div>
+			</a>
+		</div>
+		<div class="gi job-info">
+			<span class="recency-badge">New</span>
+			<h3><a href="{{ url }}">{{ job.title }}</a></h3>
+			<p><a href="{{ url }}">{{ job.employer }}</a></p>
+		</div>
+		<div class="gi job-location">
+			<p class="job-location-detail">{{ job.location }}</p>
+		</div>
+		<div class="gi job-type">
+			<a href="#" class="tag-btn fulltime">Full Time</a>
+			<br>
+			<time>Posted 6 days ago</time>
+		</div>
+	</div>
+	
+<hr>	
+
+</div>

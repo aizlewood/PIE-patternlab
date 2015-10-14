@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $PREFOOTER
+\*------------------------------------*/
+.prefooter {
+	margin-top: $space-triple;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+	background: url(/images/facepile.png) repeat $brand-green;
+	color: $white;
+	line-height: 1.2;
+	padding: $space;
+}
+
+.prefooter .btn {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 30%;
+	min-width: 10em;
+	margin: $space-triple;
+}

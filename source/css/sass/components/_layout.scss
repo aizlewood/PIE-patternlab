@@ -1,0 +1,425 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+/* Layout Container */
+.lc {
+	max-width: $max-width;	
+	margin: 0 auto;
+	padding: $pad-half;
+}
+
+.inner {
+	@extend .lc;
+}
+
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+
+/* Two Column Layout */
+.l-two-col {
+	@extend .cf;
+
+	.l-main {
+		@media all and (min-width: $bp-large) {
+			float: left;
+			width: 70%;
+			padding: $pad-double $pad-triple;
+		}
+	}
+	
+	.l-sidebar {
+		@media all and (max-width: $bp-large) {
+			clear: both;
+		}
+
+		@media all and (min-width: $bp-large) {
+			float: left;
+			width: 30%;
+			padding: $pad-double;
+		}
+	}
+}
+
+/* Page Title Layout */
+.page-title {
+	@extend .lc;
+
+	text-align: center;
+	padding: $space-quad;
+}
+
+.page-title .article-header {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Utility nav Layout */
+.utility-nav {
+	background: $canvas-dark;
+	padding: 0;
+	border: 1px solid $canvas-dark-border;
+	border-width: 1px 0;
+	
+}
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+/* Grid Container */
+.g {
+	overflow: hidden;
+	margin: 0 (-$pad-half);
+}
+
+/* Grid Item */
+.gi {
+	padding: $pad-half;
+	
+	img {
+		display: block;
+	}
+
+	@media all and (min-width: $bp-med) {
+		float: left;
+	}
+}
+
+/* Grid 1up */
+.g-1up {
+	.gi {
+		width: 100%;
+	}
+}
+
+/* Grid 2up */
+.g-2up {
+	@media all and (min-width: $bp-med) {
+		> .gi {
+			float: left;
+			width: 50%;
+			
+			&:nth-of-type(odd) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid Half (Always displayed side by side) */
+.g-half {
+	> .gi {
+		float: left;
+		width: 50%;
+		
+		&:nth-of-type(odd) {
+			clear: left;
+		}
+	}
+}
+
+/* Grid 3up */
+.g-3up {
+	@media all and (min-width: $bp-med) {
+		> .gi {
+			float: left;
+			width: 50%;
+			
+			&:nth-of-type(2n+1) {
+				clear: left;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		> .gi {
+			width: 33.3333333%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid 4up */
+.g-4up {
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			float: left;
+			width: 50%;
+			
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		>.gi {
+			width: 25%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid 6up */
+.g-6up {
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			float: left;
+			width: 50%;
+			
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		>.gi {
+			width: 16.5%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(6n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid Quarter (Always displayed side by side) */
+.g-quarter {
+	> .gi {
+		float: left;
+		width: 24%;
+		
+		&:nth-of-type(4n+1) {
+			clear: left;
+		}
+	}
+}
+
+.g-max4 {
+
+	@media all and (min-width: $bp-small-2) {
+		>.gi {
+			float: left;
+			width: 50%;
+			
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-small-3) {
+		>.gi {
+			width: 33.3333333%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		>.gi {
+			width: 25%;
+			
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid 5up */
+.g-max5 {
+
+	>.gi {
+		float: left;
+		width: 50%;
+		
+		&:nth-of-type(2n+1) {
+			clear: both;
+		}
+	}
+
+	@media all and (min-width: $bp-small-3) {
+		>.gi {
+			width: 33.3333333%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			width: 25%;
+			
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-med-2) {
+		>.gi {
+			width: 20%;
+			
+			&:nth-of-type(4n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(5n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid 2/3 */
+.gi.gi-2-3 {
+	@media all and (min-width: $bp-med) {
+		float: left;
+		padding: 0 $space-quad;
+		width: 66.666666%;
+	}
+}
+
+.gi.gi-1-3 {
+	@media all and (min-width: $bp-med) {
+		float: left;
+		padding: 0 $space;
+		width: 33.333333%;
+	}
+}
+
+/* Grid 4up block */
+.g-opposites {
+	.gi {
+		float: left;
+		
+		&:last-child {
+			float: right;
+			text-align: right;
+		}
+	}
+}
+
+
+/* Grid Job listing */
+.g-job-listing {
+
+	>.gi {
+		float: left;
+		padding: $space;
+		width: 50%;
+		
+		&:nth-of-type(2n+1) {
+			clear: both;
+		}
+	}	
+
+
+	@media all and (min-width: $bp-small-3) {
+		>.gi {
+			width: 33.3333333%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+		}	
+	}
+	
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			width: 25%;
+			
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+
+		.gi.employer-logo {
+			width: 10%;
+		}
+
+		.gi.employer-logo .employer-logo-thumb img {
+			max-width: 5em;
+			padding: $space;
+		}		
+
+		.gi.job-info {
+			width: 50%;
+		}		
+
+		.gi.job-location {
+			width: 25%;
+		}		
+
+		.gi.job-type {
+			width: 15%;
+		}	
+
+	}
+
+	@media all and (min-width: $bp-med-2) {
+		>.gi {
+			width: 20%;
+			
+			&:nth-of-type(4n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(5n+1) {
+				clear: left;
+			}
+		}
+	}
+}

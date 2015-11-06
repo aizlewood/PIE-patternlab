@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1446829599" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1446836786" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +15,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1446829599" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1446829599" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1446836786" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1446836786" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -382,128 +382,88 @@
 					<div id="organisms-modal-apply" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-04-modal-apply/02-organisms-04-modals-04-modal-apply.html" class="patternLink" data-patternpartial="organisms-modal-apply">Modal Apply</a></h2>
 						<div class="sg-pattern-body">
-							<table class="account manage-alerts">
-	<thead>
-		<tr>
-			<th>Alert name</th>
-			<th>Date created</th>
-			<th>Keywords</th>
-			<th>Location</th>
-			<th>Frequency</th>
-			<th>Status</th>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td colspan="6">
-			<p><a href="#">Add alert</a></p>
-		</td>
-	</tr>
-	<tr>
-		<td class="third">
-			<p>This is a long title of an alert</p>
-		</td>
-		<td>
-			<p class="small">July 13, 2015</p>
-		</td>
-		<td>
-			<p class="small">'design' 'marketing' 'management'</p>
-		</td>
-		<td>
-			<p class="small">London</p>
-		</td>
-		<td>
-			<p class="small">Weekly</p>
-		</td>
-		<td>
-			<p class="small">Enabled</p>
-		</td>
-	</tr>
-	<tr>
-		<td class="third">
-			<p>This is a test</p>
-		</td>
-		<td>
-			<p class="small">July 13, 2015</p>
-		</td>
-		<td>
-			<p class="small">'design'</p>
-		</td>
-		<td>
-			<p class="small">London</p>
-		</td>
-		<td>
-			<p class="small">Weekly</p>
-		</td>
-		<td>
-			<p class="small">Enabled</p>
-		</td>
-	</tr>
-	</tbody>
-</table>
+							
+<div class="md-modal md-effect-7" id="modal-1">
+	<div class="md-content">
+
+		<section class="section">
+		
+		<button class="md-close right"><img src="../../images/cross.svg"></button>
+
+		<h3 class="middle">Apply for this job</h3>
+
+		<p class="middle"><strong>International Sales Manager</strong>, Tellus Group</p>
+
+		<fieldset>
+		    <div class="field-container">
+		        <label for="text">Text Input <abbr title="Required">*</abbr></label>
+		        <input id="text" type="text" placeholder="Text Input">
+		    </div>
+
+		    <div class="field-container">
+		        <label for="emailaddress">Email Address</label>
+		        <input id="emailaddress" type="email" placeholder="name@email.com">
+		    </div>
+
+		    <div class="field-container">
+		        <label for="textarea">Textarea</label>
+		        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+		    </div>
+
+		    <h5>Upload your CV (optional)</h5>
+		    <p>Upload your CV / resume or any other relevant file in .doc, .pdf, .jpg or .gif format. <br> <em>Maximum file size: 1MB</em></p>
+
+		    <button><a href="#" class="text-btn">Choose files</a></button> No files chosen
+
+			<p><a href="#" class="btn caps">Button Caps</a></p>
+
+		</fieldset>
+		</section>
+	</div>
+</div>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;table class=&quot;account manage-alerts&quot;&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Alert name&lt;/th&gt;
-			&lt;th&gt;Date created&lt;/th&gt;
-			&lt;th&gt;Keywords&lt;/th&gt;
-			&lt;th&gt;Location&lt;/th&gt;
-			&lt;th&gt;Frequency&lt;/th&gt;
-			&lt;th&gt;Status&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-	&lt;tr&gt;
-		&lt;td colspan=&quot;6&quot;&gt;
-			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Add alert&lt;/a&gt;&lt;/p&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td class=&quot;third&quot;&gt;
-			&lt;p&gt;This is a long title of an alert&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;'design' 'marketing' 'management'&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td class=&quot;third&quot;&gt;
-			&lt;p&gt;This is a test&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;'design'&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
+										
+&lt;div class=&quot;md-modal md-effect-7&quot; id=&quot;modal-1&quot;&gt;
+	&lt;div class=&quot;md-content&quot;&gt;
+
+		&lt;section class=&quot;section&quot;&gt;
+		
+		&lt;button class=&quot;md-close right&quot;&gt;&lt;img src=&quot;../../images/cross.svg&quot;&gt;&lt;/button&gt;
+
+		&lt;h3 class=&quot;middle&quot;&gt;Apply for this job&lt;/h3&gt;
+
+		&lt;p class=&quot;middle&quot;&gt;&lt;strong&gt;International Sales Manager&lt;/strong&gt;, Tellus Group&lt;/p&gt;
+
+		&lt;fieldset&gt;
+		    &lt;div class=&quot;field-container&quot;&gt;
+		        &lt;label for=&quot;text&quot;&gt;Text Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		        &lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		    &lt;/div&gt;
+
+		    &lt;div class=&quot;field-container&quot;&gt;
+		        &lt;label for=&quot;emailaddress&quot;&gt;Email Address&lt;/label&gt;
+		        &lt;input id=&quot;emailaddress&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
+		    &lt;/div&gt;
+
+		    &lt;div class=&quot;field-container&quot;&gt;
+		        &lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/label&gt;
+		        &lt;textarea id=&quot;textarea&quot; rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
+		    &lt;/div&gt;
+
+		    &lt;h5&gt;Upload your CV (optional)&lt;/h5&gt;
+		    &lt;p&gt;Upload your CV / resume or any other relevant file in .doc, .pdf, .jpg or .gif format. &lt;br&gt; &lt;em&gt;Maximum file size: 1MB&lt;/em&gt;&lt;/p&gt;
+
+		    &lt;button&gt;&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;Choose files&lt;/a&gt;&lt;/button&gt; No files chosen
+
+			&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn caps&quot;&gt;Button Caps&lt;/a&gt;&lt;/p&gt;
+
+		&lt;/fieldset&gt;
+		&lt;/section&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 									</code>
 								</pre>
 							</div>
@@ -651,6 +611,9 @@
 		</script>
 		
 
+
+	<div class="md-overlay"></div><!-- the overlay element -->
+
 	<!--DO NOT REMOVE-->
 		<script>
 		/*!
@@ -684,10 +647,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1446829599">
+	<script id="pl-js-polyfill-insert-1446836786">
 		(function() {
 			if (self != top) {
-				var cb = '1446829599';
+				var cb = '1446836786';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -696,10 +659,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1446829599">
+	<script id="pl-js-insert-1446836786">
 		(function() {
 			if (self != top) {
-				var cb = '1446829599';
+				var cb = '1446836786';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

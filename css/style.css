@@ -259,6 +259,10 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .cf:after, [role=main]:after, .l-two-col:after {
   clear: both; }
 
+button {
+  outline: 0;
+  border: 0; }
+
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
   display: none !important;
@@ -409,18 +413,25 @@ h2, .beta {
 
 h3, .gamma {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.1em;
   line-height: 1.2;
   color: #362442; }
 
+.job-info h3 {
+  font-size: 1.2em; }
+
 h4, .delta {
+  font-size: 1.6em;
   font-family: "Montserrat", sans-serif;
   color: #362442; }
 
 h5, .epsilon {
+  font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
   color: #362442; }
 
 h6, .zeta {
+  font-size: 0.9em;
   font-family: "Montserrat", sans-serif;
   color: #362442; }
 
@@ -587,6 +598,8 @@ perspective effects (not including the modals and the overlay).
   width: 50%;
   max-width: 630px;
   min-width: 320px;
+  overflow: auto;
+  max-height: 90%;
   height: auto;
   z-index: 2000;
   visibility: hidden;
@@ -621,34 +634,8 @@ perspective effects (not including the modals and the overlay).
   background: #fff;
   position: relative;
   border-radius: 3px;
+  padding: 1em 2em;
   margin: 0 auto; }
-
-.md-content h3 {
-  margin: 0;
-  padding: 0.4em;
-  text-align: center;
-  font-size: 2.4em;
-  font-weight: 300;
-  opacity: 0.8;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px 3px 0 0; }
-
-.md-content > div {
-  padding: 15px 40px 30px;
-  margin: 0;
-  font-weight: 300;
-  font-size: 1.15em; }
-
-.md-content > div p {
-  margin: 0;
-  padding: 10px 0; }
-
-.md-content > div ul {
-  margin: 0;
-  padding: 0 0 30px 20px; }
-
-.md-content > div ul li {
-  padding: 5px 0; }
 
 .md-content button {
   display: block;
@@ -1504,6 +1491,8 @@ time {
   float: left; }
 .g-job-listing .gi.job-type {
   text-align: left; }
+.g-job-listing .employer-logo {
+  display: none; }
 @media all and (min-width: 24em) {
   .g-job-listing > .gi {
     width: 90%;
@@ -1524,6 +1513,9 @@ time {
     clear: none; }
   .g-job-listing > .gi:nth-of-type(2n+1) {
     clear: none; }
+
+  .g-job-listing .employer-logo {
+    display: block; }
 
   .g-job-listing .gi.employer-logo .employer-logo-thumb img {
     max-width: 6.5em;
@@ -2331,6 +2323,15 @@ span.recency-badge {
 
 p.employer-link {
   font-size: 0.85em; }
+
+.employer-link.web {
+  background: transparent url("/images/globe.svg") no-repeat 90% 50%; }
+
+.employer-link.twitter {
+  background: transparent url("/images/twitter.svg") no-repeat 90% 50%; }
+
+.employer-link.linkedin {
+  background: transparent url("/images/linkedin.svg") no-repeat 90% 50%; }
 
 .stats {
   text-align: center;

@@ -11,14 +11,16 @@
 	border: 1px solid $dark;
 	text-align: center;
 
+
 	&.fulltime {
 		border: 1px solid $fulltime;
 		color: $fulltime;
 	}
 
 	&.fulltime:hover, &.fulltime:focus {
-		background: $fulltime;
-		color: $white;
+		// background: $fulltime;
+		// color: $white;
+		text-decoration: none;
 	}	
 
 	&.parttime {
@@ -27,8 +29,9 @@
 	}	
 
 	&.parttime:hover, &.parttime:focus {
-		background: $parttime;
-		color: $white;
+		// background: $parttime;
+		// color: $white;
+		text-decoration: none;		
 	}	
 
 	&.fixedterm {
@@ -37,8 +40,9 @@
 	}
 
 	&.fixedterm:hover, &.fixedterm:focus {
-		background: $fixedterm;
-		color: $white;
+		// background: $fixedterm;
+		// color: $white;
+		text-decoration: none;		
 	}	
 
 	&.freelance {
@@ -47,8 +51,9 @@
 	}
 
 	&.freelance:hover, &.freelance:focus {
-		background: $freelance;
-		color: $white;
+		// background: $freelance;
+		// color: $white;
+		text-decoration: none;		
 	}	
 
 	&.other {
@@ -57,7 +62,8 @@
 	}
 
 	&.other:hover, &.other:focus {
-		background: $other;
-		color: $white;
+		// background: $other;
+		// color: $white;
+		text-decoration: none;		
 	}	
 }

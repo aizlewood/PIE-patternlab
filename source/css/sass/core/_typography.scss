@@ -32,23 +32,23 @@
     font-weight: 700;
 }
 
-@mixin link($color, $text-decoration: none)
-{
-    color: $color;
-    text-decoration: $text-decoration;
-    &:visited,
-    &:hover,
-    &:active {
-        color: $color;
-        text-decoration: $text-decoration;
-    }
-}
+// @mixin link($color, $text-decoration: none)
+// {
+//     color: $color;
+//     text-decoration: $text-decoration;
+//     &:visited,
+//     &:hover,
+//     &:active {
+//         color: $color;
+//         text-decoration: $text-decoration;
+//     }
+// }
 
-@mixin rem($pxsize, $line-height: false)
-{
-    font-size: $pxsize + px;
-    font-size: ($pxsize / 16) + rem;
-    @if $line-height {
-        line-height: ($line-height / $pxsize);
-    }
-}
+// @mixin rem($pxsize, $line-height: false)
+// {
+//     font-size: $pxsize + px;
+//     font-size: ($pxsize / 16) + rem;
+//     @if $line-height {
+//         line-height: ($line-height / $pxsize);
+//     }
+// }

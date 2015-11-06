@@ -1,0 +1,81 @@
+/* Jobs List */
+.job-listing-list {
+	border: 1px solid $grey-light;
+}
+.job-listing-list li {
+	margin-bottom: 0;
+}
+
+/* Social share list */
+.social-share-list li {
+	margin-bottom: 0;
+}
+
+
+/* Jobs Meta List */
+.job-meta-list {
+
+}
+
+.job-meta-list li {
+	margin-bottom: 0;
+	line-height: 1.5;
+	font-size: $font-size-small;
+}
+
+.job--listings {
+
+}
+
+.job--listings.filter {
+	padding-top: $space;
+	background: $brand-purple;
+	color: #C3BDC6;
+}
+
+.job--listings .search-controls li {
+	width: 100%;
+}
+
+
+// Job search filter list 
+
+@media all and (min-width: $bp-med) {
+	.job--listings .search-controls li {
+		margin-right: $space;
+	}
+
+	.job--listings .search-controls li.wide {
+		width: 31%;
+	}
+
+	.job--listings .search-controls li.narrow {
+		width: 15%;
+	}
+
+	.job--listings .search-controls li.last {
+		margin-right: 0;
+	}	
+}
+
+@media all and (min-width: $bp-large) {
+
+}
+
+//Job search filter title 
+.utility-nav--label {
+	position: relative;
+	top: 1em;
+}
+
+//Job search filter checkboxes 
+.filters {
+	padding: $space;
+	text-align: right;	
+}
+
+.filters {
+	li {
+		margin: 0 3%;
+	}
+}

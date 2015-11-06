@@ -89,6 +89,20 @@
 	}
 }
 
+
+/* Grid Item Inlined image */
+.gi.inlined {
+	padding: $pad-half;
+	
+	img {
+		display: inline;
+	}
+
+	@media all and (min-width: $bp-med) {
+		float: left;
+	}
+}
+
 /* Grid 1up */
 .g-1up {
 	.gi {
@@ -345,73 +359,105 @@
 }
 
 
-/* Grid Job listing */
+/*------------------------------------*\
+    $GRIDS FOR JOB LISTINGS
+\*------------------------------------*/
 .g-job-listing {
 
 	>.gi {
+		width: 100%;
 		float: left;
-		padding: $space;
-		width: 50%;
-		
-		&:nth-of-type(2n+1) {
-			clear: both;
-		}
 	}	
 
+	.gi.job-type {
+		text-align: left;
+	}
 
-	@media all and (min-width: $bp-small-3) {
+	@media all and (min-width: $bp-small) {
 		>.gi {
-			width: 33.3333333%;
+			width: 90%;
+			padding: $space;
 			
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
 			
-			&:nth-of-type(3n+1) {
-				clear: none;
-			}
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}		
 		}	
+
+		.gi.job-location {
+			width: 50%;
+		}			
+		.gi.job-type {
+			width: 35%;
+		}
 	}
 	
 	@media all and (min-width: $bp-med) {
 		>.gi {
-			width: 25%;
 			
 			&:nth-of-type(3n+1) {
 				clear: none;
 			}
 			
-			&:nth-of-type(4n+1) {
-				clear: left;
+			&:nth-of-type(2n+1) {
+				clear: none;
 			}
 		}
 
-		.gi.employer-logo {
-			width: 10%;
-		}
-
 		.gi.employer-logo .employer-logo-thumb img {
-			max-width: 5em;
+			max-width: 6.5em;
 			padding: $space;
 		}		
 
 		.gi.job-info {
-			width: 50%;
+			width: 77%;
 		}		
 
 		.gi.job-location {
-			width: 25%;
+			width: 45%;
 		}		
 
 		.gi.job-type {
-			width: 15%;
+			width: 35%;
 		}	
 
 	}
 
-	@media all and (min-width: $bp-med-2) {
+	@media all and (min-width: $bp-large) {
 		>.gi {
-			width: 20%;
+			
+			&:nth-of-type(4n+1) {
+				clear: none;
+			}
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+		}		
+
+		.gi.job-info {
+			margin-top: $space;
+			width: 44%;
+		}		
+
+		.gi.job-location {
+			margin-top: $space;
+			width: 22%;
+		}		
+
+		.gi.job-type {
+			margin-top: $space-double;
+			width: 17%;
+			text-align: right;
+		}	
+
+	}	
+
+	@media all and (min-width: $bp-xl) {
+		>.gi {
 			
 			&:nth-of-type(4n+1) {
 				clear: none;
@@ -422,4 +468,27 @@
 			}
 		}
 	}
+}
+
+/*------------------------------------*\
+    $SPLITS
+\*------------------------------------*/
+
+.row {
+	clear: both;
+	overflow: hidden;
+	padding: 0 $space;
+}
+
+.half {
+	width: 50%;
+	float: left;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+.half.right {
+	float: right;
+	text-align: right;
 }

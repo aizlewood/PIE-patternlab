@@ -71,6 +71,12 @@
 	text-align: left;
 }
 
+/* Misc */
+.middle {
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Display Classes */
 .hide-small {
     @media all and (max-width: $bp-med) {

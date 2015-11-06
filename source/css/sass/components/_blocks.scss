@@ -23,16 +23,13 @@
 /* Job Block */
 .job-block {
 	background: $white;
+	padding: 0 $space;
+	border-bottom: 1px solid $grey-light-2;
 }
 
 .job-block:hover {
 	background: $brand-green-light;
 }
-
-.job-block hr {
-	margin: 0;
-}
-
 
 /* Hero Block */
 .block-hero {
@@ -93,6 +90,21 @@
 			padding: 0 $pad;
 		}
 	}
+}
+
+/* Block Load more job listings */
+.block.job-listings-load-more {
+	background: $canvas-dark;
+	margin-top: -2.1em;
+	border: 1px solid $grey-light;
+	padding: $space-double $space $space $space;
+}
+
+.block.job-listings-load-more .btn {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 30%;
+	min-width: 15em;
 }
 
 

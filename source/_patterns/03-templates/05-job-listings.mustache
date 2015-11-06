@@ -8,26 +8,26 @@
 			</header>
 		</div>
 
-		<div class="filter-search-nav">
+		<div class="job--listings filter">
 			<div class="inner">
 
-				<div class="g g-4up">
-						<div class="gi">
-						    <div class="field-container">
-					        <label for="search">Search</label>
+				<ul class="inline-list job--listings search-controls">
+					<li class="wide">
+					    <div class="field-container ondark">
+					        <label class="light" for="search">Search</label>
 					        <input id="search" type="search" placeholder="Enter Search Term">
 					    </div>
-					</div>
-					<div class="gi">
-					    <div class="field-container">
-					        <label for="search">Search</label>
+					</li>
+					<li class="narrow">
+					    <div class="field-container ondark">
+					        <label class="light" for="search">Search</label>
 					        <input id="search" type="search" placeholder="Enter Search Term">
 					    </div>
-					</div>
-					<div class="gi">
+					</li>
+					<li class="wide">
 						<fieldset>
-						    <div class="field-container">
-						        <label for="select">Select</label>
+						    <div class="field-container ondark">
+						        <label class="light" for="select">Select</label>
 						        <select id="select">
 						            <optgroup label="Option Group">
 						                <option>Option One</option>
@@ -37,11 +37,12 @@
 						        </select>
 						    </div>
 						</fieldset>
-					</div>
-					<div class="gi">
+					</li>
+					<li class="narrow last">
 						<a href="#" class="btn">Search Jobs</a>
-					</div>
-				</div>
+					</li>
+				</ul>
+
 
 			</div>
 		</div>
@@ -50,18 +51,18 @@
 			<div class="inner">
 
 				<div class="g g-2up">
-					<div class="gi">
-						<legend>Filter by type</legend>
+					<div class="gi gi-1-3">
+						<legend class="utility-nav--label"><strong>Filter by type</strong></legend>
 					</div>
-					<div class="gi">
+					<div class="gi gi-2-3">
 						<form action="#">
 						    <fieldset class="options">
-						        <ul>
-						            <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Fulltime</label></li>
-						            <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Part-time</label></li>
-						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Fixed term</label></li>
-						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Freelance</label></li>
-						            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Other</label></li>       
+						        <ul class="inline-list filters">
+						            <li><label class="light" for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Fulltime</label></li>
+						            <li><label class="light" for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Part-time</label></li>
+						            <li><label class="light" for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Fixed term</label></li>
+						            <li><label class="light" for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Freelance</label></li>
+						            <li><label class="light" for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Other</label></li>       
 						        </ul>
 						    </fieldset>
 						</form>
@@ -74,13 +75,24 @@
 	<div role="main">
 
 		<div class="listings top-shelf">
-			<h4>Top shelf listings</h4>
+
+		<div class="row">
+			<div class="half"><br />{{> molecules-topshelf-title }}</div>
+			<div class="half right"></div>
+		</div>
+
 			{{> organisms-job-listing }}
 		</div>
 
 		<div class="listings">
-			<h4>Showing 1,234 jobs</h4>
+
+		<div class="row">
+			<div class="half">{{> molecules-results-title }}</div>
+			<div class="half right">{{> atoms-rss }}</div>
+		</div>
+
 			{{> organisms-job-listing }}
+			{{> molecules-job-listings-load-more }}
 		</div>
 
 

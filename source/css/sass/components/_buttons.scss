@@ -19,20 +19,21 @@
 		color: $white;
 	}
 
-	&.cta {
+	&.caps {
 		width: 100%;
 		background: $brand-green;
 		text-transform: uppercase;
 		color: $white;	
 		padding: $pad-and-half $pad-triple;
+		margin: $space 0;
 	}	
 
-	&.cta:hover, &.cta:focus {
+	&.caps:hover, &.caps:focus {
 		background: $brand-green-dark;
 		color: $white;
 	}
 
-	&.alt-cta {
+	&.alt-caps {
 		width: 100%;
 		background: $brand-blue;
 		text-transform: uppercase;
@@ -40,7 +41,7 @@
 		padding: $pad-and-half $pad-triple;
 	}	
 
-	&.alt-cta:hover, &.alt-cta:focus {
+	&.alt-caps:hover, &.alt-caps:focus {
 		background: $brand-blue;
 		color: $white;
 	}	
@@ -49,6 +50,8 @@
 		width: 100%;
 		background: $disabled;
 		color: $white;
+		text-decoration: none;
+		cursor: not-allowed;
 	}
 
 	&.alt {
@@ -61,18 +64,18 @@
 		border: 1px solid $grey-light-1;
 	}
 
-	&.bookmark {
+	&.star {
 		text-transform: uppercase;
 		font-weight: normal;
 		letter-spacing: 1px;
 		color: $brand-purple;
 	}	
 
-	&.bookmark img {
+	&.star img {
 		margin-bottom: -2px;
 	}
 
-	&.bookmark:hover, &.bookmark:focus {
+	&.star:hover, &.star:focus {
 		border: 1px solid $grey-light-3;
 	}	
 
@@ -115,5 +118,5 @@
 }
 
 .text-btn {
-	font-style: italic;
+
 }

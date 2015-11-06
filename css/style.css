@@ -186,7 +186,7 @@ input[type=text], input[type=search], input[type=url], input[type=number], input
     outline: 0;
     border: 0px; }
 
-button, input[type="submit"] {
+input[type="submit"] {
   padding: 0.5em;
   background: #333;
   border: 1px solid #e4e4e4;
@@ -417,8 +417,9 @@ h3, .gamma {
   line-height: 1.2;
   color: #362442; }
 
-.job-info h3 {
-  font-size: 1.2em; }
+.job-info h3, .account-table-info h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em; }
 
 h4, .delta {
   font-size: 1.6em;

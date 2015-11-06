@@ -15,6 +15,28 @@
 	}
 }
 
+/* nav-list */
+.dd-list {
+	background: $white;
+	max-width: 20em;
+	padding-top: $space;
+}
+
+.dd-list li {
+	padding: 0 $space-and-half;
+	border-bottom: 1px solid $grey-light;	
+}
+
+.dd-list li:last-child {
+	border-bottom: none;
+}
+
+.dd-list li a {
+	display: block;
+	padding-bottom: $space;
+}
+
+
 
 /* Headline List */
 .headline-list {

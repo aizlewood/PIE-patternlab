@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1444245362" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1446230666" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +15,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1444245362" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1444245362" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1446230666" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1446230666" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -373,6 +373,46 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="atoms-rss" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-02-text-08-rss/00-atoms-02-text-08-rss.html" class="patternLink" data-patternpartial="atoms-rss">Rss</a></h2>
+						<div class="sg-pattern-body">
+							<p><a href="#" class="rss">RSS</a></p>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;rss&quot;&gt;RSS&lt;/a&gt;&lt;/p&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-checkout-text" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-02-text-09-checkout-text/00-atoms-02-text-09-checkout-text.html" class="patternLink" data-patternpartial="atoms-checkout-text">Checkout Text</a></h2>
+						<div class="sg-pattern-body">
+							<h3>Your order summary</h3>
+
+<p>Order number: <strong>5692</strong><br>
+Date: <strong>July 13, 2015</strong><br>
+Total: <strong>£350.00</strong><br>
+Payment method: <strong>Credit card</strong></p>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;h3&gt;Your order summary&lt;/h3&gt;
+
+&lt;p&gt;Order number: &lt;strong&gt;5692&lt;/strong&gt;&lt;br&gt;
+Date: &lt;strong&gt;July 13, 2015&lt;/strong&gt;&lt;br&gt;
+Total: &lt;strong&gt;&pound;350.00&lt;/strong&gt;&lt;br&gt;
+Payment method: &lt;strong&gt;Credit card&lt;/strong&gt;&lt;/p&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-unordered" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-03-lists-00-unordered/00-atoms-03-lists-00-unordered.html" class="patternLink" data-patternpartial="atoms-unordered">Unordered</a></h2>
 						<div class="sg-pattern-body">
@@ -501,6 +541,32 @@ p q r s t u v w x y z { | } ~
 	&lt;li&gt;This is a list item in an unordered list&lt;/li&gt;
 	&lt;li&gt;Sometimes, an unordered list is a bulleted list.&lt;/li&gt;
 	&lt;li&gt;This is the last list item&lt;/li&gt;
+&lt;/ul&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-dd-list" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-03-lists-04-dd-list/00-atoms-03-lists-04-dd-list.html" class="patternLink" data-patternpartial="atoms-dd-list">Dd List</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="dd-list">
+	<li><a href="#">Manage job alerts</a></li>
+	<li><a href="#">Manage bookmarks</a></li>
+	<li><a href="#">Manage jobs</a></li>
+	<li><a href="#">Your account</a></li>
+	<li><a href="#">Your cart</a></li>
+</ul>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;dd-list&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage job alerts&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage bookmarks&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage jobs&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your account&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 									</code>
 								</pre>
@@ -882,8 +948,11 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<p><a href="#" class="btn">Button</a></p>
 <p><a href="#" class="btn cta">Call-to-action Button</a></p>
-<p><a href="#" class="btn alt">Alternate Button</a></p>
-<p><a href="#" class="btn disabled">Disabled Button</a></p>
+<p><a href="#" class="btn alt bookmark"><img src="../../images/star-outlined.svg"> Bookmark</a></p>
+<p><a href="#" class="btn alt">Show me more results</a></p>
+<p><a href="#" class="btn disabled">Unavailable</a></p>
+<p><a href="#" class="btn logout">Logout</a></p>
+<p><a href="#" class="btn alt-cta">Continue Shopping</a></p>
 <p><a href="#" class="text-btn">Text Button</a></p>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
@@ -891,8 +960,11 @@ p q r s t u v w x y z { | } ~
 									<code>
 										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn cta&quot;&gt;Call-to-action Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt&quot;&gt;Alternate Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn disabled&quot;&gt;Disabled Button&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt bookmark&quot;&gt;&lt;img src=&quot;../../images/star-outlined.svg&quot;&gt; Bookmark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt&quot;&gt;Show me more results&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn disabled&quot;&gt;Unavailable&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn logout&quot;&gt;Logout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt-cta&quot;&gt;Continue Shopping&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;Text Button&lt;/a&gt;&lt;/p&gt;
 									</code>
 								</pre>
@@ -916,6 +988,20 @@ p q r s t u v w x y z { | } ~
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;tag-btn fixedterm&quot;&gt;Fixed Term&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;tag-btn freelance&quot;&gt;Freelance&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;tag-btn other&quot;&gt;Other&lt;/a&gt;&lt;/p&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-reset-buttons" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-02-reset-buttons/00-atoms-06-buttons-02-reset-buttons.html" class="patternLink" data-patternpartial="atoms-reset-buttons">Reset Buttons</a></h2>
+						<div class="sg-pattern-body">
+							<p><a href="#" class="reset-btn"><img src="../../images/ex.svg">Reset</a></p>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;reset-btn&quot;&gt;&lt;img src=&quot;../../images/ex.svg&quot;&gt;Reset&lt;/a&gt;&lt;/p&gt;
 									</code>
 								</pre>
 							</div>
@@ -1025,6 +1111,306 @@ p q r s t u v w x y z { | } ~
 		&lt;td&gt;Table Cell 3&lt;/td&gt;
 		&lt;td&gt;Table Cell 4&lt;/td&gt;
 		&lt;td&gt;Table Cell 5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-account-table-2-col" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-07-tables-01-account-table-2-col/00-atoms-07-tables-01-account-table-2-col.html" class="patternLink" data-patternpartial="atoms-account-table-2-col">Account Table 2 Col</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account">
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+		</tr>
+	</tfoot>
+	<tbody>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Heading 1&lt;/th&gt;
+			&lt;th&gt;Table Heading 2&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-account-table-4-col" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-07-tables-02-account-table-4-col/00-atoms-07-tables-02-account-table-4-col.html" class="patternLink" data-patternpartial="atoms-account-table-4-col">Account Table 4 Col</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account">
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+			<th>Table Heading 3</th>
+			<th>Table Heading 4</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+			<th>Table Footer 4</th>
+		</tr>
+	</tfoot>
+	<tbody>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Heading 1&lt;/th&gt;
+			&lt;th&gt;Table Heading 2&lt;/th&gt;
+			&lt;th&gt;Table Heading 3&lt;/th&gt;
+			&lt;th&gt;Table Heading 4&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+			&lt;th&gt;Table Footer 3&lt;/th&gt;
+			&lt;th&gt;Table Footer 4&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-account-table-6-col" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-07-tables-03-account-table-6-col/00-atoms-07-tables-03-account-table-6-col.html" class="patternLink" data-patternpartial="atoms-account-table-6-col">Account Table 6 Col</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account">
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+			<th>Table Heading 3</th>
+			<th>Table Heading 4</th>
+			<th>Table Heading 5</th>
+			<th>Table Heading 6</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+			<th>Table Footer 4</th>
+			<th>Table Footer 5</th>
+			<th>Table Footer 6</th>
+		</tr>
+	</tfoot>
+	<tbody>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+		<td>Table Cell 6</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+		<td>Table Cell 6</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+		<td>Table Cell 6</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+		<td>Table Cell 6</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Heading 1&lt;/th&gt;
+			&lt;th&gt;Table Heading 2&lt;/th&gt;
+			&lt;th&gt;Table Heading 3&lt;/th&gt;
+			&lt;th&gt;Table Heading 4&lt;/th&gt;
+			&lt;th&gt;Table Heading 5&lt;/th&gt;
+			&lt;th&gt;Table Heading 6&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+			&lt;th&gt;Table Footer 3&lt;/th&gt;
+			&lt;th&gt;Table Footer 4&lt;/th&gt;
+			&lt;th&gt;Table Footer 5&lt;/th&gt;
+			&lt;th&gt;Table Footer 6&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+		&lt;td&gt;Table Cell 5&lt;/td&gt;
+		&lt;td&gt;Table Cell 6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+		&lt;td&gt;Table Cell 5&lt;/td&gt;
+		&lt;td&gt;Table Cell 6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+		&lt;td&gt;Table Cell 5&lt;/td&gt;
+		&lt;td&gt;Table Cell 6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Table Cell 1&lt;/td&gt;
+		&lt;td&gt;Table Cell 2&lt;/td&gt;
+		&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;td&gt;Table Cell 4&lt;/td&gt;
+		&lt;td&gt;Table Cell 5&lt;/td&gt;
+		&lt;td&gt;Table Cell 6&lt;/td&gt;
 	&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
@@ -1218,6 +1604,90 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;byline&quot;&gt;Tellus Group&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-stats-block" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-08-stats-block/01-molecules-00-text-08-stats-block.html" class="patternLink" data-patternpartial="molecules-stats-block">Stats Block</a></h2>
+						<div class="sg-pattern-body">
+							<div class="stats">
+	<div class="stats-context">Live for</div>
+	<div class="stats-value">13</div>
+	<div class="stats-quantify">days</div>
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;stats&quot;&gt;
+	&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+	&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+	&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-showing-results" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-09-showing-results/01-molecules-00-text-09-showing-results.html" class="patternLink" data-patternpartial="molecules-showing-results">Showing Results</a></h2>
+						<div class="sg-pattern-body">
+							<p class="results results-showing-filter">Showing <b>283</b> results for "<em>Marketing</em>"</p>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;p class=&quot;results results-showing-filter&quot;&gt;Showing &lt;b&gt;283&lt;/b&gt; results for &quot;&lt;em&gt;Marketing&lt;/em&gt;&quot;&lt;/p&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-results-title" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-10-results-title/01-molecules-00-text-10-results-title.html" class="patternLink" data-patternpartial="molecules-results-title">Results Title</a></h2>
+						<div class="sg-pattern-body">
+							<p class="results results-title">Top shelf listings</p>
+<p class="results results-showing-number">Showing <b>1,283</b> jobs</p>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;p class=&quot;results results-title&quot;&gt;Top shelf listings&lt;/p&gt;
+&lt;p class=&quot;results results-showing-number&quot;&gt;Showing &lt;b&gt;1,283&lt;/b&gt; jobs&lt;/p&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-tagged-with" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-11-tagged-with/01-molecules-00-text-11-tagged-with.html" class="patternLink" data-patternpartial="molecules-tagged-with">Tagged With</a></h2>
+						<div class="sg-pattern-body">
+							<p class="tagged-with">Tagged with <img src="../../images/tag.svg"> <em><a href="">Sales</a>, <a href="">Marketing</a></em></p>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;p class=&quot;tagged-with&quot;&gt;Tagged with &lt;img src=&quot;../../images/tag.svg&quot;&gt; &lt;em&gt;&lt;a href=&quot;&quot;&gt;Sales&lt;/a&gt;, &lt;a href=&quot;&quot;&gt;Marketing&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-pricing-price" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-12-pricing-price/01-molecules-00-text-12-pricing-price.html" class="patternLink" data-patternpartial="molecules-pricing-price">Pricing Price</a></h2>
+						<div class="sg-pattern-body">
+							<div class="pricing-price">
+	<div class="price-value">£250</div>
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;pricing-price&quot;&gt;
+	&lt;div class=&quot;price-value&quot;&gt;&pound;250&lt;/div&gt;
+&lt;/div&gt;
 									</code>
 								</pre>
 							</div>
@@ -1656,6 +2126,9 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 						<div class="sg-pattern-body">
 							<div class="block block-card">
 		
+		<div class="pricing-price">
+			<div class="price-value">£250</div>
+		</div>		
 		<p class="package-type">Package type</p>
 
 		<ul>
@@ -1670,6 +2143,7 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
+											<a href="../../patterns/01-molecules-00-text-12-pricing-price/01-molecules-00-text-12-pricing-price.html"><code>molecules-pricing-price</code></a>
 											<a href="../../patterns/00-atoms-03-lists-03-unordered-nostyle/00-atoms-03-lists-03-unordered-nostyle.html"><code>atoms-unordered-nostyle</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
@@ -1677,6 +2151,9 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 									<code>
 										&lt;div class=&quot;block block-card&quot;&gt;
 		
+		&lt;div class=&quot;pricing-price&quot;&gt;
+			&lt;div class=&quot;price-value&quot;&gt;&pound;250&lt;/div&gt;
+		&lt;/div&gt;		
 		&lt;p class=&quot;package-type&quot;&gt;Package type&lt;/p&gt;
 
 		&lt;ul&gt;
@@ -2036,6 +2513,60 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 							</div>
 						</div>
 					</div>
+					<div id="molecules-primary-nav-logged-in" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-05-primary-nav-logged-in/01-molecules-05-navigation-05-primary-nav-logged-in.html" class="patternLink" data-patternpartial="molecules-primary-nav-logged-in">Primary Nav Logged In</a></h2>
+						<div class="sg-pattern-body">
+							<nav id="nav" class="nav">
+	<ul class="nav-list">
+		<li><a href="#">Find a Job</a></li>
+		<li><a href="#">Post a Job</a></li>
+		<li><a href="#">Pricing</a></li>
+	</ul>
+
+	<ul class="nav-controls">
+		<li><a href="#" aria-haspopup="true">xx</a>
+	            <ul class="dd-list">
+	            	<li><a href="#">Manage job alerts</a></li>
+	            	<li><a href="#">Manage bookmarks</a></li>
+	            	<li><a href="#">Manage jobs</a></li>
+	            	<li><a href="#">Your account</a></li>
+	            	<li><a href="#">Your cart</a></li>
+	            </ul>		</li>
+		<li class="logout"><a href="#" class="btn logout">Logout</a></li>
+	</ul>
+</nav><!--end .nav-->
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/00-atoms-03-lists-04-dd-list/00-atoms-03-lists-04-dd-list.html"><code>atoms-dd-list</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+	&lt;ul class=&quot;nav-list&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Find a Job&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Post a Job&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;ul class=&quot;nav-controls&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; aria-haspopup=&quot;true&quot;&gt;xx&lt;/a&gt;
+	            &lt;ul class=&quot;dd-list&quot;&gt;
+	            	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage job alerts&lt;/a&gt;&lt;/li&gt;
+	            	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage bookmarks&lt;/a&gt;&lt;/li&gt;
+	            	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manage jobs&lt;/a&gt;&lt;/li&gt;
+	            	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your account&lt;/a&gt;&lt;/li&gt;
+	            	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt;
+	            &lt;/ul&gt;		&lt;/li&gt;
+		&lt;li class=&quot;logout&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;&lt;!--end .nav--&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="molecules-social-share" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-components-00-social-share/01-molecules-06-components-00-social-share.html" class="patternLink" data-patternpartial="molecules-social-share">Social Share</a></h2>
 						<div class="sg-pattern-body">
@@ -2160,6 +2691,74 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 									<code>
 										&lt;div class=&quot;alert alert-&quot;&gt;
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-message" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-01-message/01-molecules-07-messaging-01-message.html" class="patternLink" data-patternpartial="molecules-message">Message</a></h2>
+						<div class="sg-pattern-body">
+							<div class="message message-">
+	<div class="g g-2up">
+		<div class="gi gi-2-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		<div class="gi gi-1-3"></div>
+	</div>
+	
+</div>
+
+<div class="message message-">
+	<div class="g g-2up">
+		<div class="gi gi-2-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		<div class="gi gi-1-3"><p><a href="#" class="btn">Button</a></p></div>
+	</div>
+</div>
+
+<div class="message message-">
+	<div class="g g-2up">
+		<div class="gi gi-2-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		<div class="gi gi-1-3"><p><a href="#" class="btn alt-cta">Continue Shopping</a></p></div>
+	</div>
+</div>
+
+<div class="message message-">
+	<div class="g g-2up">
+		<div class="gi gi-2-3"></div>
+		<div class="gi gi-1-3"><p>Share this page</p></div>
+	</div>
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;message message-&quot;&gt;
+	&lt;div class=&quot;g g-2up&quot;&gt;
+		&lt;div class=&quot;gi gi-2-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/div&gt;
+		&lt;div class=&quot;gi gi-1-3&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+&lt;div class=&quot;message message-&quot;&gt;
+	&lt;div class=&quot;g g-2up&quot;&gt;
+		&lt;div class=&quot;gi gi-2-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/div&gt;
+		&lt;div class=&quot;gi gi-1-3&quot;&gt;&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;message message-&quot;&gt;
+	&lt;div class=&quot;g g-2up&quot;&gt;
+		&lt;div class=&quot;gi gi-2-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/div&gt;
+		&lt;div class=&quot;gi gi-1-3&quot;&gt;&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt-cta&quot;&gt;Continue Shopping&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;message message-&quot;&gt;
+	&lt;div class=&quot;g g-2up&quot;&gt;
+		&lt;div class=&quot;gi gi-2-3&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;gi gi-1-3&quot;&gt;&lt;p&gt;Share this page&lt;/p&gt;&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 									</code>
 								</pre>
@@ -2868,7 +3467,7 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 	</div>	
 
 	<ul class="job-meta-list">
-		<li><span class="kicker">Job Title</span><br><p>International Sales Manager</a></p></li>
+		<li><span class="kicker">Job Title</span><br><p>International Sales Manager</p></li>
 		<li><span class="kicker">Company name</span><br><p>Tellus Group</p></li>
 		<li><span class="kicker">Location</span><br><p>New York, USA</p></li>
 		<li><span class="kicker">Date posted</span><br><p>July 17, 2015</p></li>
@@ -2907,7 +3506,7 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 	&lt;/div&gt;	
 
 	&lt;ul class=&quot;job-meta-list&quot;&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Job Title&lt;/span&gt;&lt;br&gt;&lt;p&gt;International Sales Manager&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Job Title&lt;/span&gt;&lt;br&gt;&lt;p&gt;International Sales Manager&lt;/p&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Company name&lt;/span&gt;&lt;br&gt;&lt;p&gt;Tellus Group&lt;/p&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Location&lt;/span&gt;&lt;br&gt;&lt;p&gt;New York, USA&lt;/p&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Date posted&lt;/span&gt;&lt;br&gt;&lt;p&gt;July 17, 2015&lt;/p&gt;&lt;/li&gt;
@@ -2919,6 +3518,1048 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;See more positions from&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Tellus Group&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/section&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-account-bookmarks" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-tables-01-account-bookmarks/02-organisms-03-tables-01-account-bookmarks.html" class="patternLink" data-patternpartial="organisms-account-bookmarks">Account Bookmarks</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-bookmarks">
+	<thead>
+		<tr>
+			<th>Bookmark</th>
+			<th>Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="account-table-info">
+			<p><time datetime="2013-04-06T12:32+00:00">Posted 2 weeks ago</time></p>
+			<p class=""><strong><a href="#">International Sales Manager</a></strong></p>
+			<p class="small">Tellus Group</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="account-table-info">
+			<p><time datetime="2013-04-06T12:32+00:00">Posted 2 weeks ago</time></p>
+			<p class=""><strong><a href="#">International Sales Manager</a></strong></p>
+			<p class="small">Tellus Group</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/00-atoms-02-text-04-time/00-atoms-02-text-04-time.html"><code>atoms-time</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-bookmarks&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Bookmark&lt;/th&gt;
+			&lt;th&gt;Notes&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;account-table-info&quot;&gt;
+			&lt;p&gt;&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;Posted 2 weeks ago&lt;/time&gt;&lt;/p&gt;
+			&lt;p class=&quot;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#&quot;&gt;International Sales Manager&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+			&lt;p class=&quot;small&quot;&gt;Tellus Group&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;account-table-info&quot;&gt;
+			&lt;p&gt;&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;Posted 2 weeks ago&lt;/time&gt;&lt;/p&gt;
+			&lt;p class=&quot;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#&quot;&gt;International Sales Manager&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+			&lt;p class=&quot;small&quot;&gt;Tellus Group&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-account-manage-jobs" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-tables-02-account-manage-jobs/02-organisms-03-tables-02-account-manage-jobs.html" class="patternLink" data-patternpartial="organisms-account-manage-jobs">Account Manage Jobs</a></h2>
+						<div class="sg-pattern-body">
+									<div class="md-modal md-effect-7" id="modal-1">
+			<div class="md-content">
+					<h3>Stats for: International Sales Manager</h3>
+					<ul class="block-clump">
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>	
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>
+						<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>						</li>		
+					</ul>					<a href="#" class="md-close">Close me!</a>
+				</div>
+			</div>
+		</div>
+
+		<table class="account manage-jobs">
+	<thead>
+		<tr>
+			<th>Job title</th>
+			<th>Filled?</th>
+			<th>Date posted</th>
+			<th>Date expires</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="third">
+			<p><a href="">Marketing manager</a>  <a href="#" class="md-trigger" data-modal="modal-1">TEST</a></p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>Sales director</p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div class="md-overlay"></div><!-- the overlay element -->
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/02-organisms-04-modals-01-modal-stats/02-organisms-04-modals-01-modal-stats.html"><code>organisms-modal-stats</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+												&lt;div class=&quot;md-modal md-effect-7&quot; id=&quot;modal-1&quot;&gt;
+			&lt;div class=&quot;md-content&quot;&gt;
+					&lt;h3&gt;Stats for: International Sales Manager&lt;/h3&gt;
+					&lt;ul class=&quot;block-clump&quot;&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;	
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;
+						&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;						&lt;/li&gt;		
+					&lt;/ul&gt;					&lt;a href=&quot;#&quot; class=&quot;md-close&quot;&gt;Close me!&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;table class=&quot;account manage-jobs&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Job title&lt;/th&gt;
+			&lt;th&gt;Filled?&lt;/th&gt;
+			&lt;th&gt;Date posted&lt;/th&gt;
+			&lt;th&gt;Date expires&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;&quot;&gt;Marketing manager&lt;/a&gt;  &lt;a href=&quot;#&quot; class=&quot;md-trigger&quot; data-modal=&quot;modal-1&quot;&gt;TEST&lt;/a&gt;&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;-&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;August 20, 2015&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;Sales director&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;-&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;August 20, 2015&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;md-overlay&quot;&gt;&lt;/div&gt;&lt;!-- the overlay element --&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-account-alerts" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-tables-03-account-alerts/02-organisms-03-tables-03-account-alerts.html" class="patternLink" data-patternpartial="organisms-account-alerts">Account Alerts</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-alerts">
+	<thead>
+		<tr>
+			<th>Alert name</th>
+			<th>Date created</th>
+			<th>Keywords</th>
+			<th>Location</th>
+			<th>Frequency</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td colspan="6">
+			<p><a href="#">Add alert</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a long title of an alert</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design' 'marketing' 'management'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a test</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-alerts&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Alert name&lt;/th&gt;
+			&lt;th&gt;Date created&lt;/th&gt;
+			&lt;th&gt;Keywords&lt;/th&gt;
+			&lt;th&gt;Location&lt;/th&gt;
+			&lt;th&gt;Frequency&lt;/th&gt;
+			&lt;th&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;6&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Add alert&lt;/a&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a long title of an alert&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design' 'marketing' 'management'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a test&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-modal-stats" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-01-modal-stats/02-organisms-04-modals-01-modal-stats.html" class="patternLink" data-patternpartial="organisms-modal-stats">Modal Stats</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="block-clump">
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>	
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>
+	<li>
+		<div class="stats">
+			<div class="stats-context">Live for</div>
+			<div class="stats-value">13</div>
+			<div class="stats-quantify">days</div>
+		</div>	</li>		
+</ul>
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-00-text-08-stats-block/01-molecules-00-text-08-stats-block.html"><code>molecules-stats-block</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;block-clump&quot;&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;	
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;stats&quot;&gt;
+			&lt;div class=&quot;stats-context&quot;&gt;Live for&lt;/div&gt;
+			&lt;div class=&quot;stats-value&quot;&gt;13&lt;/div&gt;
+			&lt;div class=&quot;stats-quantify&quot;&gt;days&lt;/div&gt;
+		&lt;/div&gt;	&lt;/li&gt;		
+&lt;/ul&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-modal-bump" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-02-modal-bump/02-organisms-04-modals-02-modal-bump.html" class="patternLink" data-patternpartial="organisms-modal-bump">Modal Bump</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-jobs">
+	<thead>
+		<tr>
+			<th>Job title</th>
+			<th>Filled?</th>
+			<th>Date posted</th>
+			<th>Date expires</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="third">
+			<p>Marketing manager</p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>Sales director</p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-jobs&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Job title&lt;/th&gt;
+			&lt;th&gt;Filled?&lt;/th&gt;
+			&lt;th&gt;Date posted&lt;/th&gt;
+			&lt;th&gt;Date expires&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;Marketing manager&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;-&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;August 20, 2015&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;Sales director&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;-&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;August 20, 2015&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-modal-login" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-03-modal-login/02-organisms-04-modals-03-modal-login.html" class="patternLink" data-patternpartial="organisms-modal-login">Modal Login</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-alerts">
+	<thead>
+		<tr>
+			<th>Alert name</th>
+			<th>Date created</th>
+			<th>Keywords</th>
+			<th>Location</th>
+			<th>Frequency</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td colspan="6">
+			<p><a href="#">Add alert</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a long title of an alert</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design' 'marketing' 'management'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a test</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-alerts&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Alert name&lt;/th&gt;
+			&lt;th&gt;Date created&lt;/th&gt;
+			&lt;th&gt;Keywords&lt;/th&gt;
+			&lt;th&gt;Location&lt;/th&gt;
+			&lt;th&gt;Frequency&lt;/th&gt;
+			&lt;th&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;6&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Add alert&lt;/a&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a long title of an alert&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design' 'marketing' 'management'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a test&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-modal-apply" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-04-modal-apply/02-organisms-04-modals-04-modal-apply.html" class="patternLink" data-patternpartial="organisms-modal-apply">Modal Apply</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-alerts">
+	<thead>
+		<tr>
+			<th>Alert name</th>
+			<th>Date created</th>
+			<th>Keywords</th>
+			<th>Location</th>
+			<th>Frequency</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td colspan="6">
+			<p><a href="#">Add alert</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a long title of an alert</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design' 'marketing' 'management'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a test</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-alerts&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Alert name&lt;/th&gt;
+			&lt;th&gt;Date created&lt;/th&gt;
+			&lt;th&gt;Keywords&lt;/th&gt;
+			&lt;th&gt;Location&lt;/th&gt;
+			&lt;th&gt;Frequency&lt;/th&gt;
+			&lt;th&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;6&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Add alert&lt;/a&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a long title of an alert&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design' 'marketing' 'management'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a test&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-modal-application-sent" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-04-modals-05-modal-application-sent/02-organisms-04-modals-05-modal-application-sent.html" class="patternLink" data-patternpartial="organisms-modal-application-sent">Modal Application Sent</a></h2>
+						<div class="sg-pattern-body">
+							<table class="account manage-alerts">
+	<thead>
+		<tr>
+			<th>Alert name</th>
+			<th>Date created</th>
+			<th>Keywords</th>
+			<th>Location</th>
+			<th>Frequency</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td colspan="6">
+			<p><a href="#">Add alert</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a long title of an alert</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design' 'marketing' 'management'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>This is a test</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">'design'</p>
+		</td>
+		<td>
+			<p class="small">London</p>
+		</td>
+		<td>
+			<p class="small">Weekly</p>
+		</td>
+		<td>
+			<p class="small">Enabled</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;table class=&quot;account manage-alerts&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Alert name&lt;/th&gt;
+			&lt;th&gt;Date created&lt;/th&gt;
+			&lt;th&gt;Keywords&lt;/th&gt;
+			&lt;th&gt;Location&lt;/th&gt;
+			&lt;th&gt;Frequency&lt;/th&gt;
+			&lt;th&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;6&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Add alert&lt;/a&gt;&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a long title of an alert&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design' 'marketing' 'management'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;third&quot;&gt;
+			&lt;p&gt;This is a test&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;July 13, 2015&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;'design'&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;London&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Weekly&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;p class=&quot;small&quot;&gt;Enabled&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 									</code>
 								</pre>
 							</div>
@@ -2969,10 +4610,10 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1444245362">
+	<script id="pl-js-polyfill-insert-1446230666">
 		(function() {
 			if (self != top) {
-				var cb = '1444245362';
+				var cb = '1446230666';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -2981,10 +4622,10 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1444245362">
+	<script id="pl-js-insert-1446230666">
 		(function() {
 			if (self != top) {
-				var cb = '1444245362';
+				var cb = '1446230666';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -2992,6 +4633,8 @@ Get in touch with &lt;a href=&quot;&quot;&gt;hadil@thepietalent.com&lt;/a&gt; to
 	</script>
 	
 
+
+		<script src="/js/main.js"></script>
 
 	</body>
 </html>

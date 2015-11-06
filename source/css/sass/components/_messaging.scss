@@ -17,3 +17,14 @@
 	border-color: $error;
 	background: #ffbebe;
 }
+
+.message {
+	color: $grey;
+	text-align: left;
+	padding: $pad;
+	margin-bottom: $space-half;
+	border: 1px solid $grey-light-3;
+	background: $grey-light;
+	text-transform: uppercase;
+	font-size: $font-size-small-2;
+}

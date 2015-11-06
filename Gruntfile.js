@@ -96,8 +96,12 @@ module.exports = function(grunt) {
              * and dest (destination) keys.
              */
             files: [{
-                src: ['source/js/init.js'],
-                dest: 'public/js/init.js'
+                src: ['source/js/**/*.js'],
+                /*
+                src: ['source/js/classie.js','source/js/cssParser.js'],
+
+                */
+                dest: 'public/js/main.js'
             }],
             /*
              * Which files to watch for changes.
@@ -109,7 +113,7 @@ module.exports = function(grunt) {
              * Any files and folders to delete prior to the build task running.
              * Delete this if you don't want to run the clean step before generating the fresh files.
              */
-            clean: ['source/js'],
+            clean: ['public/js'],
             /*
              * JSHint settings
              * Using this is recommended - a sensible set of defaults have been 
@@ -117,14 +121,7 @@ module.exports = function(grunt) {
              * To override defaults set them in the 'options' object. Available options
              * can be found here: http://www.jshint.com/docs/options
              */
-            hint: {
-                files: [],
-                options: {
-                    globals: {
-                        jQuery: true
-                    }
-                }
-            }
+            hint: false
         },
 
         /******************************************************************************

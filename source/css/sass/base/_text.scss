@@ -33,3 +33,7 @@ abbr {
     border-bottom: 1px dotted $grey;
     cursor: help;
 }
+
+p.small {
+    font-size: $font-size-small;
+}

@@ -1,0 +1,51 @@
+		<div class="md-modal md-effect-7" id="modal-1">
+			<div class="md-content">
+					<h3>Stats for: {{ job.title }}</h3>
+					{{> organisms-modal-stats }}
+					<a href="#" class="md-close">Close me!</a>
+				</div>
+			</div>
+		</div>
+
+		<table class="account manage-jobs">
+	<thead>
+		<tr>
+			<th>Job title</th>
+			<th>Filled?</th>
+			<th>Date posted</th>
+			<th>Date expires</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="third">
+			<p><a href="">Marketing manager</a>  <a href="#" class="md-trigger" data-modal="modal-1">TEST</a></p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="third">
+			<p>Sales director</p>
+		</td>
+		<td>
+			<p class="small">-</p>
+		</td>
+		<td>
+			<p class="small">July 13, 2015</p>
+		</td>
+		<td>
+			<p class="small">August 20, 2015</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div class="md-overlay"></div><!-- the overlay element -->

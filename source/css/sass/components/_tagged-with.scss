@@ -1,0 +1,23 @@
+.tagged-with {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	color: $mid;
+	font-size: $font-size-small-2;
+}
+
+.tagged-with em {
+	text-transform: capitalize;
+	letter-spacing: 0;
+	font-size: 120%;
+	margin: 0 0.3em;
+}
+
+.tagged-with a {
+	color: $mid;
+}
+
+.tagged-with img {
+	margin: 0 0.2em 0 0.3em;
+	margin-bottom: -4px;
+}

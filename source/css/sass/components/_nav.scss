@@ -72,3 +72,21 @@ ul.nav-controls li.create-account {
 		color: $dark;
 	}
 }
+
+//Logged in nav dropdown
+
+/* Second level */
+
+.nav li {
+	position: relative;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+.nav li:hover ul {
+	display: block;
+}

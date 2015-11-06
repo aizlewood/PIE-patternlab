@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+table.account {
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	border: 0px solid $grey-light-1;
+	width: 100%;
+}
+th {
+	text-align: left;
+	border: 0px solid $grey-light-1;
+	padding: 1em;
+}
+tr {
+	border-bottom: 1px solid $grey-light-1;
+	padding: 1em;
+}
+td {
+	border: 0px solid $grey-light-1;
+	padding: 1em;
+}
+
+thead {
+	background: none;
+}
+
+thead tr:hover {
+	background: none;
+}
+
+tr:hover {
+	background: $brand-green-light;
+}
+
+td.account-table-info {
+	line-height: 1;
+	width: 35%;
+}
+
+td.account-table-info a {
+	color: $grey;
+}
+
+td.third {
+	line-height: 1;
+	width: 33%;
+}
+
+@media only screen and (max-width: 35em) {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td.third,
+	td.account-table-info {
+		line-height: 1;
+		width: auto;
+	}	
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Alert name"; }
+	td:nth-of-type(2):before { content: "Date created"; }
+	td:nth-of-type(3):before { content: "Keywords"; }
+	td:nth-of-type(4):before { content: "Location"; }
+	td:nth-of-type(5):before { content: "Frequency"; }
+	td:nth-of-type(6):before { content: "Status"; }
+}

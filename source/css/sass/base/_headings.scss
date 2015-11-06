@@ -16,22 +16,30 @@ h2, .beta    {
 }
 
 h3, .gamma   { 
-	font-family: $font-header;	
+	font-family: $font-header;
+	font-size: 2.1em;
 	line-height: 1.2;
 	color: $brand-purple;	
 }
 
+.job-info h3 {
+	font-size: 1.2em;
+}
+
 h4, .delta   {
+	font-size: 1.6em;
 	font-family: $font-header;
 	color: $brand-purple;	
 }
 
 h5, .epsilon { 
+	font-size: 1.2em;
 	font-family: $font-header;	
 	color: $brand-purple;	
 }
 
 h6, .zeta    { 
+	font-size: 0.9em;
 	font-family: $font-header;	
 	color: $brand-purple;	
 }

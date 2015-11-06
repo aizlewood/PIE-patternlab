@@ -18,23 +18,14 @@
 
 		<hr />
 
-		<div class="l-two-col">
-			<div class="l-main">
-				<section class="section latest-posts">
-					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
-						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
-						{{/ latest-posts }}
-					</ul>
-					<a href="#" class="text-btn">View more posts</a>
-				</section>
-			</div><!--end .l-main-->
+		<div class="inner">
+			<div class="row">
+				<div class="half"><br />{{> molecules-topshelf-title }}</div>
+				<div class="half right"></div>
+			</div>		
+			{{> organisms-job-listing }}
+		</div>
 
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end .l-sidebar-->
-		</div><!--end .l-two-col-->
 	</div><!--End role=main-->
 	{{> organisms-prefooter }}
 	{{> organisms-footer }}

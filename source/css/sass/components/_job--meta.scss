@@ -6,3 +6,15 @@
 p.employer-link {
 	font-size: $font-size-small;
 }
+
+.employer-link.web {
+	background: transparent url("/images/globe.svg") no-repeat 90% 50%;
+}
+
+.employer-link.twitter {
+	background: transparent url("/images/twitter.svg") no-repeat 90% 50%;
+}
+
+.employer-link.linkedin {
+	background: transparent url("/images/linkedin.svg") no-repeat 90% 50%;
+}

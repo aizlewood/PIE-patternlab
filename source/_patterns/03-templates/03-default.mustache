@@ -3,7 +3,7 @@
 
 		<div class="page-title">
 			<header class="article-header">
-				<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
+				<h1>{{ title }}</h1>
 				{{> molecules-byline }}
 			</header>
 		</div>
@@ -31,8 +31,6 @@
 					{{> atoms-time }}
 					{{> organisms-article-body }}
 				</article><!--end .article-->
-
-				{{> organisms-job-listing }}
 			</div><!--end l-main-->
 
 			<div class="l-sidebar">
@@ -41,6 +39,14 @@
 
 		</div><!--end l-two-col-->	
 
+		<div class="inner">
+			<div class="row">
+				<div class="half"><br />{{> molecules-topshelf-title }}</div>
+				<div class="half right"></div>
+			</div>		
+			{{> organisms-job-listing }}
+		</div>
+				
 	</div><!--End role=main-->
 	{{> organisms-prefooter }}
 	{{> organisms-footer }}

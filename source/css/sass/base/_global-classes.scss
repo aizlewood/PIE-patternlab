@@ -15,6 +15,11 @@
     clear: both;
 }
 
+button {
+    outline: 0;
+    border: 0;
+}
+
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
     display: none !important;

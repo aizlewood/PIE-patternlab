@@ -1,59 +1,39 @@
-<table class="account manage-alerts">
-	<thead>
-		<tr>
-			<th>Alert name</th>
-			<th>Date created</th>
-			<th>Keywords</th>
-			<th>Location</th>
-			<th>Frequency</th>
-			<th>Status</th>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td colspan="6">
-			<p><a href="{{ url }}">Add alert</a></p>
-		</td>
-	</tr>
-	<tr>
-		<td class="third">
-			<p>This is a long title of an alert</p>
-		</td>
-		<td>
-			<p class="small">July 13, 2015</p>
-		</td>
-		<td>
-			<p class="small">'design' 'marketing' 'management'</p>
-		</td>
-		<td>
-			<p class="small">London</p>
-		</td>
-		<td>
-			<p class="small">Weekly</p>
-		</td>
-		<td>
-			<p class="small">Enabled</p>
-		</td>
-	</tr>
-	<tr>
-		<td class="third">
-			<p>This is a test</p>
-		</td>
-		<td>
-			<p class="small">July 13, 2015</p>
-		</td>
-		<td>
-			<p class="small">'design'</p>
-		</td>
-		<td>
-			<p class="small">London</p>
-		</td>
-		<td>
-			<p class="small">Weekly</p>
-		</td>
-		<td>
-			<p class="small">Enabled</p>
-		</td>
-	</tr>
-	</tbody>
-</table>
+
+<div class="md-modal md-effect-7" id="modal-1">
+	<div class="md-content">
+
+		<section class="section">
+		
+		<button class="md-close right"><img src="../../images/cross.svg"></button>
+
+		<h3 class="middle">Apply for this job</h3>
+
+		<p class="middle"><strong>{{ job.title }}</strong>, {{ job.employer }}</p>
+
+		<fieldset>
+		    <div class="field-container">
+		        <label for="text">Text Input <abbr title="Required">*</abbr></label>
+		        <input id="text" type="text" placeholder="Text Input">
+		    </div>
+
+		    <div class="field-container">
+		        <label for="emailaddress">Email Address</label>
+		        <input id="emailaddress" type="email" placeholder="name@email.com">
+		    </div>
+
+		    <div class="field-container">
+		        <label for="textarea">Textarea</label>
+		        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+		    </div>
+
+		    <h5>Upload your CV (optional)</h5>
+		    <p>Upload your CV / resume or any other relevant file in .doc, .pdf, .jpg or .gif format. <br> <em>Maximum file size: 1MB</em></p>
+
+		    <button><a href="#" class="text-btn">Choose files</a></button> No files chosen
+
+			<p><a href="#" class="btn caps">Button Caps</a></p>
+
+		</fieldset>
+		</section>
+	</div>
+</div>

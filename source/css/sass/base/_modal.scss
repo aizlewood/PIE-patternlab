@@ -30,6 +30,8 @@ perspective effects (not including the modals and the overlay).
 	width: 50%;
 	max-width: 630px;
 	min-width: 320px;
+	overflow: auto;
+	max-height: 90%;
 	height: auto;
 	z-index: 2000;
 	visibility: hidden;
@@ -72,39 +74,8 @@ perspective effects (not including the modals and the overlay).
 	background: $white;
 	position: relative;
 	border-radius: 3px;
+	padding: $space $space-double;
 	margin: 0 auto;
-}
-
-.md-content h3 {
-	margin: 0;
-	padding: 0.4em;
-	text-align: center;
-	font-size: 2.4em;
-	font-weight: 300;
-	opacity: 0.8;
-	background: rgba(0,0,0,0.1);
-	border-radius: 3px 3px 0 0;
-}
-
-.md-content > div {
-	padding: 15px 40px 30px;
-	margin: 0;
-	font-weight: 300;
-	font-size: 1.15em;
-}
-
-.md-content > div p {
-	margin: 0;
-	padding: 10px 0;
-}
-
-.md-content > div ul {
-	margin: 0;
-	padding: 0 0 30px 20px;
-}
-
-.md-content > div ul li {
-	padding: 5px 0;
 }
 
 .md-content button {

@@ -22,8 +22,10 @@ h3, .gamma   {
 	color: $brand-purple;	
 }
 
-.job-info h3 {
+.job-info h3,
+.account-table-info h3 {
 	font-size: 1.2em;
+	margin-bottom: 0.5em;
 }
 
 h4, .delta   {

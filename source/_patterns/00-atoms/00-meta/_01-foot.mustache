@@ -1,11 +1,27 @@
 
-
 	<div class="md-overlay"></div><!-- the overlay element -->
 
 	<!--DO NOT REMOVE-->
 	{% pattern-lab-foot %}
 
-		<script src="/js/main.js"></script>
+		<script src="/js/main.js" type="text/javascript" aysnc></script>
+		<script>
+			$(function () {
+			  $('.click-nav > ul').toggleClass('no-js js');
+			  $('.click-nav .js ul').hide();
+			  $('.click-nav .js').click(function(e) {
+			    $(this).find('ul').slideToggle(200);
+			    $('.clicker').toggleClass('active');
+			    e.stopPropagation();
+			  });
+			  $(document).click(function() {
+			    if ($('.click-nav .js ul').is(':visible')) {
+			      $('.click-nav .js ul', this).slideUp();
+			      $('.clicker').removeClass('active');
+			    }
+			  });
+			});
+		</script>		
 
 	</body>
 </html>

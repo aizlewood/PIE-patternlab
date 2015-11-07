@@ -18,6 +18,13 @@
 button {
     outline: 0;
     border: 0;
+    cursor: pointer;
+}
+
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.65em;
 }
 
 /* Completely remove from the flow and screen readers. */

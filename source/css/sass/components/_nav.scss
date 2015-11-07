@@ -90,3 +90,218 @@ ul.nav-controls li.create-account {
 .nav li:hover ul {
 	display: block;
 }
+
+/* -----------------------
+
+Popover menu
+
+-----------------------*/
+#dd-nav {
+    display: block;
+}
+#dd-nav > a {
+    display: none;
+}
+#dd-nav li {
+    position: relative;
+}
+
+/* first level */
+#dd-nav > ul {
+	height: auto;
+}
+#dd-nav > ul > li {
+	width: auto;
+	height: 100%;
+	float: left;
+}
+#dd-nav > ul > li > a {
+	height: 100%;
+	text-align: left;
+}
+#dd-nav > ul > li:not( :last-child ) > a {
+	border-right: 0;
+}
+#dd-nav > ul > li:hover > a,
+#dd-nav > ul:not( :hover ) > li.active > a {
+	background-color: transparent;
+}
+
+
+/* second level */
+
+#dd-nav li ul {
+	background-color: $white;
+	display: none;
+	position: absolute;
+	top: 100%;
+	border-radius: 5px;
+	border: 1px solid $grey-light-2;
+	left: -25px;
+}
+
+#dd-nav li ul li {
+	background-color: $white;
+	border-bottom: 1px solid $grey-light-2;
+	min-width: 250px;
+	margin: 0;
+	padding: 0;
+}
+
+#dd-nav li:hover ul {
+	display: block;
+}
+#dd-nav li:not( :first-child ):hover ul {
+	left: 0px;
+}
+#dd-nav li ul a {
+	display: block;
+	padding: $space-half $space;
+}
+#dd-nav li ul li a:hover,
+#dd-nav li ul:not( :hover ) li.active a {
+	background-color: $brand-green;
+}
+
+@media only screen and ( max-width: 40em ) {
+	#dd-nav {
+		position: relative;
+		top: auto;
+		left: auto;
+		background: blue;
+	}
+	#dd-nav > a {
+		text-align: left;
+		text-indent: -9999px;
+		background-color: yellow;
+		position: relative;
+	}
+	#dd-nav > a:before,
+	#dd-nav > a:after {
+		position: absolute;
+		top: 35%;
+		left: 25%;
+		right: 25%;
+		content: '';
+	}
+	#dd-nav > a:after {
+		top: 60%;
+	}
+
+	#dd-nav:not( :target ) > a:first-of-type,
+	#dd-nav:target > a:last-of-type {
+		// display: block;
+	}
+
+
+	/* first level */
+
+	#dd-nav > ul {
+		height: auto;
+		width: 100%;
+		padding: 0;
+		display: block;
+		text-align: center;
+		position: relative;
+		z-index: 99;
+		left: 0;
+		right: 0;
+	}
+	#dd-nav:target > ul {
+		display: block;
+	}
+	#dd-nav > ul > li {
+		width: 100%;
+		float: none;
+	}
+	#dd-nav > ul > li > a {
+		height: auto;
+		text-align: left;
+	}
+	#dd-nav > ul > li:not( :last-child ) > a {
+		border-right: none;
+	}
+
+	/* second level */
+
+	#dd-nav li ul {
+		// position: static;
+	}
+
+}
+
+@media only screen and ( max-width: 62.5em ) {
+	#dd-nav {
+		width: 100%;
+		position: static;
+		margin: 0;
+		background: red;
+	}
+}
+
+
+
+.click-nav {
+	margin:0;
+	width:auto;
+}
+.click-nav ul {
+	position:relative;
+	margin-left: 0;
+	z-index: 100;
+}
+.click-nav ul li {
+	position:relative;
+	list-style:none;
+	cursor:pointer;
+	margin: 0;
+	padding: 0;
+}
+.click-nav ul li ul {
+	position:absolute;
+	left:0;
+	right:0;
+}
+.click-nav ul .clicker {
+	position:relative;
+	background: none;
+	color:$brand-green;
+	border-bottom: 0px;
+	padding: 0;
+}
+.click-nav ul .clicker:hover,
+.click-nav ul .active {
+	background: none;
+	color: $brand-green-dark;
+}
+.click-nav img {
+	position:absolute;
+	top:9px;
+	left:12px;
+}
+.click-nav ul li a {
+	transition:background-color 0.1s ease-in-out;
+	-webkit-transition:background-color 0.1s ease-in-out; 
+	-moz-transition:background-color 0.1s ease-in-out;
+	display:block;
+	padding: $space;
+	background:$white;
+	border-bottom: 1px solid $grey-light-2;
+	text-decoration:none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.65em;
+	outline: 0;
+}
+.click-nav ul li a:hover {
+	color: $brand-purple;
+}
+
+/* Fallbacks */
+.click-nav .no-js ul {
+	display:none;
+}
+.click-nav .no-js:hover ul {
+	display:block;
+}
+

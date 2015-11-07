@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1446841074" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1446901822" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +15,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1446841074" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1446841074" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1446901822" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1446901822" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -30,7 +30,6 @@
 	<li><a href="#">Your account</a></li>
 	<li><a href="#">Your cart</a></li>
 </ul>
-
 	<div class="md-overlay"></div><!-- the overlay element -->
 
 	<!--DO NOT REMOVE-->
@@ -75,10 +74,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1446841074">
+	<script id="pl-js-polyfill-insert-1446901822">
 		(function() {
 			if (self != top) {
-				var cb = '1446841074';
+				var cb = '1446901822';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -87,10 +86,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1446841074">
+	<script id="pl-js-insert-1446901822">
 		(function() {
 			if (self != top) {
-				var cb = '1446841074';
+				var cb = '1446901822';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -99,7 +98,24 @@
 	
 
 
-		<script src="/js/main.js"></script>
+		<script src="/js/main.js" type="text/javascript" aysnc></script>
+		<script>
+			$(function () {
+			  $('.click-nav > ul').toggleClass('no-js js');
+			  $('.click-nav .js ul').hide();
+			  $('.click-nav .js').click(function(e) {
+			    $(this).find('ul').slideToggle(200);
+			    $('.clicker').toggleClass('active');
+			    e.stopPropagation();
+			  });
+			  $(document).click(function() {
+			    if ($('.click-nav .js ul').is(':visible')) {
+			      $('.click-nav .js ul', this).slideUp();
+			      $('.clicker').removeClass('active');
+			    }
+			  });
+			});
+		</script>		
 
 	</body>
 </html>

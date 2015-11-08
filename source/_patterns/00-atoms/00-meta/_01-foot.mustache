@@ -4,24 +4,68 @@
 	<!--DO NOT REMOVE-->
 	{% pattern-lab-foot %}
 
-		<script src="/js/main.js" type="text/javascript" aysnc></script>
+	<script src="/js/main.js" type="text/javascript" aysnc></script>
+    <script>
+      // Init responsive nav
+	  var customToggle = document.getElementById( 'nav-toggle' );
+      var navigation = responsiveNav(".nav-collapse", {
+		customToggle: "#nav-toggle", // Selector: Specify the ID of a custom toggle
+	    enableFocus: true,
+		enableDropdown: true,
+		openDropdown: '<span class="screen-reader-text">Open sub menu</span>',
+		closeDropdown: '<span class="screen-reader-text">Close sub menu</span>',
+			init: function () {          // Set ARIA for menu toggle button
+				customToggle.setAttribute( 'aria-expanded', 'false' );
+				customToggle.setAttribute( 'aria-pressed', 'false' );
+			},
+			open: function () {
+				customToggle.setAttribute( 'aria-expanded', 'true' );
+				customToggle.setAttribute( 'aria-pressed', 'true' );
+				customToggle.innerHTML = 'Close menu';
+			},
+			close: function () {
+				customToggle.setAttribute( 'aria-expanded', 'false' );
+				customToggle.setAttribute( 'aria-pressed', 'false' );
+				customToggle.innerHTML = 'Open menu';
+			},
+      });
+    </script>
 		<script>
-			$(function () {
-			  $('.click-nav > ul').toggleClass('no-js js');
-			  $('.click-nav .js ul').hide();
-			  $('.click-nav .js').click(function(e) {
-			    $(this).find('ul').slideToggle(200);
-			    $('.clicker').toggleClass('active');
-			    e.stopPropagation();
-			  });
-			  $(document).click(function() {
-			    if ($('.click-nav .js ul').is(':visible')) {
-			      $('.click-nav .js ul', this).slideUp();
-			      $('.clicker').removeClass('active');
-			    }
-			  });
-			});
+		// Popup Window
+		var scrollTop = '';
+		var newHeight = '100';
+		 
+		$(window).bind('scroll', function() {
+		  scrollTop = $( window ).scrollTop();
+		  newHeight = scrollTop + 100;
+		});
+				
+		$('.popup-trigger').click(function(e) {
+		  e.stopPropagation();
+		  if(jQuery(window).width() < 767) {
+		    $(this).after( $( ".popup" ) );
+		    $('.popup').show().addClass('popup-mobile').css('top', 0);
+		    $('html, body').animate({
+		      scrollTop: $('.popup').offset().top
+		    }, 500);   
+		  } else {
+		    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
+		  };
+		});
+				
+		$('html').click(function() {
+		  $('.popup').hide();
+		});
+		 
+		$('.popup-btn-close').click(function(e){
+		  $('.popup').hide();
+		});
+		 
+		$('.popup').click(function(e){
+		  e.stopPropagation();
+		});
 		</script>		
 
+		
 	</body>
 </html>

@@ -232,3 +232,8 @@ p.package-type {
 	padding: $space-half;
 	border-bottom: 1px solid $price-border;
 }
+
+.price-card ul li:nth-last-child,
+.price-totals ul li:nth-last-child {
+	border-bottom: 0px;
+}

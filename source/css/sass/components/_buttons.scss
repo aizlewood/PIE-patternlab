@@ -104,6 +104,30 @@
 
 }
 
+.logout-symbol {
+	background: none;
+	display: block;
+	color: $white;
+	content: "";
+	background: transparent url("/images/logout.svg") no-repeat 90% 56%;
+	height: 46px;
+	width: 46px;
+	padding: 0;
+	position: absolute;
+	margin: 0;
+	text-transform: lowercase;
+	top: 0.6em;
+	right: 8%;
+	display: none;
+}
+
+@media screen and (min-width: 40em) {
+	.logout-symbol {
+		color: $brand-purple;
+		top: 0.45em;
+		right: -10px;
+	}
+}
 .btn-small {
 	padding: $pad-half;
 }
@@ -118,5 +142,15 @@
 }
 
 .text-btn {
+	background: none;
+	outline: 0;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	color: $brand-blue;
+}
 
+.text-btn:hover {
+	text-decoration: underline;
 }

@@ -1,11 +1,16 @@
 		<section class="section">
 		
 		<button class="md-close right"><img src="../../images/cross.svg"></button>
+		<span class="popup-btn-close"><img src="../../images/cross.svg"></span>
 
 		<h3 class="middle">Apply for this job</h3>
 
 		<p class="middle"><strong>{{ job.title }}</strong>, {{ job.employer }}</p>
 
+		{{# emergency }}
+			{{> molecules-alert:error }}
+		{{/ emergency }}
+		
 		<fieldset>
 		    <div class="field-container">
 		        <label for="text">Text Input <abbr title="Required">*</abbr></label>

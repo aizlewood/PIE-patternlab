@@ -1,0 +1,84 @@
+
+<div class="page" id="page">
+	{{> organisms-header-logged-in }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>{{ job.title }}</h1>
+				{{> molecules-jobs-byline }}
+			</header>
+		</div>
+
+		<div class="utility-nav">
+			<div class="inner">
+
+				<div class="g g-4up">
+					<div class="gi">
+						<a class="utility-nav--link" href="">&laquo; Back to Search</a>
+					</div>
+					<div class="gi"></div>
+					<div class="gi"></div>
+					<div class="gi inlined">
+						<button class="btn alt star popup-trigger"><img src="../../images/star-outlined.svg"> Bookmark this Job</button>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	<div role="main">
+
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+					{{> atoms-time }}
+					{{> organisms-article-body }}
+					
+					<p><button class="btn caps popup-trigger">Apply for this Job</button></p>
+
+				</article><!--end .article-->
+
+				
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{> organisms-job-meta }}
+			</div><!--end l-sidebar-->
+
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+
+
+		<div class="utility-nav">
+			<div class="inner">
+
+				<div class="g g-2up">
+					<div class="gi"></div>
+					<div class="gi">
+						<div class="right-skinny">
+							{{> molecules-social-share }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="inner">
+			<div class="row">
+				<div class="half"><br />{{> molecules-topshelf-title }}</div>
+				<div class="half right"></div>
+			</div>		
+			{{> organisms-job-listing }}
+		</div>
+
+			
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>
+
+
+<div class="popup">
+	{{> organisms-modal-apply }}
+</div>

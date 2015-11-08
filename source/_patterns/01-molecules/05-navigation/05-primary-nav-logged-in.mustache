@@ -1,14 +1,14 @@
-<nav id="nav" class="nav">
-	<ul class="nav-list">
+
+<nav class="nav-collapse" id="nav">
+	<ul class="menu-items">
 		<li><a href="{{ url }}">Find a Job</a></li>
 		<li><a href="{{ url }}">Post a Job</a></li>
-		<li><a href="{{ url }}">Pricing</a></li>
-	</ul>
-
-	<ul class="nav-controls">
-		<li><a href="{{ url }}" aria-haspopup="true">xx</a>
-	            {{> atoms-dd-list }}
+		<li><a href="{{ url }}">Pricing</a></li>		
+		<li class="dropdown line"><a href="{{ url }}">Your Account</a>
+				{{> atoms-dd-list }}
+		
 		</li>
-		<li class="logout"><a href="{{ url }}" class="btn logout">Logout</a></li>
+		<li><a href="{{ url }}">Logout</a>
+		<button class="logout-symbol"><span class="screen-reader-text">Logout</span></button></li>
 	</ul>
 </nav><!--end .nav-->

@@ -1,11 +1,4 @@
 
-<div class="md-modal md-effect-7" id="modal-1">
-	<div class="md-content">
-		{{> organisms-modal-apply }}
-	</div>
-</div>	
-
-
 <div class="page" id="page">
 	{{> organisms-header }}
 
@@ -41,7 +34,9 @@
 				<article class="article">
 					{{> atoms-time }}
 					{{> organisms-article-body }}
+					
 					<p><button class="btn caps md-trigger" data-modal="modal-1">Apply for this Job</button></p>
+
 				</article><!--end .article-->
 
 				
@@ -82,3 +77,10 @@
 	{{> organisms-prefooter }}
 	{{> organisms-footer }}
 </div>
+
+
+<div class="md-modal md-effect-1" id="modal-1">
+	<div class="md-content">
+		{{> organisms-modal-apply }}
+	</div>
+</div>	

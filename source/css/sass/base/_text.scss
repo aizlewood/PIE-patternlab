@@ -3,6 +3,12 @@ p {
 	margin-bottom: $space;
 }
 
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: $font-size-small-2;
+}
+
 /* Blockquote */
 blockquote {
     font-style:italic;

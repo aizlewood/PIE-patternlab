@@ -1,53 +1,86 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1, .alpha   {
-	font-family: $font-header;
-	font-size: 3.5em; 
-	line-height: 1.2;
-	letter-spacing: -2px;
-	color: $brand-purple;
-}
 
-h2, .beta    { 
-	font-family: $font-header;	
-	font-size: 3em;
-	line-height: 1.2;
-	color: $brand-purple;	
-}
 
-h3, .gamma   { 
-	font-family: $font-header;
-	font-size: 2.1em;
-	line-height: 1.2;
-	color: $brand-purple;	
-}
+	h1, .alpha   {
+		font-family: $font-header;
+		font-size: 2em; 
+		line-height: 1.2;
+		letter-spacing: -2px;
+		color: $brand-purple;
+	}
 
-.job-info h3,
-.account-table-info h3 {
-	font-size: 1.2em;
-	margin-bottom: 0.5em;
-}
+	h2, .beta    { 
+		font-family: $font-header;	
+		font-size: 2em;
+		line-height: 1.2;
+		color: $brand-purple;	
+	}
 
-h4, .delta   {
-	font-size: 1.6em;
-	font-family: $font-header;
-	color: $brand-purple;	
-}
+	h3, .gamma   { 
+		font-family: $font-header;
+		font-size: 1.8em;
+		line-height: 1.2;
+		color: $brand-purple;	
+	}
 
-h5, .epsilon { 
-	font-size: 1.2em;
-	font-family: $font-header;	
-	color: $brand-purple;	
-}
+	.job-info h3,
+	.account-table-info h3 {
+		font-size: 0.9em;
+		margin-bottom: 0.5em;
+	}
 
-h6, .zeta    { 
-	font-size: 0.9em;
-	font-family: $font-header;	
-	color: $brand-purple;	
-}
+	h4, .delta   {
+		font-size: 1.3em;
+		font-family: $font-header;
+		color: $brand-purple;	
+	}
 
-/* Subheadings */
-.subheading {
-	font-family: $font-serif;
-	font-weight: normal;
+	h5, .epsilon { 
+		font-size: 1em;
+		font-family: $font-header;	
+		color: $brand-purple;	
+	}
+
+	h6, .zeta    { 
+		font-size: 0.7em;
+		font-family: $font-header;	
+		color: $brand-purple;	
+	}
+
+	/* Subheadings */
+	.subheading {
+		font-family: $font-serif;
+		font-weight: normal;
+	}
+
+@media all and (min-width: $bp-med) {
+
+	h1 {
+		font-size: 3.5em; 
+		line-height: 1.2;
+		letter-spacing: -2px;
+	}
+	h2 {
+		font-size: 3em;
+		line-height: 1.2;
+	}
+	h3 {
+		font-size: 2.1em;
+		line-height: 1.2;
+	}
+	.job-info h3,
+	.account-table-info h3 {
+		font-size: 1.2em;
+		margin-bottom: 0.5em;
+	}
+	h4 {
+		font-size: 1.6em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 0.9em;
+	}
 }

@@ -17,5 +17,11 @@
 	margin: 0 auto;
 	width: 30%;
 	min-width: 15em;
-	margin: $space-triple;
+	margin: 0;
+}
+
+@media all and (min-width: $bp-med) {
+	.prefooter .btn {
+		margin: $space-triple;
+	}
 }

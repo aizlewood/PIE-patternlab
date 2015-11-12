@@ -11,22 +11,13 @@
 			&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;gi&quot;&gt;
-			&lt;p class=&quot;employer-link web&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.site }}&lt;/a&gt;&lt;/p&gt;
-			&lt;p class=&quot;employer-link twitter&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.twitter }}&lt;/a&gt;&lt;/p&gt;
-			&lt;p class=&quot;employer-link linkedin&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.linkedin }}&lt;/a&gt;&lt;/p&gt;
+			&lt;div class=&quot;employer-inner&quot;&gt;
+				&lt;p class=&quot;employer-link&quot;&gt;&lt;i class=&quot;Icon Icon--globe&quot;&gt;&lt;/i&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.site }}&lt;/a&gt;&lt;/p&gt;
+				&lt;p class=&quot;employer-link&quot;&gt;&lt;i class=&quot;Icon Icon--twitter&quot;&gt;&lt;/i&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.twitter }}&lt;/a&gt;&lt;/p&gt;
+				&lt;p class=&quot;employer-link&quot;&gt;&lt;i class=&quot;Icon Icon--linkedin&quot;&gt;&lt;/i&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ employer.linkedin }}&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;	
 
-	&lt;ul class=&quot;job-meta-list&quot;&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Job Title&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.title }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Company name&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.employer }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Location&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.location }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Date posted&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.date }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Category&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.category }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Job type&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;tag-btn fulltime&quot;&gt;Full Time&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Salary&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.salary }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Language skills required&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.langs }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;Bonus/Commission&lt;/span&gt;&lt;br&gt;&lt;p&gt;{{ job.bonus }}&lt;/p&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class=&quot;kicker&quot;&gt;See more positions from&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ job.employer }}&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-	&lt;/ul&gt;
+	{{&gt; atoms-job-meta-list }}
 &lt;/section&gt;

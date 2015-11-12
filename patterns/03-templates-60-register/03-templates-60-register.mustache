@@ -1,0 +1,52 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+
+		&lt;div class=&quot;page-title&quot;&gt;
+			&lt;header class=&quot;article-header&quot;&gt;
+				&lt;h1&gt;Register&lt;/h1&gt;
+				{{&gt; molecules-byline }}
+			&lt;/header&gt;
+		&lt;/div&gt;
+
+	&lt;div role=&quot;main&quot;&gt;
+
+			&lt;div class=&quot;inner rounded-container border&quot;&gt;
+
+				&lt;form method=&quot;post&quot; action=&quot;{{ url }}&quot; class=&quot;comment-form&quot;&gt;
+					&lt;fieldset&gt;
+						&lt;div class=&quot;field-container&quot;&gt;
+							&lt;label for=&quot;comment-name&quot;&gt;Your Name &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+							&lt;input id=&quot;comment-name&quot; type=&quot;text&quot; placeholder=&quot;Enter Your Name&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;field-container&quot;&gt;
+							&lt;label for=&quot;comment-email&quot;&gt;Your Email &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+							&lt;input id=&quot;comment-email&quot; type=&quot;email&quot; placeholder=&quot;Your email address&quot; /&gt;
+						&lt;/div&gt;
+					    &lt;div class=&quot;field-container&quot;&gt;
+					        &lt;label for=&quot;password&quot;&gt;Create a Password &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+					    &lt;/div&gt;
+					    &lt;div class=&quot;field-container&quot;&gt;
+					        &lt;label for=&quot;password&quot;&gt;Re-enter your Password &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+					    &lt;/div&gt;
+					&lt;/fieldset&gt;
+				&lt;/form&gt;
+
+				&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Sign me up!&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;By signing up you&rsquo;re agreeing to our &lt;a href=&quot;{{ url }}&quot;&gt;terms of use&lt;/a&gt; and &lt;a href=&quot;{{ url }}&quot;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;			
+
+				&lt;div class=&quot;block&quot;&gt;
+					&lt;div class=&quot;middle&quot;&gt;
+						&lt;p&gt;Already have an account?&lt;br&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Sign in now&lt;/a&gt;&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;	
+
+		
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-prefooter }}
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

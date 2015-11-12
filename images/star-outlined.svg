@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
-    <title>star-outlined</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Production" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Jobs-description-Copy" sketch:type="MSArtboardGroup" transform="translate(-785.000000, -261.000000)" fill="#504353">
-            <g id="BOOKMARK-+-star-outlined" sketch:type="MSLayerGroup" transform="translate(683.000000, 253.000000)">
-                <g id="star-outlined" transform="translate(102.000000, 8.000000)" sketch:type="MSShapeGroup">
-                    <path d="M17.8,7.022 L11.387,7.022 L9,0.3 L6.611,7.022 L0.199,7.022 L5.431,10.969 L3.56,17.898 L9,13.744 L14.438,17.898 L12.569,10.969 L17.8,7.022 L17.8,7.022 Z M9,11.783 L5.986,14.283 L7.229,10.721 L4.378,8.421 L7.9,8.522 L9,4.482 L10.099,8.522 L13.62,8.421 L10.769,10.721 L12.012,14.283 L9,11.783 L9,11.783 Z" id="Shape"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><title>star-outlined</title><path d="M17.8 7.022h-6.413L9 .3 6.61 7.022H.2l5.23 3.947-1.87 6.928L9 13.744l5.438 4.154-1.87-6.93L17.8 7.023zM9 11.782l-3.014 2.5 1.243-3.56-2.852-2.3 3.522.1L9 4.482l1.1 4.04 3.52-.1-2.85 2.3 1.242 3.56L9 11.783z" fill="#504353" fill-rule="evenodd"/></svg>

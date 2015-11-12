@@ -62,6 +62,12 @@ ul.nav-controls li.create-account {
 		float: left;
 		border-right: 1px solid $grey-light-2;
 
+    &.current {
+      background: $brand-purple;
+      border-radius: 5px;
+      color: $white;
+    }
+
 		&:last-child {
 			border: 0;
 		}
@@ -71,6 +77,10 @@ ul.nav-controls li.create-account {
 		padding: $pad;
 		color: $dark;
 	}
+
+  .current a {
+    color: $white;
+  }
 }
 
 /* ----------------------

@@ -12,9 +12,14 @@
 	text-align: center;
 	padding-bottom: 0.6em;
 
-	&:hover, &:focus {
+	&:hover {
 		background: $white;
 		color: $dark;
+	}	
+
+	&:focus {
+		position: relative;
+		top: 1px;
 	}	
 }
 

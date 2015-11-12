@@ -12,6 +12,11 @@
 	text-align: center;
 
 
+	&:focus {
+		position: relative;
+		top: 1px;
+	}
+	
 	&.fulltime {
 		border: 1px solid $fulltime;
 		color: $fulltime;

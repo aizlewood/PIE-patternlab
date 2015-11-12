@@ -16,6 +16,25 @@
 	}
 }
 
+.loader{
+  margin: 0 0 $space-double;
+  height: $space-double;
+  width: $space-double;
+  text-align: center;
+  padding: $space;
+  margin: 0 auto $space;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: $brand-green;
+}
+
 /* --------------- Animations ------------*/
 
 @mixin animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}.animated.hinge{-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}@-webkit-keyframes fadeInDown {

@@ -1,0 +1,52 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>Register</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+	<div role="main">
+
+			<div class="inner rounded-container border">
+
+				<form method="post" action="{{ url }}" class="comment-form">
+					<fieldset>
+						<div class="field-container">
+							<label for="comment-name">Your Name <abbr title="Required">*</abbr></label>
+							<input id="comment-name" type="text" placeholder="Enter Your Name" />
+						</div>
+						<div class="field-container">
+							<label for="comment-email">Your Email <abbr title="Required">*</abbr></label>
+							<input id="comment-email" type="email" placeholder="Your email address" />
+						</div>
+					    <div class="field-container">
+					        <label for="password">Create a Password <abbr title="Required">*</abbr></label>
+					        <input id="password" type="password" placeholder="Type your Password">
+					    </div>
+					    <div class="field-container">
+					        <label for="password">Re-enter your Password <abbr title="Required">*</abbr></label>
+					        <input id="password" type="password" placeholder="Type your Password">
+					    </div>
+					</fieldset>
+				</form>
+
+				<p><a href="#" class="btn">Sign me up!</a></p>
+
+				<p>By signing up you’re agreeing to our <a href="{{ url }}">terms of use</a> and <a href="{{ url }}">privacy policy</a></p>			
+
+				<div class="block">
+					<div class="middle">
+						<p>Already have an account?<br><a href="{{ url }}">Sign in now</a></p>
+					</div>
+				</div>
+
+			</div>	
+
+		
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

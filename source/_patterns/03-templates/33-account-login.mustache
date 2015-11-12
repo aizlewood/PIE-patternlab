@@ -1,0 +1,42 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>Login</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+	<div role="main">
+
+			<div class="inner rounded-container border">
+
+				<form method="post" action="{{ url }}" class="comment-form">
+					<fieldset>
+						<div class="field-container">
+							<label for="comment-email">Your Email <abbr title="Required">*</abbr></label>
+							<input id="comment-email" type="email" placeholder="Your email address" />
+						</div>
+					    <div class="field-container">
+					        <label for="password">Your Password <abbr title="Required">*</abbr></label>
+					        <input id="password" type="password" placeholder="Type your Password">
+					    </div>
+					</fieldset>
+				</form>
+
+				<p><a href="#" class="btn">Login</a></p>
+
+				<div class="block">
+					<div class="middle">
+						<p>Don't have an account?<br><a href="{{ url }}">Create an account now</a></p>
+					</div>
+				</div>
+
+			</div>	
+
+		
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

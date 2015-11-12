@@ -32,6 +32,12 @@ span.recency-badge {
 	font-size: $font-size-small;
 }
 
+@media all and (max-width: $bp-med) {
+	.job-location {
+		display: none;
+	}	
+}	
+
 .job-location-detail {
 	background: url("/images/location.svg") no-repeat 0%;
 	padding: $space-double $space-and-half;
@@ -41,3 +47,9 @@ span.recency-badge {
 	margin-top: $space;
 	text-align: center;
 }
+
+@media all and (max-width: $bp-med) {
+	.job-type {
+		margin-top: 0;
+	}	
+}	

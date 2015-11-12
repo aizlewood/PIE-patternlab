@@ -1,0 +1,42 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+
+		&lt;div class=&quot;page-title&quot;&gt;
+			&lt;header class=&quot;article-header&quot;&gt;
+				&lt;h1&gt;Login&lt;/h1&gt;
+				{{&gt; molecules-byline }}
+			&lt;/header&gt;
+		&lt;/div&gt;
+
+	&lt;div role=&quot;main&quot;&gt;
+
+			&lt;div class=&quot;inner rounded-container border&quot;&gt;
+
+				&lt;form method=&quot;post&quot; action=&quot;{{ url }}&quot; class=&quot;comment-form&quot;&gt;
+					&lt;fieldset&gt;
+						&lt;div class=&quot;field-container&quot;&gt;
+							&lt;label for=&quot;comment-email&quot;&gt;Your Email &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+							&lt;input id=&quot;comment-email&quot; type=&quot;email&quot; placeholder=&quot;Your email address&quot; /&gt;
+						&lt;/div&gt;
+					    &lt;div class=&quot;field-container&quot;&gt;
+					        &lt;label for=&quot;password&quot;&gt;Your Password &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+					    &lt;/div&gt;
+					&lt;/fieldset&gt;
+				&lt;/form&gt;
+
+				&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Login&lt;/a&gt;&lt;/p&gt;
+
+				&lt;div class=&quot;block&quot;&gt;
+					&lt;div class=&quot;middle&quot;&gt;
+						&lt;p&gt;Don't have an account?&lt;br&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Create an account now&lt;/a&gt;&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;	
+
+		
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-prefooter }}
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

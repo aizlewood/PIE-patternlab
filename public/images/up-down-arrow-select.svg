@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
-    <title>Triangle 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Production" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Jobs-index" sketch:type="MSArtboardGroup" transform="translate(-803.000000, -299.000000)" fill="#4A4A4A">
-            <g id="Search-function" sketch:type="MSLayerGroup" transform="translate(0.000000, 243.000000)">
-                <g id="Rectangle-232-Copy-2-+-Category-+-Triangle-1" transform="translate(519.000000, 42.000000)" sketch:type="MSShapeGroup">
-                    <path d="M291,14 L298,22 L284,22 L291,14 Z M284,24 L298,24 L291,32 L284,24 Z" id="Triangle-1"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg"><title>Triangle 1</title><path d="M7 0l7 8H0l7-8zM0 10h14l-7 8-7-8z" fill="#4A4A4A" fill-rule="evenodd"/></svg>

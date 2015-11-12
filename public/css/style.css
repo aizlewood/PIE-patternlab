@@ -63,6 +63,22 @@ header, footer, nav, section, article, hgroup, figure {
 .animate-move > .demo-shape {
   transition: all 0.8s ease-in-out; }
 
+.loader {
+  margin: 0 0 2em;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top; }
+
+/*
+  Set the color of the icon
+*/
+svg path, svg rect {
+  fill: #8EC617; }
+
 /* --------------- Animations ------------*/
 .animated.hinge {
   -webkit-animation-duration: 1.5s;
@@ -1205,7 +1221,8 @@ perspective effects (not including the modals and the overlay).
   border: 1px solid #ddd;
   border-width: 1px 0;
   margin: 1.5em;
-  padding: 1em; }
+  padding: 1em;
+  font-weight: bold; }
 
 .total-price {
   font-family: "Montserrat", sans-serif;
@@ -1315,6 +1332,20 @@ time {
   max-width: 72em;
   margin: 0 auto;
   padding: 0.5em; }
+
+.rounded-container {
+  color: #362442;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 2em;
+  margin: 0 auto;
+  width: 100%; }
+  .rounded-container.border {
+    border: 1px solid #eee; }
+  @media all and (min-width: 46.8em) {
+    .rounded-container {
+      width: 50%; } }
 
 /*------------------------------------*\
     $TEMPLATES
@@ -1553,7 +1584,11 @@ time {
     width: 50%; }
 
   .g-job-listing .gi.job-type {
-    width: 35%; }
+    width: 35%;
+    padding: 0.5em; }
+
+  .g-job-listing .gi.job-info {
+    padding: 0.5em; }
  }
 @media all and (min-width: 46.8em) {
   .g-job-listing > .gi:nth-of-type(3n+1) {
@@ -1622,95 +1657,79 @@ time {
   float: right;
   text-align: right; }
 
-/* Icon Font */
-@font-face {
-  font-family: 'icons';
-  src: url('../fonts/icons.eot');
-  src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'), url('../fonts/icons.woff') format('woff'), url('../fonts/icons.ttf') format('truetype'), url('../fonts/icons.svg#icons') format('svg');
-  font-weight: normal;
-  font-style: normal; }
+.Icon {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: 100%;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  background-size: contain; }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-  font-family: 'icons';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
+.Icon {
+  opacity: 0.5; }
 
-.icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple, .icon-android, .icon-arrow:after, .icon-envelope:before {
-  font-family: 'icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
+.Icon:hover {
+  opacity: 1; }
 
-.icon-twitter:before {
-  content: "\74"; }
+.Icon--bell-big {
+  background-image: url("../images/bell-big.svg"); }
 
-.icon-stumbleupon:before {
-  content: "\75"; }
+.Icon--bell {
+  background-image: url("../images/bell.svg"); }
 
-.icon-pinterest:before {
-  content: "\70"; }
+.Icon--cross {
+  background-image: url("../images/cross.svg"); }
 
-.icon-linkedin:before {
-  content: "\69"; }
+.Icon--email {
+  background-image: url("../images/email.svg"); }
 
-.icon-google-plus:before {
-  content: "\67"; }
+.Icon--ex {
+  background-image: url("../images/ex.svg"); }
 
-.icon-search:before {
-  content: "\73"; }
+.Icon--facebook {
+  background-image: url("../images/facebook.svg"); }
 
-.icon-play:before {
-  content: "\61"; }
+.Icon--globe {
+  background-image: url("../images/globe.svg"); }
 
-.icon-menu:before {
-  content: "\21"; }
+.Icon--gplus {
+  background-image: url("../images/gplus.svg"); }
 
-.icon-arrow-left:before {
-  content: "\23"; }
+.Icon--linkedin {
+  background-image: url("../images/linkedin.svg"); }
 
-.icon-arrow-right:before {
-  content: "\24"; }
+.Icon--location {
+  background-image: url("../images/location.svg"); }
 
-.icon-bubble:before {
-  content: "\25"; }
+.Icon--logout {
+  background-image: url("../images/logout.svg"); }
 
-.icon-facebook:before {
-  content: "\66"; }
+.Icon--profile {
+  background-image: url("../images/profile.svg"); }
 
-.icon-feed:before {
-  content: "\27"; }
+.Icon--rss {
+  background-image: url("../images/rss.svg"); }
 
-.icon-youtube:before {
-  content: "\79"; }
+.Icon--small-arrow-down {
+  background-image: url("../images/small-arrow-down.svg"); }
 
-.icon-tag:before {
-  content: "\28"; }
+.Icon--star-outlined {
+  background-image: url("../images/star-outlined.svg"); }
 
-.icon-tumblr:before {
-  content: "\6d"; }
+.Icon--tag {
+  background-image: url("../images/tag.svg"); }
 
-.icon-instagram:before {
-  content: "\22"; }
+.Icon--twitter {
+  background-image: url("../images/twitter.svg"); }
 
-.icon-podcast:before {
-  content: "\26"; }
+.Icon--up-down-arrow-select {
+  background-image: url("../images/up-down-arrow-select.svg"); }
 
-.icon-android:before {
-  content: "\29"; }
-
-.icon-apple:before {
-  content: "\2a"; }
-
-.icon-envelope:before {
-  content: "\2b"; }
+.Icon--user-account {
+  background-image: url("../images/user-account.svg"); }
 
 .icon-arrow:after {
   content: "\61";
@@ -1994,9 +2013,12 @@ p.package-type {
   padding: 1.5em 2em;
   border: 0;
   text-align: center; }
-  .btn:hover, .btn:focus {
+  .btn:hover {
     background: #7AAA13;
     color: #fff; }
+  .btn:focus {
+    position: relative;
+    top: 1px; }
   .btn.caps {
     width: 100%;
     background: #8EC617;
@@ -2111,6 +2133,9 @@ p.package-type {
   padding: 0.5em 1em;
   border: 1px solid #222;
   text-align: center; }
+  .tag-btn:focus {
+    position: relative;
+    top: 1px; }
   .tag-btn.fulltime {
     border: 1px solid #917298;
     color: #917298; }
@@ -2150,9 +2175,12 @@ p.package-type {
   border: 1px solid #999;
   text-align: center;
   padding-bottom: 0.6em; }
-  .reset-btn:hover, .reset-btn:focus {
+  .reset-btn:hover {
     background: #fff;
     color: #222; }
+  .reset-btn:focus {
+    position: relative;
+    top: 1px; }
 
 .reset-btn img {
   margin-right: 3px;
@@ -2246,11 +2274,17 @@ ul.nav-controls li.create-account {
   .pagination li {
     float: left;
     border-right: 1px solid #eee; }
+    .pagination li.current {
+      background: #362442;
+      border-radius: 5px;
+      color: #fff; }
     .pagination li:last-child {
       border: 0; }
   .pagination a {
     padding: 1em;
     color: #222; }
+  .pagination .current a {
+    color: #fff; }
 
 /* ----------------------
 
@@ -2772,6 +2806,14 @@ Dropdown nav
 .footer .g {
   margin: 1.5em 0; }
 
+.footer .logo-dark {
+  float: left;
+  max-width: 8rem;
+  margin: 1.7em 1em 1em 1em; }
+  @media all and (min-width: 46.8em) {
+    .footer .logo-dark {
+      max-width: 9rem; } }
+
 .nav-footer {
   margin: 0; }
   .nav-footer li {
@@ -2844,6 +2886,11 @@ span.recency-badge {
   text-transform: uppercase;
   font-size: 0.85em; }
 
+@media all and (max-width: 46.8em) {
+  .job-location {
+    display: none; }
+ }
+
 .job-location-detail {
   background: url("/images/location.svg") no-repeat 0%;
   padding: 2em 1.5em; }
@@ -2851,6 +2898,11 @@ span.recency-badge {
 .job-type {
   margin-top: 1em;
   text-align: center; }
+
+@media all and (max-width: 46.8em) {
+  .job-type {
+    margin-top: 0; }
+ }
 
 /* Jobs List */
 .job-listing-list {
@@ -2909,14 +2961,27 @@ span.recency-badge {
 p.employer-link {
   font-size: 0.85em; }
 
-.employer-link.web {
-  background: transparent url("/images/globe.svg") no-repeat 90% 50%; }
+p.employer-link .Icon {
+  margin-right: 0.5em;
+  margin-top: -3px; }
 
-.employer-link.twitter {
-  background: transparent url("/images/twitter.svg") no-repeat 90% 50%; }
+p.employer-link .Icon--twitter {
+  margin-top: 1px; }
 
-.employer-link.linkedin {
-  background: transparent url("/images/linkedin.svg") no-repeat 90% 50%; }
+p.employer-link .Icon--linkedin {
+  margin-top: -5px; }
+
+.job-meta .gi {
+  width: auto; }
+
+.job-meta .employer-inner {
+  padding-top: 1em; }
+
+@media all and (max-width: 46.8em) {
+  .job-meta .gi {
+    width: auto;
+    float: left; }
+ }
 
 .stats {
   text-align: center;

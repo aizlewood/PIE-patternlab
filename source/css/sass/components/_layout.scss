@@ -13,6 +13,25 @@
 	@extend .lc;
 }
 
+.rounded-container {
+	color: $brand-purple;
+	background: $white;
+	position: relative;
+	border-radius: 5px;
+	padding: $space-double;
+	margin: 0 auto;
+	width: 100%;
+
+	&.border {
+		border: 1px solid $grey-light-2;
+	}
+
+	@media all and (min-width: $bp-med) {
+		width: 50%;
+	}
+}
+
+
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
@@ -396,7 +415,11 @@
 		}			
 		.gi.job-type {
 			width: 35%;
+			padding: $space-half;			
 		}
+		.gi.job-info {
+			padding: $space-half;
+		}		
 	}
 	
 	@media all and (min-width: $bp-med) {

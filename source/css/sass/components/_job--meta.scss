@@ -7,14 +7,30 @@ p.employer-link {
 	font-size: $font-size-small;
 }
 
-.employer-link.web {
-	background: transparent url("/images/globe.svg") no-repeat 90% 50%;
+p.employer-link .Icon {
+	margin-right: $space-half;
+	margin-top: -3px;
 }
 
-.employer-link.twitter {
-	background: transparent url("/images/twitter.svg") no-repeat 90% 50%;
+p.employer-link .Icon--twitter {
+	margin-top: 1px;
 }
 
-.employer-link.linkedin {
-	background: transparent url("/images/linkedin.svg") no-repeat 90% 50%;
+p.employer-link .Icon--linkedin {
+	margin-top: -5px;
 }
+
+.job-meta .gi {
+	width: auto;
+}
+
+.job-meta .employer-inner {
+	padding-top: $space;
+}
+
+@media all and (max-width: $bp-med) {
+	.job-meta .gi {
+		width: auto;
+		float: left;
+	}	
+}	

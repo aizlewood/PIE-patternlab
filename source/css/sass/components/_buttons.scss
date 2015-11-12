@@ -14,10 +14,15 @@
 	border: 0;
 	text-align: center;
 	
-	&:hover, &:focus {
+	&:hover {
 		background: $brand-green-dark;
 		color: $white;
 	}
+
+	&:focus {
+		position: relative;
+		top: 1px;
+	}	
 
 	&.caps {
 		width: 100%;

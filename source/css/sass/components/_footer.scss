@@ -17,6 +17,16 @@
 	margin: $space-and-half 0;
 }
 
+.footer .logo-dark {
+	float: left;
+	max-width: 8rem;
+	margin: 1.7em $space $space $space;
+
+	@media all and (min-width: $bp-med) {
+		max-width: 9rem;
+	}
+}
+
 //Footer Nav
 .nav-footer {
 	margin: 0;

@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1447320534" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1448829076" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +15,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1447320534" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1447320534" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1448829076" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1448829076" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -418,10 +418,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1447320534">
+	<script id="pl-js-polyfill-insert-1448829076">
 		(function() {
 			if (self != top) {
-				var cb = '1447320534';
+				var cb = '1448829076';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -430,10 +430,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1447320534">
+	<script id="pl-js-insert-1448829076">
 		(function() {
 			if (self != top) {
-				var cb = '1447320534';
+				var cb = '1448829076';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -468,41 +468,41 @@
 			},
       });
     </script>
-		<script>
-		// Popup Window
-		var scrollTop = '';
-		var newHeight = '100';
-		 
-		$(window).bind('scroll', function() {
-		  scrollTop = $( window ).scrollTop();
-		  newHeight = scrollTop + 100;
-		});
-				
-		$('.popup-trigger').click(function(e) {
-		  e.stopPropagation();
-		  if(jQuery(window).width() < 767) {
-		    $(this).after( $( ".popup" ) );
-		    $('.popup').show().addClass('popup-mobile').css('top', 0);
-		    $('html, body').animate({
-		      scrollTop: $('.popup').offset().top
-		    }, 500);   
-		  } else {
-		    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
-		  };
-		});
-				
-		$('html').click(function() {
-		  $('.popup').hide();
-		});
-		 
-		$('.popup-btn-close').click(function(e){
-		  $('.popup').hide();
-		});
-		 
-		$('.popup').click(function(e){
-		  e.stopPropagation();
-		});
-		</script>		
+	<script>
+	// Popup Window
+	var scrollTop = '';
+	var newHeight = '100';
+	 
+	$(window).bind('scroll', function() {
+	  scrollTop = $( window ).scrollTop();
+	  newHeight = scrollTop + 100;
+	});
+			
+	$('.popup-trigger').click(function(e) {
+	  e.stopPropagation();
+	  if(jQuery(window).width() < 767) {
+	    $(this).after( $( ".popup" ) );
+	    $('.popup').show().addClass('popup-mobile').css('top', 0);
+	    $('html, body').animate({
+	      scrollTop: $('.popup').offset().top
+	    }, 500);   
+	  } else {
+	    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
+	  };
+	});
+			
+	$('html').click(function() {
+	  $('.popup').hide();
+	});
+	 
+	$('.popup-btn-close').click(function(e){
+	  $('.popup').hide();
+	});
+	 
+	$('.popup').click(function(e){
+	  e.stopPropagation();
+	});
+	</script>		
 
 		
 	</body>

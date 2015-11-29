@@ -1,15 +1,22 @@
 <div class="block price-card">
 		
-		<p class="package-type">Package type</p>
+		<p>Your Order</p>
+
+		<p class="package-type">Package type&nbsp;&nbsp;<a href="{{ url }}">Remove</a></p>
 
 		{{> molecules-price }}
 
-		{{> atoms-unordered-nostyle }}
+		{{> atoms-job-checkout-list }}
 
 </div>
 
 <div class="price-totals">
 
-	{{> atoms-unordered-nostyle }}
+	<p>Total</p>
+	{{> molecules-price }}
+
+	<br />
+
+	<p><a href="#" class="btn alt-caps">Add more listings</a></p>
 
 </div>

@@ -1,15 +1,22 @@
 &lt;div class=&quot;block price-card&quot;&gt;
 		
-		&lt;p class=&quot;package-type&quot;&gt;Package type&lt;/p&gt;
+		&lt;p&gt;Your Order&lt;/p&gt;
+
+		&lt;p class=&quot;package-type&quot;&gt;Package type&amp;nbsp;&amp;nbsp;&lt;a href=&quot;{{ url }}&quot;&gt;Remove&lt;/a&gt;&lt;/p&gt;
 
 		{{&gt; molecules-price }}
 
-		{{&gt; atoms-unordered-nostyle }}
+		{{&gt; atoms-job-checkout-list }}
 
 &lt;/div&gt;
 
 &lt;div class=&quot;price-totals&quot;&gt;
 
-	{{&gt; atoms-unordered-nostyle }}
+	&lt;p&gt;Total&lt;/p&gt;
+	{{&gt; molecules-price }}
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn alt-caps&quot;&gt;Add more listings&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;

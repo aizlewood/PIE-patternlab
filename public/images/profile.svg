@@ -1,1 +1,16 @@
-<svg width="16" height="18" viewBox="0 0 16 18" xmlns="http://www.w3.org/2000/svg"><title>Shape Copy</title><path d="M6.23 2.565c-.79.61-1.002 1.58-.963 2.094.05.63.173 1.45.173 1.45s-.244.136-.244.69c.085 1.387.53.788.623 1.397.22 1.467.725 1.205.725 2.006 0 1.333-.53 1.956-2.18 2.695C2.708 13.64 1 14.574 1 16.19V17h14v-.81c0-1.616-1.71-2.55-3.366-3.29-1.65-.74-2.18-1.362-2.18-2.696 0-.8.504-.54.726-2.006.093-.61.538-.01.625-1.398 0-.553-.245-.69-.245-.69s.123-.82.172-1.45c.05-.66-.31-2.07-1.79-2.503-.258-.275-.433-.713.364-1.152-1.742-.085-2.148.863-3.075 1.56z" stroke="#4A4A4A" stroke-width=".8" fill="none" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="profile" sketch:type="MSArtboardGroup" stroke-width="0.8" stroke="#4A4A4A">
+            <g sketch:type="MSLayerGroup" transform="translate(6.000000, 5.000000)" id="Shape-Copy">
+                <g sketch:type="MSShapeGroup">
+                    <path d="M5.23,1.565 C4.44,2.175 4.228,3.145 4.267,3.659 C4.317,4.289 4.44,5.109 4.44,5.109 C4.44,5.109 4.196,5.245 4.196,5.799 C4.281,7.186 4.726,6.587 4.819,7.196 C5.039,8.663 5.544,8.401 5.544,9.202 C5.544,10.535 5.014,11.158 3.364,11.897 C1.708,12.64 0,13.574 0,15.19 L0,16 L14,16 L14,15.19 C14,13.574 12.29,12.64 10.634,11.9 C8.984,11.16 8.454,10.538 8.454,9.204 C8.454,8.404 8.958,8.664 9.18,7.198 C9.273,6.588 9.718,7.188 9.805,5.8 C9.805,5.247 9.56,5.11 9.56,5.11 C9.56,5.11 9.683,4.29 9.732,3.66 C9.782,3 9.422,1.59 7.942,1.157 C7.684,0.882 7.509,0.444 8.306,0.005 C6.564,-0.08 6.158,0.868 5.231,1.565 L5.23,1.565 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

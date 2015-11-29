@@ -1,0 +1,56 @@
+<div class="page" id="page">
+	{{> organisms-header-logged-in }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>Thank you</h1>
+			</header>
+		</div>
+
+
+		{{> molecules-utility-nav-purchase-complete }}
+
+	<div role="main">
+
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+
+				<h4>Your Company Information</h4>
+				<br>			
+
+				<p><span class="caps">Company name</span><br><span class="read-only">Navitas UK</span></p>
+				<p><span class="caps">Company site URL</span><br><span class="read-only">http://navitas.co.uk</span></p>
+				<p><span class="caps">Company Twitter</span><br><span class="read-only">@Navitas_UK</span></p>
+				<p><span class="caps">Company LinkedIn</span><br><span class="read-only">linkedin.com/172942</span></p>
+				<p><span class="caps">Company logo</span><br><span class="read-only">Navitas UK</span></p>
+				<p><a href="{{ url }}">Edit this information</a>
+
+				<hr />
+
+
+				<h4>Invoicing Information</h4>
+				<br> 
+
+				<p><span class="caps">Country</span><br><span class="read-only">United Kingdom</span></p>
+				<p><span class="caps">Town/City</span><br><span class="read-only">Brighton</span></p>
+				<p><span class="caps">Company Address</span><br><span class="read-only">12345 Road</span></p>
+				<p><span class="caps">Suite, unit, etc</span><br><span class="read-only">Suite 67</span></p>
+				<p><span class="caps">Post Code</span><br><span class="read-only">BN1 14A</span></p>
+				<p><span class="caps">Are you VAT-registered?</span><br><span class="read-only">GB192847393</span></p>
+				<p><a href="{{ url }}">Edit this information</a>
+
+				</article><!--end .article-->
+
+				
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{> molecules-price-block }}
+			</div><!--end l-sidebar-->
+
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

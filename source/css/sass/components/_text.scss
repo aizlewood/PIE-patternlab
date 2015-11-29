@@ -6,8 +6,13 @@
 	border-bottom: 1px solid $canvas-dark-border;
 }
 
+.read-only {
+	color: $mid;
+	padding: $space-half 0;
+}
+
 //Contact text
-.contact {
+.border-top-bottom {
 	font-size: $font-size-med-2;
 	text-align: center;
 	border: 1px solid $grey-light-3;

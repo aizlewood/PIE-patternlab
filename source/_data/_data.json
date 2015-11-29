@@ -32,7 +32,10 @@
 		"category" : "Private education - Language",
 		"salary" : "From 23k",
 		"langs" : "Knowledge of second language desirable",
-		"bonus" : "Yes"
+		"bonus" : "Yes",
+		"post"  : "Post a Job",
+		"preview"  : "Preview: ",		
+		"post-helper"  :  "Find your perfect candidate"
 	},
 	"employer" : {
 		"site" : "Website",
@@ -41,7 +44,8 @@
 	},		
 	"headline" : {
 		"short" : "Lorem ipsum dolor sit (37 characters)",
-		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)",
+		"social" : "Share this page"		
 	},
 	"excerpt" : {
 		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",

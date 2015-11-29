@@ -1,1 +1,16 @@
-<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><title>star-outlined</title><path d="M17.8 7.022h-6.413L9 .3 6.61 7.022H.2l5.23 3.947-1.87 6.928L9 13.744l5.438 4.154-1.87-6.93L17.8 7.023zM9 11.782l-3.014 2.5 1.243-3.56-2.852-2.3 3.522.1L9 4.482l1.1 4.04 3.52-.1-2.85 2.3 1.242 3.56L9 11.783z" fill="#504353" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>star-outlined</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="star-outlined" sketch:type="MSArtboardGroup" fill="#504353">
+            <g sketch:type="MSLayerGroup" transform="translate(4.000000, 4.000000)" id="Shape">
+                <g sketch:type="MSShapeGroup">
+                    <path d="M17.8,7.022 L11.387,7.022 L9,0.3 L6.61,7.022 L0.2,7.022 L5.43,10.969 L3.56,17.897 L9,13.744 L14.438,17.898 L12.568,10.968 L17.8,7.023 L17.8,7.022 Z M9,11.782 L5.986,14.282 L7.229,10.722 L4.377,8.422 L7.899,8.522 L9,4.482 L10.1,8.522 L13.62,8.422 L10.77,10.722 L12.012,14.282 L9,11.783 L9,11.782 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

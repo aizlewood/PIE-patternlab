@@ -1,6 +1,6 @@
 
 <div class="page" id="page">
-	{{> organisms-header }}
+	{{> organisms-header-logged-in }}
 
 		<div class="page-title">
 			<header class="article-header">
@@ -19,7 +19,7 @@
 					<div class="gi"></div>
 					<div class="gi"></div>
 					<div class="gi inlined">
-						<a href="#" class="btn alt star"><img src="../../images/star-outlined.svg"> Bookmark this Job</a>
+						<button class="btn alt star popup-trigger"><img src="../../images/star-outlined.svg"> Bookmark this Job</button>
 					</div>
 				</div>
 
@@ -35,7 +35,7 @@
 					{{> atoms-time }}
 					{{> organisms-article-body }}
 					
-					<p><button class="btn caps md-trigger" data-modal="modal-1">Apply for this Job</button></p>
+					<p><button class="btn caps popup-trigger">Apply for this Job</button></p>
 
 				</article><!--end .article-->
 
@@ -79,8 +79,6 @@
 </div>
 
 
-<div class="md-modal md-effect-1" id="modal-1">
-	<div class="md-content">
-		{{> organisms-modal-apply }}
-	</div>
-</div>	
+<div class="popup">
+	{{> organisms-modal-apply }}
+</div>

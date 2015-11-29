@@ -1,0 +1,148 @@
+
+<div class="page" id="page">
+	{{> organisms-header-logged-in }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>{{ job.post }}</h1>
+				{{> molecules-helper }}
+			</header>
+		</div>
+
+		{{> molecules-utility-nav-signed-in }}
+
+	<div role="main">
+
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+
+				<form method="post" action="{{ url }}" class="form">
+					<fieldset>
+						<div class="field-container">
+							<label for="job-title">Job Title <abbr title="Required">*</abbr></label>
+							<input id="job-title" type="text" placeholder="e.g. Marketing Manager" />
+						</div>
+						<div class="field-container">
+							<label for="location">Location (optional)</label>
+							<input id="location" type="text" placeholder="Enter a location" />
+						</div>
+					    <div class="field-container">
+							<fieldset>
+							    <div class="field-container">
+							        <label for="select">Job type <abbr title="Required">*</abbr></label>
+							        <select id="select">
+							            <optgroup label="Option Group">
+							                <option>Option One</option>
+							                <option>Option Two</option>
+							                <option>Option Three</option>
+							            </optgroup>
+							        </select>
+							    </div>
+							</fieldset>
+					    </div>
+					    <div class="field-container">
+							<fieldset>
+							    <div class="field-container">
+							        <label for="select">Category <abbr title="Required">*</abbr></label>
+							        <select id="select">
+							            <optgroup label="Option Group">
+							                <option>Option One</option>
+							                <option>Option Two</option>
+							                <option>Option Three</option>
+							            </optgroup>
+							        </select>
+							    </div>
+							</fieldset>
+					    </div>
+						<div class="field-container">
+							<label for="job-tags">Job tags (optional)</label>
+							<input id="job-tags" type="text" placeholder="Separate by comma" />
+						</div>
+						<div class="field-container">
+							<label for="application-email">Application email or URL</label>
+							<input id="application-email" type="email" placeholder="name@example.com" />
+						</div>
+					    <div class="field-container">
+							<fieldset>
+							    <div class="field-container">
+							        <label for="select">Bonus or commission scheme</label>
+							        <select id="select">
+							            <optgroup label="Option Group">
+							                <option>Option One</option>
+							                <option>Option Two</option>
+							                <option>Option Three</option>
+							            </optgroup>
+							        </select>
+							    </div>
+							</fieldset>
+					    </div>						
+					    <div class="field-container">
+					        <label for="close-date">Close date <abbr title="Required">*</abbr></label>
+					        <input id="close-date" type="text" placeholder="DD/MM/YYYY">
+					    </div>
+						<div class="field-container">
+							<label for="salary">Salary <abbr title="Required">*</abbr></label>
+							<input id="salary" type="text" placeholder="Enter a figure or range" />
+						</div>
+						<div class="field-container">
+							<label for="language-skills">Language skills required (optional)</label>
+							<input id="language-skills" type="text" placeholder="French, Spanish, etc" />
+						</div>
+						<div class="field-container">
+						    <label for="job-description">Description <abbr title="Required">*</abbr></label>
+						    <textarea id="job-description" rows="8" cols="48" placeholder="Enter your description"></textarea>
+						</div>
+
+						<hr />
+
+
+					    <div class="field-container">
+					        <label for="company-name">Company name <abbr title="Required">*</abbr></label>
+					        <input id="company-name" type="text" placeholder="e.g. Acme Corp">
+					    </div>
+					    <div class="field-container">
+					        <label for="webaddress">Company site URL</label>
+					        <input id="webaddress" type="url" placeholder="http://yoursite.com">
+					    </div>	
+					    <div class="field-container">
+					        <label for="twitter">Company Twitter</label>
+					        <input id="twitter" type="url" placeholder="@username">
+					    </div>	
+					    <div class="field-container">
+					        <label for="linkedin">Company LinkedIn</label>
+					        <input id="linkedin" type="url" placeholder="/url">
+					    </div>						    
+					    <div class="field-container">
+						    <label for="webaddress">Company logo</label>
+						    <p>Upload your logo in .png, .jpg or .gif format.<br><em>Maximum file size: 1MB</em></p>
+					        <p><button class="text-btn">Choose file</button></p>
+					    </div>						    
+					</fieldset>
+				</form>
+					
+					<p><button class="btn caps">Save & Preview</button></p>
+
+				</article><!--end .article-->
+
+				
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+
+			</div><!--end l-sidebar-->
+
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+
+			
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>
+
+
+<div class="md-modal md-effect-1" id="modal-1">
+	<div class="md-content">
+		{{> organisms-modal-apply }}
+	</div>
+</div>	

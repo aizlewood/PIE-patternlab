@@ -1,0 +1,101 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>Checkout</h1>
+				{{> molecules-helper }}
+			</header>
+		</div>
+
+
+		{{> molecules-utility-nav-success }}
+
+	<div role="main">
+
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+
+				<h4>Your Company Information</h4>
+				<br>			
+
+				<p><span class="caps">Company name</span><br><span class="read-only">Navitas UK</span></p>
+				<p><span class="caps">Company site URL</span><br><span class="read-only">http://navitas.co.uk</span></p>
+				<p><span class="caps">Company Twitter</span><br><span class="read-only">@Navitas_UK</span></p>
+				<p><span class="caps">Company LinkedIn</span><br><span class="read-only">linkedin.com/172942</span></p>
+				<p><span class="caps">Company logo</span><br><span class="read-only">Navitas UK</span></p>
+				<p><a href="{{ url }}">Edit this information</a>
+
+				<form method="post" action="{{ url }}" class="form">
+					<fieldset>
+						<hr />
+
+
+						<h4>Invoicing Information</h4>
+						<br> 
+
+					    <div class="field-container">
+							<fieldset>
+							    <div class="field-container">
+							        <label for="select">Country <abbr title="Required">*</abbr></label>
+							        <select id="select">
+							            <optgroup label="Option Group">
+							                <option>Option One</option>
+							                <option>Option Two</option>
+							                <option>Option Three</option>
+							            </optgroup>
+							        </select>
+							    </div>
+							</fieldset>
+						</div>
+
+						<div class="field-container">
+							<label for="town">Town/City <abbr title="Required">*</abbr></label>
+							<input id="town" type="text" placeholder="Enter a location" />
+						</div>
+
+						<div class="field-container">
+							<label for="county">Town/City <abbr title="Required">*</abbr></label>
+							<input id="county" type="text" placeholder="Enter a location" />
+						</div>
+
+						<div class="field-container">
+							<label for="street">Company address <abbr title="Required">*</abbr></label>
+							<input id="street" type="text" placeholder="Street number & name" />
+						</div>
+
+						<div class="field-container">
+							<label for="suite">Suite, unit etc</label>
+							<input id="suite" type="text" placeholder="Suite, office, etc" />
+						</div>						
+
+						<div class="field-container">
+							<label for="post-cde">Post Code <abbr title="Required">*</abbr></label>
+							<input id="post-code" type="text" placeholder="Enter a Post code or ZIP" />
+						</div>						
+
+						<div class="field-container">
+							<label for="vat">Are you VAT-registered? <abbr title="Required">*</abbr></label>
+							<input id="vat" type="text" placeholder="Your VAT or charity number" />
+						</div>
+
+					</fieldset>
+				</form>
+					
+					<p><button class="btn caps">Proceed to Payment</button></p>
+
+				</article><!--end .article-->
+
+				
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{> molecules-price-block }}
+			</div><!--end l-sidebar-->
+
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

@@ -79,7 +79,7 @@
 /* Utility nav Layout */
 .utility-nav {
 	background: $canvas-dark;
-	padding: 0;
+	padding: 0 2%;
 	border: 1px solid $canvas-dark-border;
 	border-width: 1px 0;
 	
@@ -352,7 +352,7 @@
 .gi.gi-2-3 {
 	@media all and (min-width: $bp-med) {
 		float: left;
-		padding: 0 $space-quad;
+		padding: 0 $space;
 		width: 66.666666%;
 	}
 }

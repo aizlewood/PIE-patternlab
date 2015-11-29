@@ -12,6 +12,15 @@
 	color: $error;	
 }
 
+.success {
+	text-align: center;
+	padding: $pad;
+	margin-bottom: $space-half;
+	border: 1px solid #BAED82;
+	background: #EFFFDF;
+	color: $valid;	
+}
+
 .alert-error {
 	color: $error;
 	border-color: $error;

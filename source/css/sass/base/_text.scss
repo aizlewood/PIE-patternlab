@@ -3,10 +3,14 @@ p {
 	margin-bottom: $space;
 }
 
+.red {
+    color: $error;
+}
+
 .caps {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: $font-size-small-2;
+    font-size: $font-size-tiny;
 }
 
 /* Blockquote */

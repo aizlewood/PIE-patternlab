@@ -1,1 +1,16 @@
-<svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M13 6.5L8.667 2.89v2.166H3.61v2.888h5.057v2.167L13 6.5zM1.444 1.444h5.778V0H1.444C.65 0 0 .65 0 1.444v10.112C0 12.35.65 13 1.444 13h5.778v-1.444H1.444V1.444z" fill="#A59C93" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>logout</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logout" sketch:type="MSArtboardGroup" fill="#A59C93">
+            <g sketch:type="MSLayerGroup" transform="translate(6.000000, 6.000000)" id="Shape">
+                <g sketch:type="MSShapeGroup">
+                    <path d="M13,6.5 L8.667,2.89 L8.667,5.056 L3.61,5.056 L3.61,7.944 L8.667,7.944 L8.667,10.111 L13,6.5 L13,6.5 Z M1.444,1.444 L7.222,1.444 L7.222,0 L1.444,0 C0.65,0 0,0.65 0,1.444 L0,11.556 C0,12.35 0.65,13 1.444,13 L7.222,13 L7.222,11.556 L1.444,11.556 L1.444,1.444 L1.444,1.444 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

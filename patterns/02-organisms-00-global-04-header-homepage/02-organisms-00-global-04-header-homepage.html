@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>PIE Jobs | Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/style.css?1449182274" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1449182274" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1449182274" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="body">	
+		<!-- Begin .header -->
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+<header class="header homepage cf" role="banner">
+	<div class="header-inner">
+	<a href="#">
+		<img src="../../images/logo-dark.png" class="logo" alt="Logo Alt Text" />
+	</a>	<button id="nav-toggle" class="nav-toggle">Open menu</button>
+
+	<nav class="homepage nav-collapse" id="nav">
+		<ul class="menu-items">
+			<li><a href="#">Find a Job</a></li>
+			<li><a href="#">Post a Job</a></li>
+			<li><a href="#">Pricing</a></li>		
+			<li class="line"><a href="#">Login</a></li>
+			<li><a href="#"><button class="btn">Create your account</button></a></li>
+		</ul>
+	</nav><!--end .nav-->	</div>
+</header>
+<!-- End .header -->
+	<div class="md-overlay"></div><!-- the overlay element -->
+
+	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "organisms-header-homepage";
+		var lineage        = [{"lineagePattern":"atoms-logo-homepage","lineagePath":"..\/..\/patterns\/00-atoms-04-images-09-logo-homepage\/00-atoms-04-images-09-logo-homepage.html"},{"lineagePattern":"molecules-primary-nav-homepage","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-11-primary-nav-homepage\/01-molecules-05-navigation-11-primary-nav-homepage.html"}];
+		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"}];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1449182274">
+		(function() {
+			if (self != top) {
+				var cb = '1449182274';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1449182274">
+		(function() {
+			if (self != top) {
+				var cb = '1449182274';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	<script src="/js/main.js" type="text/javascript" aysnc></script>
+    <script>
+      // Init responsive nav
+	  var customToggle = document.getElementById( 'nav-toggle' );
+      var navigation = responsiveNav(".nav-collapse", {
+		customToggle: "#nav-toggle", // Selector: Specify the ID of a custom toggle
+	    enableFocus: true,
+		enableDropdown: true,
+		openDropdown: '<span class="screen-reader-text">Open sub menu</span>',
+		closeDropdown: '<span class="screen-reader-text">Close sub menu</span>',
+			init: function () {          // Set ARIA for menu toggle button
+				customToggle.setAttribute( 'aria-expanded', 'false' );
+				customToggle.setAttribute( 'aria-pressed', 'false' );
+			},
+			open: function () {
+				customToggle.setAttribute( 'aria-expanded', 'true' );
+				customToggle.setAttribute( 'aria-pressed', 'true' );
+				customToggle.innerHTML = 'Close menu';
+			},
+			close: function () {
+				customToggle.setAttribute( 'aria-expanded', 'false' );
+				customToggle.setAttribute( 'aria-pressed', 'false' );
+				customToggle.innerHTML = 'Open menu';
+			},
+      });
+    </script>
+	<script>
+	// Popup Window
+	var scrollTop = '';
+	var newHeight = '100';
+	 
+	$(window).bind('scroll', function() {
+	  scrollTop = $( window ).scrollTop();
+	  newHeight = scrollTop + 100;
+	});
+			
+	$('.popup-trigger').click(function(e) {
+	  e.stopPropagation();
+	  if(jQuery(window).width() < 767) {
+	    $(this).after( $( ".popup" ) );
+	    $('.popup').show().addClass('popup-mobile').css('top', 0);
+	    $('html, body').animate({
+	      scrollTop: $('.popup').offset().top
+	    }, 500);   
+	  } else {
+	    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
+	  };
+	});
+			
+	$('html').click(function() {
+	  $('.popup').hide();
+	});
+	 
+	$('.popup-btn-close').click(function(e){
+	  $('.popup').hide();
+	});
+	 
+	$('.popup').click(function(e){
+	  e.stopPropagation();
+	});
+	</script>		
+
+		
+	</body>
+</html>

@@ -590,6 +590,9 @@ tr:hover {
 p {
   margin-bottom: 1em; }
 
+.white {
+  color: #fff; }
+
 .red {
   color: #FF0000; }
 
@@ -656,6 +659,102 @@ p.small {
   text-transform: uppercase;
   cursor: pointer; }
 
+/* =============================================== *\
+	HTML5 VIDEO BACKGROUND
+	This is the important part
+	It can be used for a 'hero' section or a
+	full-screen background
+\* =============================================== */
+/* This first class is not necessary for full-screen backgrounds */
+.video-hero {
+  position: relative;
+  overflow: hidden; }
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.video-bg video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: inherit;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+/**
+	 * For full-screen video backgrounds, add the
+	 * .video-bg--fullscreen class to .video-bg div
+	 */
+.video-bg--fullscreen {
+  position: fixed; }
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  /* Allows right click menu on the video */
+  background: rgba(0, 0, 0, 0.1);
+  /* You can play with the opacity */ }
+
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video' is the name of the video
+ */
+.video-bg.demo-video {
+  background-image: url(../video/typing-numbers.jpg); }
+
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .video-bg video {
+  opacity: 0;
+  transition: opacity 0.8s linear; }
+
+.js .video-bg video.is-playing {
+  opacity: 1; }
+
+/* =============================================== *\
+	HTML5 VIDEO HERO
+	You don't need to copy this, but you might
+	draw some inspiration from it
+\* =============================================== */
+.video-hero {
+  height: auto;
+  /* Feel free to set a height in your own way */ }
+
+@media screen and (min-width: 50em) {
+  .video-hero {
+    min-height: 35em;
+    /* Feel free to set a height in your own way */ }
+ }
+
+.video-hero--content {
+  position: relative;
+  text-align: center;
+  margin-top: 83px;
+  padding: 2.5% 0;
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+
 .byline {
   font-size: 1.0625em;
   color: #999;
@@ -675,7 +774,7 @@ p.small {
     font-size: 0.85em;
     color: #999;
     letter-spacing: 1px;
-    margin-top: 0.15em; }
+    margin-top: 0.45em; }
   .social-share a {
     color: #222;
     display: block; }
@@ -824,6 +923,12 @@ time {
     .rounded-container {
       width: 50%; } }
 
+.space-double {
+  padding: 2em; }
+
+.space-triple {
+  padding: 3em; }
+
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
@@ -940,12 +1045,17 @@ time {
  }
 
 /* Grid 6up */
+.g-6up > .gi {
+  float: left;
+  width: 50%; }
+  .g-6up > .gi:nth-of-type(2n+1) {
+    clear: both; }
 @media all and (min-width: 46.8em) {
   .g-6up > .gi {
     float: left;
-    width: 50%; }
+    width: 16%; }
     .g-6up > .gi:nth-of-type(2n+1) {
-      clear: both; }
+      clear: none; }
  }
 @media all and (min-width: 50em) {
   .g-6up > .gi {
@@ -1137,19 +1247,12 @@ time {
 .Icon {
   position: relative;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-size: 100%;
   vertical-align: middle;
   background-repeat: no-repeat;
-  font-size: 18px;
   background-size: contain; }
-
-.Icon {
-  opacity: 0.5; }
-
-.Icon:hover {
-  opacity: 1; }
 
 .Icon--bell-big {
   background-image: url("../images/bell-big.svg"); }
@@ -1309,6 +1412,24 @@ time {
   .block p:last-child {
     margin-bottom: 0; }
 
+.callout--block {
+  text-align: center;
+  padding: 1em; }
+
+.callout--block .callout--block-value {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: -1;
+  line-height: 1;
+  color: #362442; }
+
+.callout--block .callout--block-quantify {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.85em;
+  color: #999; }
+
 .headline {
   line-height: 1.2; }
 
@@ -1371,6 +1492,16 @@ time {
   padding: 2em 1em 1em 1em; }
 
 .block.job-listings-load-more .btn {
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 30%;
+  min-width: 15em; }
+
+/* Homepage buttons */
+.block.action {
+  padding: 1em; }
+
+.block.action .btn {
   vertical-align: middle;
   margin: 0 auto;
   width: 30%;
@@ -1514,6 +1645,17 @@ p.package-type {
   .btn.caps:hover, .btn.caps:focus {
     background: #7AAA13;
     color: #fff; }
+  .btn.ghost {
+    width: 100%;
+    background: transparent;
+    text-transform: uppercase;
+    color: #8EC617;
+    border: 1px solid #8EC617;
+    padding: 1.5em 3em;
+    margin: 1em 0; }
+  .btn.ghost:hover, .btn.ghost:focus {
+    border: 1px solid #7AAA13;
+    color: #7AAA13; }
   .btn.alt-caps {
     width: 100%;
     background: #4A90E2;
@@ -1541,7 +1683,7 @@ p.package-type {
     letter-spacing: 0px;
     color: #362442; }
   .btn.star img {
-    margin-bottom: -2px; }
+    margin-bottom: -6px; }
   .btn.star:hover, .btn.star:focus {
     border: 1px solid #ddd; }
   .btn.prefooter-cta {
@@ -1675,6 +1817,13 @@ p.package-type {
   background: #fff;
   padding: 0;
   border-bottom: 1px solid #dbdbdb; }
+
+.header.homepage {
+  background: transparent;
+  padding: 0;
+  border-bottom: none;
+  position: relative;
+  z-index: 999; }
 
 .header-inner {
   padding: 0; }
@@ -1867,6 +2016,9 @@ RWD Nav
 .nav-collapse > ul {
   border-top: 1px solid rgba(255, 255, 255, 0.15); }
 
+.homepage .nav-collapse > ul {
+  border-top: 1px solid transparent; }
+
 .nav-collapse li {
   float: left;
   width: 100%; }
@@ -1899,6 +2051,20 @@ RWD Nav
 
   .nav-collapse li:first-child a {
     border-left: 1px solid #fff; }
+ }
+
+@media screen and (min-width: 40em) {
+  .homepage .nav-collapse a {
+    border-bottom: 0;
+    background: transparent;
+    color: #fff;
+    border-right: 1px solid transparent;
+    margin: 0;
+    float: left;
+    text-align: center; }
+
+  .homepage .nav-collapse li:first-child a {
+    border-left: 1px solid transparent; }
  }
 
 /* ------------------------------------------
@@ -2027,6 +2193,10 @@ RWD Nav
     background-color: #fff;
     color: #1E1426; }
 
+  .homepage .nav-collapse a:hover, .homepage .nav-collapse li.focus > a {
+    background-color: transparent;
+    color: #8EC617; }
+
   .dropdown ul a:hover, .dropdown ul li:focus > a {
     background: #F2F2F2;
     color: #4A4A4A; }
@@ -2056,6 +2226,9 @@ RWD Nav
 
   .nav-collapse .line {
     border-left: 1px solid #eee; }
+
+  .homepage .nav-collapse .line {
+    border-left: 1px solid transparent; }
 
   .has-dropdown:after {
     font-size: 1.5em;
@@ -2361,7 +2534,7 @@ Dropdown nav
   color: #999; }
 
 span.recency-badge {
-  background: url("/images/bell.svg") no-repeat 0%;
+  background: url("/images/bell.svg") no-repeat -30%;
   text-transform: uppercase;
   font-size: 0.65em;
   color: #999;
@@ -2613,6 +2786,44 @@ td.account-table-info a {
     line-height: 1;
     width: 100%;
     min-width: 200px; }
+ }
+
+.quote--large {
+  margin-top: 3em;
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+  background: #4A90E2;
+  color: #fff;
+  line-height: 1.6;
+  padding: 2em 1em;
+  min-height: 20em; }
+
+.quote--large blockquote {
+  margin: 0 auto;
+  max-width: 40em;
+  font-size: 1.4375em;
+  color: #fff;
+  border: none;
+  padding-top: 5%; }
+
+.quote--large cite {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: normal;
+  display: block;
+  padding: 1em 0; }
+
+.quote--large .btn {
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 30%;
+  min-width: 15em;
+  margin: 0; }
+
+@media all and (min-width: 46.8em) {
+  .quote--large .btn {
+    margin: 3em; }
  }
 
 /* Horizontal Carousel */

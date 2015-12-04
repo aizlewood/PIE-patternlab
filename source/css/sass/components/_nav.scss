@@ -201,6 +201,10 @@ RWD Nav
   border-top: 1px solid rgba(255,255,255, .15);
 }
 
+.homepage .nav-collapse > ul {
+  border-top: 1px solid transparent;
+}
+
 .nav-collapse li {
   float: left;
   width: 100%;
@@ -239,6 +243,20 @@ RWD Nav
   }
 }
 
+@media screen and (min-width: 40em) {
+  .homepage .nav-collapse a {
+    border-bottom: 0;
+    background: transparent;
+    color: $white;
+    border-right: 1px solid transparent;
+    margin: 0;
+    float: left;
+    text-align: center;
+  }
+  .homepage .nav-collapse li:first-child a {
+    border-left: 1px solid transparent;
+  }
+}
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
@@ -392,6 +410,12 @@ RWD Nav
 	  color: $brand-purple-dark;
 	}	
 
+  .homepage .nav-collapse a:hover,
+  .homepage .nav-collapse li.focus > a {
+    background-color: transparent;
+    color: $brand-green;
+  }   
+
 	.dropdown ul a:hover,
 	.dropdown ul li:focus > a {
 		background: $canvas-dark;
@@ -428,6 +452,10 @@ RWD Nav
 	.nav-collapse .line {
 		border-left: 1px solid $grey-light-2;
 	}  
+
+  .homepage .nav-collapse .line {
+    border-left: 1px solid transparent;
+  }    
 
   .has-dropdown:after {
     font-size: 1.5em;

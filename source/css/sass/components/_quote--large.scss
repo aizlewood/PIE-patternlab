@@ -1,0 +1,42 @@
+.quote--large {
+	margin-top: $space-triple;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+	background: $brand-blue;
+	color: $white;
+	line-height: 1.6;
+	padding: $space-double $space;
+	min-height: 20em;
+}
+
+.quote--large blockquote {
+	margin: 0 auto;
+	max-width: 40em;
+	font-size: $font-size-large;
+	color: $white;
+	border: none;
+	padding-top: 5%;
+}
+
+.quote--large cite {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-style: normal;
+	display: block;
+	padding: $space 0;
+}
+
+.quote--large .btn {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 30%;
+	min-width: 15em;
+	margin: 0;
+}
+
+@media all and (min-width: $bp-med) {
+	.quote--large .btn {
+		margin: $space-triple;
+	}
+}

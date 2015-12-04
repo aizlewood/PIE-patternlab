@@ -38,6 +38,21 @@
 		color: $white;
 	}
 
+	&.ghost {
+		width: 100%;
+		background: transparent;
+		text-transform: uppercase;
+		color: $brand-green;
+		border: 1px solid $brand-green;		
+		padding: $pad-and-half $pad-triple;
+		margin: $space 0;
+	}	
+
+	&.ghost:hover, &.ghost:focus {
+		border: 1px solid $brand-green-dark;	
+		color: $brand-green-dark;
+	}	
+
 	&.alt-caps {
 		width: 100%;
 		background: $brand-blue;
@@ -77,7 +92,7 @@
 	}	
 
 	&.star img {
-		margin-bottom: -2px;
+		margin-bottom: -6px;
 	}
 
 	&.star:hover, &.star:focus {

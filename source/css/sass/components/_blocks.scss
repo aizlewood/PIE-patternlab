@@ -16,6 +16,28 @@
 	}
 }
 
+.callout--block {
+	text-align: center;
+	padding: $space;
+}
+
+.callout--block .callout--block-value {
+	font-size: $font-size-large-2;
+	font-weight: bold;
+	letter-spacing: -1;
+	line-height: 1;
+	color: $brand-purple;
+}
+
+.callout--block .callout--block-quantify {
+	margin-top: $space;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: $font-size-small;
+	color: $mid;
+}
+
+
 .headline {
 	line-height: 1.2;
 }
@@ -101,6 +123,18 @@
 }
 
 .block.job-listings-load-more .btn {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 30%;
+	min-width: 15em;
+}
+
+/* Homepage buttons */
+.block.action {
+	padding: $space;
+}
+
+.block.action .btn {
 	vertical-align: middle;
 	margin: 0 auto;
 	width: 30%;

@@ -1,0 +1,32 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-header-homepage-logged-in }}
+	&lt;div role=&quot;main&quot;&gt;
+		{{# emergency }}
+			{{&gt; molecules-alert:error }}
+		{{/ emergency }}
+		{{# hero }}
+			{{&gt; molecules-block-hero }}
+		{{/ hero}}
+
+		&lt;div class=&quot;g g-3up&quot;&gt;
+			{{# touts}}
+				&lt;div class=&quot;gi&quot;&gt;
+					{{&gt; molecules-block-inset }}
+				&lt;/div&gt;
+			{{/ touts}}
+		&lt;/div&gt;&lt;!--end 3up--&gt;
+
+		&lt;hr /&gt;
+
+		&lt;div class=&quot;inner&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;half&quot;&gt;&lt;br /&gt;{{&gt; molecules-topshelf-title }}&lt;/div&gt;
+				&lt;div class=&quot;half right&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;		
+			{{&gt; organisms-job-listing }}
+		&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-prefooter }}
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

@@ -1,21 +1,12 @@
 .Icon {
   position: relative;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-size: 100%;
   vertical-align: middle;
   background-repeat: no-repeat;
-  font-size: 18px;
   background-size: contain;
-}
-
-.Icon {
-	opacity: 0.5;
-}
-
-.Icon:hover {
-	opacity: 1;
 }
 
 .Icon--bell-big {

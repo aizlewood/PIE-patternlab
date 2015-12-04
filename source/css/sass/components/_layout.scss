@@ -31,6 +31,13 @@
 	}
 }
 
+.space-double {
+	padding: $space-double;
+}
+
+.space-triple {
+	padding: $space-triple;
+}
 
 /*------------------------------------*\
     $TEMPLATES
@@ -213,13 +220,23 @@
 
 /* Grid 6up */
 .g-6up {
-	@media all and (min-width: $bp-med) {
+
 		>.gi {
 			float: left;
 			width: 50%;
 			
 			&:nth-of-type(2n+1) {
 				clear: both;
+			}
+		}
+
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			float: left;
+			width: 16%;
+			
+			&:nth-of-type(2n+1) {
+				clear: none;
 			}
 		}
 	}

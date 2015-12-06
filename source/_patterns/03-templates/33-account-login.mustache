@@ -16,20 +16,20 @@
 					<fieldset>
 						<div class="field-container">
 							<label for="comment-email">Your Email <abbr title="Required">*</abbr></label>
-							<input id="comment-email" type="email" placeholder="Your email address" />
+							<input id="comment-email" type="email" placeholder="Your email address" required>
 						</div>
 					    <div class="field-container">
 					        <label for="password">Your Password <abbr title="Required">*</abbr></label>
-					        <input id="password" type="password" placeholder="Type your Password">
+					        <input id="password" type="password" placeholder="Type your Password" required>
 					    </div>
 					</fieldset>
-				</form>
 
-				<p><a href="#" class="btn">Login</a></p>
+				<p><button class="btn" type="submit">Login</button></p>					
+				</form>
 
 				<div class="block">
 					<div class="middle">
-						<p>Don't have an account? <a href="{{ url }}">Create one now</a></p>
+						<p class="small">Don't have an account? <a href="{{ url }}">Create one now</a></p>
 					</div>
 				</div>
 

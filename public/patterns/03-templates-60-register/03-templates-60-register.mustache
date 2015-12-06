@@ -12,34 +12,34 @@
 
 			&lt;div class=&quot;inner rounded-container border&quot;&gt;
 
-				&lt;form method=&quot;post&quot; action=&quot;{{ url }}&quot; class=&quot;comment-form&quot;&gt;
+				&lt;form method=&quot;post&quot; action=&quot;{{ url }}&quot; class=&quot;validated-form&quot;&gt;
 					&lt;fieldset&gt;
 						&lt;div class=&quot;field-container&quot;&gt;
 							&lt;label for=&quot;comment-name&quot;&gt;Your Name &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-							&lt;input id=&quot;comment-name&quot; type=&quot;text&quot; placeholder=&quot;Enter Your Name&quot; /&gt;
+							&lt;input id=&quot;comment-name&quot; type=&quot;text&quot; placeholder=&quot;Enter Your Name&quot; required /&gt;
 						&lt;/div&gt;
 						&lt;div class=&quot;field-container&quot;&gt;
 							&lt;label for=&quot;comment-email&quot;&gt;Your Email &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-							&lt;input id=&quot;comment-email&quot; type=&quot;email&quot; placeholder=&quot;Your email address&quot; /&gt;
+							&lt;input id=&quot;comment-email&quot; type=&quot;email&quot; placeholder=&quot;Your email address&quot; required /&gt;						
 						&lt;/div&gt;
 					    &lt;div class=&quot;field-container&quot;&gt;
 					        &lt;label for=&quot;password&quot;&gt;Create a Password &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot; required&gt;
 					    &lt;/div&gt;
 					    &lt;div class=&quot;field-container&quot;&gt;
 					        &lt;label for=&quot;password&quot;&gt;Re-enter your Password &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-					        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+					        &lt;input id=&quot;confirm_password&quot; type=&quot;password&quot; placeholder=&quot;Confirm your Password&quot; required&gt;
 					    &lt;/div&gt;
 					&lt;/fieldset&gt;
-				&lt;/form&gt;
 
-				&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Sign me up!&lt;/a&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;button class=&quot;btn&quot; type=&quot;submit&quot;&gt;Sign me up!&lt;/button&gt;&lt;/p&gt;
+				&lt;/form&gt;				
 
-				&lt;p&gt;By signing up you&rsquo;re agreeing to our &lt;a href=&quot;{{ url }}&quot;&gt;terms of use&lt;/a&gt; and &lt;a href=&quot;{{ url }}&quot;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;			
+				&lt;p class=&quot;tiny caps middle&quot; style=&quot;opacity: 0.4&quot;&gt;By signing up you&rsquo;re agreeing to our &lt;a href=&quot;{{ url }}&quot;&gt;terms of use&lt;/a&gt; and &lt;a href=&quot;{{ url }}&quot;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;			
 
 				&lt;div class=&quot;block&quot;&gt;
 					&lt;div class=&quot;middle&quot;&gt;
-						&lt;p&gt;Already have an account? &lt;a href=&quot;{{ url }}&quot;&gt;Sign in now&lt;/a&gt;&lt;/p&gt;
+						&lt;p class=&quot;small&quot;&gt;&lt;br&gt;Already have an account? &lt;a href=&quot;{{ url }}&quot;&gt;Sign in now&lt;/a&gt;&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
 

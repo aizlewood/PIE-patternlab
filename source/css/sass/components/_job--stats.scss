@@ -13,7 +13,8 @@
 
 .stats .stats-value {
 	font-size: $font-size-huge;
-	font-weight: bold;
+	font-family: $font-header;
+	font-weight: normal;
 	letter-spacing: -1;
 	line-height: 1;
 }

@@ -1,32 +1,119 @@
 &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-	{{&gt; organisms-header-homepage-logged-in }}
-	&lt;div role=&quot;main&quot;&gt;
-		{{# emergency }}
-			{{&gt; molecules-alert:error }}
-		{{/ emergency }}
-		{{# hero }}
-			{{&gt; molecules-block-hero }}
-		{{/ hero}}
 
-		&lt;div class=&quot;g g-3up&quot;&gt;
-			{{# touts}}
-				&lt;div class=&quot;gi&quot;&gt;
-					{{&gt; molecules-block-inset }}
+	&lt;div class=&quot;video&quot;&gt;	
+		&lt;!-- Start video hero --&gt;
+		&lt;div class=&quot;video-hero&quot;&gt;
+	{{&gt; organisms-header-homepage-logged-in }}		
+			&lt;div class=&quot;video-bg demo-video&quot;&gt;
+				&lt;video autoplay muted loop poster=&quot;../../video/typing-numbers.jpg&quot;&gt;
+					&lt;source src=&quot;../../video/typing-numbers.mp4&quot; type=&quot;video/mp4&quot;&gt;
+					&lt;source src=&quot;../../video/typing-numbers.webm&quot; type=&quot;video/webm&quot;&gt;
+					&lt;source src=&quot;../../video/typing-numbers.ogv&quot; type=&quot;video/ogg&quot;&gt;
+				&lt;/video&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;video-overlay&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;page-width&quot;&gt;
+				&lt;div class=&quot;video-hero--content&quot;&gt;
+					&lt;h2 class=&quot;white&quot;&gt;Find your perfect job&lt;/h2&gt;
+					&lt;p&gt;Full width video hero&lt;/p&gt;
 				&lt;/div&gt;
-			{{/ touts}}
-		&lt;/div&gt;&lt;!--end 3up--&gt;
 
-		&lt;hr /&gt;
+		&lt;div class=&quot;lc&quot;&gt;
+			&lt;div class=&quot;block action&quot;&gt;
+				&lt;div class=&quot;middle&quot;&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+						
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- End video hero --&gt;
+	&lt;/div&gt;
 
-		&lt;div class=&quot;inner&quot;&gt;
-			&lt;div class=&quot;row&quot;&gt;
-				&lt;div class=&quot;half&quot;&gt;&lt;br /&gt;{{&gt; molecules-topshelf-title }}&lt;/div&gt;
-				&lt;div class=&quot;half right&quot;&gt;&lt;/div&gt;
-			&lt;/div&gt;		
-			{{&gt; organisms-job-listing }}
+&lt;div role=&quot;main&quot;&gt;
+	&lt;div class=&quot;inner space-triple&quot;&gt;
+
+		&lt;div class=&quot;g g-1up&quot;&gt;
+			&lt;div class=&quot;gi&quot;&gt;
+				&lt;h4 class=&quot;middle&quot;&gt;Find the perfect job from employers like these&lt;/h4&gt;
+			&lt;/div&gt;
 		&lt;/div&gt;
 
+
+		&lt;div class=&quot;g g-6up space-double&quot;&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;lc&quot;&gt;
+			&lt;div class=&quot;block action&quot;&gt;
+				&lt;div class=&quot;middle&quot;&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+			
+	&lt;/div&gt;	
+
+	&lt;div class=&quot;inner&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;half&quot;&gt;&lt;br /&gt;{{&gt; molecules-topshelf-title }}&lt;/div&gt;
+			&lt;div class=&quot;half right&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;		
+		{{&gt; organisms-job-listing }}
+
+		&lt;div class=&quot;lc&quot;&gt;
+			&lt;div class=&quot;block action&quot;&gt;
+				&lt;div class=&quot;middle&quot;&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- End Main --&gt;
+
+	{{&gt; organisms-quote-large }}
+
+
+	&lt;div role=&quot;main&quot;&gt;
+	&lt;div class=&quot;inner&quot;&gt;
+
+		&lt;div class=&quot;g g-1up space-triple&quot;&gt;
+			&lt;div class=&quot;gi&quot;&gt;
+				&lt;h4 class=&quot;middle&quot;&gt;Employers, find the perfect candidate&lt;/h4&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+
+		&lt;!--Grid 4up--&gt;
+		&lt;div class=&quot;g g-4up&quot;&gt;
+			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
+			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
+		&lt;/div&gt;
+
+
+		&lt;div class=&quot;lc&quot;&gt;
+			&lt;div class=&quot;block action&quot;&gt;
+				&lt;div class=&quot;middle&quot;&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+
+	&lt;/div&gt;	
+
+
 	&lt;/div&gt;&lt;!--End role=main--&gt;
+
+
 	{{&gt; organisms-prefooter }}
 	{{&gt; organisms-footer }}
 &lt;/div&gt;

@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1449349193" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1449402836" media="all" />
 		
 		<script src="https://use.typekit.net/iaj4coh.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1449349193" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1449349193" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1449402836" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1449402836" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -36,7 +36,7 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-00-buttons/00-atoms-06-buttons-00-buttons.html" class="patternLink" data-patternpartial="atoms-buttons">Buttons</a></h2>
 						<div class="sg-pattern-body">
 							<p><button class="btn">Button</button></p>
-<p><button class="btn ghost">Button</button></p>
+<p><button class="btn ghost">Ghost Button</button></p>
 <p><button class="btn caps">Button Caps</button></p>
 <p><button class="btn alt star"><img src="../../images/star-outlined.svg"> Bookmark</button></p>
 <p><button class="btn alt">Alternative button</button></p>
@@ -49,7 +49,7 @@
 								<pre class="sg-code-html">
 									<code>
 										&lt;p&gt;&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;&lt;/p&gt;
-&lt;p&gt;&lt;button class=&quot;btn ghost&quot;&gt;Button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button class=&quot;btn ghost&quot;&gt;Ghost Button&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;button class=&quot;btn caps&quot;&gt;Button Caps&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;button class=&quot;btn alt star&quot;&gt;&lt;img src=&quot;../../images/star-outlined.svg&quot;&gt; Bookmark&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;button class=&quot;btn alt&quot;&gt;Alternative button&lt;/button&gt;&lt;/p&gt;
@@ -144,10 +144,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1449349193">
+	<script id="pl-js-polyfill-insert-1449402836">
 		(function() {
 			if (self != top) {
-				var cb = '1449349193';
+				var cb = '1449402836';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -156,10 +156,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1449349193">
+	<script id="pl-js-insert-1449402836">
 		(function() {
 			if (self != top) {
-				var cb = '1449349193';
+				var cb = '1449402836';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -168,7 +168,7 @@
 	
 
 
-	<script src="../../js/main.js?1449349193" type="text/javascript" aysnc></script>
+	<script src="../../js/main.js?1449402836" type="text/javascript" aysnc></script>
     <script>
       // Init responsive nav
 	  var customToggle = document.getElementById( 'nav-toggle' );
@@ -193,8 +193,11 @@
 				customToggle.innerHTML = 'Open menu';
 			},
       });
-    </script>
-	<script>
+
+		jQuery(function ($) {
+		    $('form').validatr(); 
+		}); 
+
 	// Popup Window
 	var scrollTop = '';
 	var newHeight = '100';

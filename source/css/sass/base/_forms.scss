@@ -64,6 +64,10 @@ textarea {
 
 }
 
+.newsletter-field {
+	width: 68%;
+}
+
 .ondark input[type=text], 
 .ondark input[type=search], 
 .ondark input[type=url], 
@@ -109,6 +113,7 @@ input[type="search"]::-webkit-search-decoration {
 //Form Field Container
 .field-container {
 	margin-bottom: $space-and-half;
+    position: relative;
 }
 
 .inline-form {
@@ -118,19 +123,22 @@ input[type="search"]::-webkit-search-decoration {
 	
 	input[type=submit], button, .btn {
 		font-size: $font-size-small-2;
-		padding: 1.25rem 1.45rem;
+		padding: 1.33rem 1.45rem;
 		background: $brand-green;
 		text-transform: uppercase;
 		border-radius: 0px 5px 5px 0px;
 		position: absolute;
 		top: 0;
-		right: -2px;
+		right: 10px;
 		z-index: 1;
 		width: auto;
 
 		&:hover, &:focus {
 			background: $brand-green-dark;
 			color: $white;
+			position: relative;
+			top: -1px;
+			left: -8px;
 		}
 	}
 }
@@ -157,4 +165,8 @@ input[type="search"]::-webkit-search-decoration {
 	border: 0;
 	border-left: 1px solid $grey;
 	color: $grey;
+}
+
+.validatr-message {
+    min-width: 12em;
 }

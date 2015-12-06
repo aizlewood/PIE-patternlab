@@ -11,7 +11,7 @@
 		display: block;
 		padding: $pad;
 		border-top: 1px solid $grey-light-2;
-		font-weight: bold;
+		font-weight: normal;
 		color: $nav;
 	}
 
@@ -218,7 +218,7 @@ RWD Nav
 
 .nav-collapse a {
   border-bottom: 1px solid rgba(255,255,255, .15);
-  font-weight: bold;
+  // font-weight: bold;
   background: $brand-purple;
   color: $white;
   float: left;
@@ -438,7 +438,7 @@ RWD Nav
     color: #fff;
     content: "";
     display: block;
-    background: transparent url("/images/small-arrow-down.svg") no-repeat 70% 48%;
+    background: transparent url("../images/small-arrow-down.svg") no-repeat 70% 48%;
     height: 46px;
     width: 46px;
     padding: 0;

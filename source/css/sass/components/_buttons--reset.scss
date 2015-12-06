@@ -5,12 +5,12 @@
 	display: inline-block;
 	color: $mid;
 	border-radius: 5px;
-	line-height: 1;
+	line-height: 1.4;
 	font-size: $font-size-small-2;
 	padding: 0.5em $space-and-half;
 	border: 1px solid $mid;
 	text-align: center;
-	padding-bottom: 0.6em;
+	padding-bottom: 1em;
 
 	&:hover {
 		background: $white;
@@ -25,5 +25,5 @@
 
 .reset-btn img {
 	margin-right: 3px;
-	margin-bottom: -1px;
+	margin-bottom: -7px;
 }

@@ -19,7 +19,7 @@
 }
 
 span.recency-badge {
-	background: url("/images/bell.svg") no-repeat -30%;
+	background: url("../images/bell.svg") no-repeat -30%;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
 	color: $mid;
@@ -39,7 +39,7 @@ span.recency-badge {
 }	
 
 .job-location-detail {
-	background: url("/images/location.svg") no-repeat 0%;
+	background: url("../images/location.svg") no-repeat 0%;
 	padding: $space-double $space-and-half;
 }
 

@@ -582,7 +582,7 @@ p {
 .caps {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.65em; }
+  font-size: 0.7em; }
 
 /* Blockquote */
 blockquote {
@@ -802,7 +802,7 @@ p.small {
 span.kicker {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.65em;
+  font-size: 0.85em;
   color: #999; }
 
 cite.citation {
@@ -2624,6 +2624,9 @@ p.employer-link .Icon--linkedin {
 
 .job-meta .employer-inner {
   padding-top: 1em; }
+
+.job-meta-list li p {
+  font-size: 1.0625em; }
 
 @media all and (max-width: 46.8em) {
   .job-meta .gi {

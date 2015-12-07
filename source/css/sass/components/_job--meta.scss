@@ -28,6 +28,10 @@ p.employer-link .Icon--linkedin {
 	padding-top: $space;
 }
 
+.job-meta-list li p {
+	font-size: $font-size-med-2;
+}
+
 @media all and (max-width: $bp-med) {
 	.job-meta .gi {
 		width: auto;

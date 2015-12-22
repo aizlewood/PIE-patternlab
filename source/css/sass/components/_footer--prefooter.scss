@@ -9,7 +9,7 @@
 	background: url(../images/facepile.png) repeat $brand-green;
 	color: $white;
 	line-height: 1.2;
-	padding: $space;
+	padding: $space-double;
 }
 
 .prefooter .btn {
@@ -22,6 +22,6 @@
 
 @media all and (min-width: $bp-med) {
 	.prefooter .btn {
-		margin: $space-triple;
+		margin: $space-double 0 0 0;
 	}
 }

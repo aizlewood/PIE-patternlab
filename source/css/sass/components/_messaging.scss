@@ -37,3 +37,11 @@
 	text-transform: uppercase;
 	font-size: $font-size-small-2;
 }
+
+.no-results {
+	min-height: 25em;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10%;
+	color: $mid;
+}

@@ -1,0 +1,49 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>{{ title }}</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+		<div class="utility-nav">
+			<div class="inner">
+
+				<div class="g g-2up">
+					<div class="gi"></div>
+					<div class="gi">
+						<div class="right-skinny">
+							{{> molecules-social-share }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<div role="main">
+
+		<div class="l-single-col">
+			<div class="l-main">
+				<article class="article">
+					{{> atoms-time }}
+					{{> organisms-article-body }}
+				</article><!--end .article-->
+			</div><!--end l-main-->
+
+		</div><!--end l-single-col-->	
+
+		<div class="inner">
+			<div class="row">
+				<div class="half"><br />{{> molecules-topshelf-title }}</div>
+				<div class="half right"></div>
+			</div>		
+			{{> organisms-job-listing }}
+		</div>
+				
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

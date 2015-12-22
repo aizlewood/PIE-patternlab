@@ -1,0 +1,32 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+
+		&lt;div class=&quot;page-title&quot;&gt;
+			&lt;header class=&quot;article-header&quot;&gt;
+				&lt;h1&gt;All Jobs&lt;/h1&gt;
+				{{&gt; molecules-byline }}
+			&lt;/header&gt;
+		&lt;/div&gt;
+
+		{{&gt; molecules-job-listings-filter }}
+
+		{{&gt; molecules-utility-nav-checkbox }}
+
+	&lt;div role=&quot;main&quot;&gt;
+
+		&lt;div class=&quot;listings&quot;&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;half&quot;&gt;{{&gt; molecules-results-title-with-cat }} {{&gt; atoms-reset-button }}  {{&gt; atoms-add-alert-button }}&lt;/div&gt;
+			&lt;div class=&quot;half right&quot;&gt;{{&gt; atoms-rss }}&lt;/div&gt;
+		&lt;/div&gt;
+
+			{{&gt; organisms-job-listing }}
+			{{&gt; molecules-job-listings-load-more }}
+		&lt;/div&gt;
+
+
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-prefooter }}
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

@@ -217,11 +217,37 @@
 	}
 }
 
+.block-card--blue {
+	position: relative;
+	background: $brand-blue;
+	color: $white;
+	padding: $space;
+	text-align: center;
+	border-radius: 5px;
+
+
+	.block-card-thumb {
+		position: relative;
+		z-index: 0;
+
+		img {
+			display: block;
+		}
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.block-card--blue {
+		margin-top: 2.5em;
+	}
+}
+
 p.package-type {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: $font-size-small-2;
-	opacity: 0.7;
+	font-weight: bold;
+	color: $yellow;
 }
 
 .block-card ul li {
@@ -230,6 +256,13 @@ p.package-type {
 }
 
 /* Price Block */
+
+.single-order {
+	margin: $space 0;
+	padding: $space 0;
+	border-bottom: 1px solid $price-border;
+}
+
 .price-card{
 	position: relative;
 	background: $brand-purple;
@@ -253,7 +286,6 @@ p.package-type {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: $font-size-small-2;
-	opacity: 0.7;
 }
 
 .block-card ul li {
@@ -264,7 +296,7 @@ p.package-type {
 .price-card ul li,
 .price-totals ul li {
 	padding: $space-half;
-	border-bottom: 1px solid $price-border;
+	border-bottom: 0px solid $price-border;
 }
 
 .price-card ul li:nth-last-child,

@@ -1,0 +1,32 @@
+<div class="page" id="page">
+	{{> organisms-header }}
+
+		<div class="page-title">
+			<header class="article-header">
+				<h1>All Jobs</h1>
+				{{> molecules-byline }}
+			</header>
+		</div>
+
+		{{> molecules-job-listings-filter }}
+
+		{{> molecules-utility-nav-checkbox }}
+
+	<div role="main">
+
+		<div class="listings">
+
+		<div class="row">
+			<div class="half">{{> molecules-results-title-with-cat }} {{> atoms-reset-button }}  {{> atoms-add-alert-button }}</div>
+			<div class="half right">{{> atoms-rss }}</div>
+		</div>
+
+			{{> organisms-job-listing }}
+			{{> molecules-job-listings-load-more }}
+		</div>
+
+
+	</div><!--End role=main-->
+	{{> organisms-prefooter }}
+	{{> organisms-footer }}
+</div>

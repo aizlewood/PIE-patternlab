@@ -21,11 +21,11 @@
 					<fieldset>
 						<div class="field-container">
 							<label for="job-title">Job Title <abbr title="Required">*</abbr></label>
-							<input id="job-title" type="text" placeholder="e.g. Marketing Manager" />
+							<input id="job-title" type="text" placeholder="e.g. Marketing Manager" required/>
 						</div>
 						<div class="field-container">
-							<label for="location">Location (optional)</label>
-							<input id="location" type="text" placeholder="Enter a location" />
+							<label for="location">Location <abbr title="Required">*</abbr></label>
+							<input id="location" type="text" placeholder="Enter a location" required/>
 						</div>
 					    <div class="field-container">
 							<fieldset>
@@ -63,20 +63,10 @@
 							<label for="application-email">Application email or URL</label>
 							<input id="application-email" type="email" placeholder="name@example.com" />
 						</div>
-					    <div class="field-container">
-							<fieldset>
-							    <div class="field-container">
-							        <label for="select">Bonus or commission scheme</label>
-							        <select id="select">
-							            <optgroup label="Option Group">
-							                <option>Option One</option>
-							                <option>Option Two</option>
-							                <option>Option Three</option>
-							            </optgroup>
-							        </select>
-							    </div>
-							</fieldset>
-					    </div>						
+						<div class="field-container">
+							<label for="location">Bonus or Commission scheme </label>
+							<input id="location" type="text" placeholder="Enter details"/>
+						</div>						
 					    <div class="field-container">
 					        <label for="close-date">Close date <abbr title="Required">*</abbr></label>
 					        <input id="close-date" type="text" placeholder="DD/MM/YYYY">

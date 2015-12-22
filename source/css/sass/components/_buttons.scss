@@ -10,7 +10,7 @@
 	line-height: 1;
 	font-weight: bold;
 	font-size: $font-size-small;
-	padding: 1.2em $pad-double 1.6em $pad-double;
+	padding: 1.5555em $pad-double 1.6em $pad-double;
 	border: 0;
 	text-align: center;
 	
@@ -64,7 +64,31 @@
 	&.alt-caps:hover, &.alt-caps:focus {
 		background: $brand-blue;
 		color: $white;
+	}
+
+	&.alt-nocaps {
+		width: 100%;
+		background: $brand-blue;
+		color: $white;	
+		padding: $pad-and-half $pad-triple;
 	}	
+
+	&.alt-nocaps:hover, &.alt-nocaps:focus {
+		background: $brand-blue;
+		color: $white;
+	}	
+
+	&.alt-dark {
+		width: 100%;
+		background: $brand-purple;
+		color: $white;	
+		padding: $pad-and-half $pad-triple;
+	}	
+
+	&.alt-dark:hover, &.alt-dark:focus {
+		background: $brand-purple;
+		color: $white;
+	}
 
 	&.disabled {
 		width: 100%;
@@ -79,6 +103,12 @@
 		border: 1px solid $grey-light-3;
 		color: $mid;		
 	}	
+
+	&.alt-blue {
+		background: $white;
+		border: none;
+		color: $brand-blue;		
+	}		
 
 	&.alt:hover, &.alt:focus {
 		border: 1px solid $grey-light-1;
@@ -168,6 +198,7 @@
 	text-align: left;
 	padding: 0;
 	margin: 0;
+	font-size: 100%;
 	// font-size: inherit;
 	color: $brand-blue;
 }

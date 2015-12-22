@@ -11,6 +11,13 @@
 	padding: $space-half 0;
 }
 
+.blurb {
+	max-width: 42em;
+	padding-top: $space;
+	text-align: center;
+	margin: 0 auto;
+}
+
 //Contact text
 .border-top-bottom {
 	font-size: $font-size-med-2;

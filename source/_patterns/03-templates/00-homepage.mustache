@@ -42,52 +42,35 @@
 
 
 		<div class="g g-6up space-double">
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
+		{{# clients}}
+			<div class="gi">{{> atoms-landscape-16x9 }} </div>
+		{{/ clients}}
 		</div>
 
-		<div class="lc">
-			<div class="block action">
-				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
-				</div>
-			</div>
-		</div>	
-			
-	</div>	
-
-	<div class="inner">
-		<div class="row">
-			<div class="half"><br />{{> molecules-topshelf-title }}</div>
-			<div class="half right"></div>
-		</div>		
 		{{> organisms-job-listing }}
 
 		<div class="lc">
 			<div class="block action">
 				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
+					<p><a href="#" class="btn ghost">Browse all jobs</a></p>
 				</div>
 			</div>
 		</div>	
 
-	</div>
+	</div><!-- End Inner -->	
 
 	</div><!-- End Main -->
 
+{{# quote}}
 	{{> organisms-quote-large }}
-
+{{/ quote}}
 
 	<div role="main">
 	<div class="inner">
 
 		<div class="g g-1up space-triple">
 			<div class="gi">
-				<h4 class="middle">Employers, find the perfect candidate</h4>
+				<h4 class="middle">Employers, find your perfect candidate</h4>
 			</div>
 		</div>	
 
@@ -103,7 +86,7 @@
 		<div class="lc">
 			<div class="block action">
 				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
+					<p><a href="#" class="btn ghost">Post your job now</a></p>
 				</div>
 			</div>
 		</div>	

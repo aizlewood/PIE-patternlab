@@ -125,6 +125,7 @@ fieldset {
 label {
   display: block;
   font-weight: bold;
+  text-align: left;
   font-size: 0.85em;
   padding-bottom: 0.5em; }
 
@@ -734,7 +735,8 @@ html.remodal-is-locked {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
-  padding: 35px;
+  padding: 60px;
+  border-radius: 5px;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   color: #2b2e38;
@@ -804,7 +806,7 @@ html.remodal-is-locked {
   overflow: visible;
   min-width: 110px;
   margin: 0;
-  padding: 12px 0;
+  padding: 3px 0;
   cursor: pointer;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
@@ -823,12 +825,14 @@ html.remodal-is-locked {
   background: #66bb6a; }
 
 .remodal-cancel {
-  color: #fff;
-  background: #e57373; }
+  color: #e57373;
+  background: #fff;
+  border: 1px solid #e57373; }
 
 .remodal-cancel:hover,
 .remodal-cancel:focus {
-  background: #ef5350; }
+  background: #ef5350;
+  color: #fff; }
 
 /* Remove inner padding and border in Firefox 4+ for the button tag. */
 .remodal-confirm::-moz-focus-inner,
@@ -2617,9 +2621,13 @@ RWD Nav
     height: 55px;
     line-height: 60px;
     position: relative; }
-  .nav-collapse a {
+  .nav-collapse a, .nav-collapse button.text-btn {
     display: inline-block;
     padding: 0 16px; }
+  .nav-collapse button.text-btn {
+    color: #4A4A4A; }
+  .homepage .nav-collapse button.text-btn {
+    color: #fff; }
   .nav-collapse a:hover {
     color: #8EC617; }
   .nav-collapse ul ul {

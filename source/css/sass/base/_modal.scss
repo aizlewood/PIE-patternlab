@@ -125,7 +125,9 @@ html.remodal-is-locked {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
-  padding: 35px;
+  padding: 60px;
+
+  border-radius: 5px;
 
   transform: translate3d(0, 0, 0);
 
@@ -212,7 +214,7 @@ html.remodal-is-locked {
 
   min-width: 110px;
   margin: 0;
-  padding: 12px 0;
+  padding: 3px 0;
 
   cursor: pointer;
   transition: background 0.2s;
@@ -235,13 +237,15 @@ html.remodal-is-locked {
 }
 
 .remodal-cancel {
-  color: #fff;
-  background: #e57373;
+  color: #e57373;
+  background: #fff;
+  border: 1px solid #e57373;
 }
 
 .remodal-cancel:hover,
 .remodal-cancel:focus {
   background: #ef5350;
+  color: #fff;
 }
 
 /* Remove inner padding and border in Firefox 4+ for the button tag. */

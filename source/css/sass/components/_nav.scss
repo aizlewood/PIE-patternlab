@@ -508,10 +508,18 @@ RWD Nav
     position: relative;
   }
 
-  .nav-collapse a {
+  .nav-collapse a, .nav-collapse button.text-btn {
     display: inline-block;
     padding: 0 16px;
   }
+
+  .nav-collapse button.text-btn {
+    color: $nav;
+  }  
+
+  .homepage .nav-collapse button.text-btn {
+    color: $white;
+  }    
 
   .nav-collapse a:hover {
   	color: $brand-green;

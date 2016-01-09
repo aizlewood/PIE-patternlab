@@ -37,6 +37,37 @@
 	color: $mid;
 }
 
+.callout--block-home {
+	text-align: center;
+	padding: $space;
+}
+
+.callout--block-home .callout--block-value {
+	font-size: $font-size-large-2;
+	font-weight: bold;
+	font-family: $font-header;
+	letter-spacing: -1;
+	line-height: 1;
+	color: $brand-purple;
+}
+
+.callout--block-home .callout--block-quantify {
+	margin-top: $space-half;
+	text-transform: normal;
+	font-weight: normal;
+	font-size: $font-size-small;
+	color: $mid;
+}
+
+.callout--block-home hr {
+	padding: 0 0 0 0;
+	margin: 2% 0;
+}
+
+.callout--block-home p {
+	font-size: $font-size-small;
+}
+
 
 .headline {
 	line-height: 1.2;
@@ -219,7 +250,7 @@
 
 .block-card--blue {
 	position: relative;
-	background: $brand-blue;
+	background: $brand-blue-dark;
 	color: $white;
 	padding: $space;
 	text-align: center;

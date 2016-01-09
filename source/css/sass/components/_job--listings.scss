@@ -37,6 +37,13 @@
 	color: #C3BDC6;
 }
 
+.job--listings.filter.light {
+	padding-top: $space;
+	margin-bottom: -$space;
+	background: none;
+	color: #C3BDC6;
+}
+
 .job--listings .search-controls li {
 	width: 100%;
 }
@@ -50,7 +57,7 @@
 	}
 
 	.job--listings .search-controls li.wide {
-		width: 31%;
+		width: 30%;
 	}
 
 	.job--listings .search-controls li.narrow {
@@ -74,8 +81,14 @@
 
 //Job search filter checkboxes 
 .filters {
-	padding: $space;
-	text-align: right;	
+	text-align: left;	
+}
+
+@media all and (min-width: $bp-large) {
+	.filters {
+		padding: $space;		
+		text-align: right;	
+	}
 }
 
 .filters {

@@ -1,0 +1,71 @@
+{
+	"title" : "Homepage logged in",
+	"bodyClass": "home",
+	"emergency" : false,
+	"hero" : [
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/landscape-16x9-mountains.jpg",
+					"alt": "Mountains"	
+				}
+			},
+			"headline" : {
+				"medium" : "Top 10 mountain ranges for hiking"
+			}
+		}
+	],
+	"clients" : [
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/berlitz.png",
+					"alt": "Berlitz"	
+				}
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/englishuk.png",
+					"alt": "EnglishUK"	
+				}
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/kaplan.png",
+					"alt": "Kaplan"	
+				}
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/navitas.png",
+					"alt": "Navitas"	
+				}
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/studygroup.png",
+					"alt": "Study Group"	
+				}
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+					"src": "../../images/sample/ucas.png",
+					"alt": "UCAS"	
+				}
+			}
+		}
+	],
+	"quote" : [
+				"If you are looking for a career in international education or student recruitment, The PIE is the place. Job postings are relevant and current. I applied for three jobs and was invited for interviews for two of them, which led me to my current job. All happened within a few weeks. Thank you for connecting me! I am also very pleased with the content of the news section, which keeps me updated on the market and the competitive situation. I highly recommend The PIE to other industry professionals. Mickey Kromann-Jensen, new Regional Manager (East Asia) – Queen’s University Belfast/INTO Queen’s University Belfast, Northern Ireland, UK"
+	]
+}

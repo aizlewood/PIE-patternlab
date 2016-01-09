@@ -171,7 +171,11 @@ textarea {
     border: 1px solid #999; }
 
 .newsletter-field {
-  width: 68%; }
+  width: 90%; }
+
+@media all and (min-width: 46.8em) {
+  .newsletter-field {
+    width: 68%; } }
 
 .ondark input[type=text],
 .ondark input[type=search],
@@ -237,9 +241,8 @@ input[type="search"]::-webkit-search-decoration {
   .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus, .inline-form .btn:hover, .inline-form .btn:focus {
     background: #7AAA13;
     color: #fff;
-    position: relative;
-    top: -1px;
-    left: -8px; }
+    top: 0px;
+    right: 10px; }
 
 /* Validation */
 .has-error {
@@ -247,6 +250,9 @@ input[type="search"]::-webkit-search-decoration {
 
 .is-valid {
   border-color: #089e00; }
+
+.form-error {
+  color: #FF0000; }
 
 /*------------------------------------*    $SPECIFIC FORMS
 \*------------------------------------*/
@@ -569,7 +575,8 @@ th {
 
 td {
   border: 1px solid #bbb;
-  padding: 1em; }
+  padding: 1em;
+  vertical-align: top; }
 
 thead {
   background: #F2F2F2; }
@@ -589,6 +596,9 @@ p {
 
 .red {
   color: #FF0000; }
+
+.green {
+  color: #8EC617; }
 
 .caps {
   text-transform: uppercase;
@@ -625,33 +635,286 @@ abbr {
 p.small {
   font-size: 0.85em; }
 
-.popup {
-  display: none;
-  position: absolute;
-  top: 100px;
-  left: 46%;
-  width: auto;
-  margin-left: -17em;
-  padding: 10% 3%;
-  background: #fff;
-  z-index: 9999;
-  outline: 9999px solid rgba(0, 0, 0, 0.5); }
+/* https://github.com/VodkaBears/Remodal#remodal */
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+html.remodal-is-locked {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none; }
 
-.popup-mobile {
+/* Anti FOUC */
+.remodal,
+[data-remodal-id] {
+  display: none; }
+
+/* Necessary styles of the overlay */
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none; }
+
+/* Necessary styles of the wrapper */
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch; }
+
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: ""; }
+
+/* Fix iPad, iPhone glitches */
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+/* Necessary styles of the modal dialog */
+.remodal {
   position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block; }
+
+/* ==========================================================================
+   Remodal's default mobile first theme
+   ========================================================================== */
+/* Default theme styles for the background */
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+          filter: blur(3px); }
+
+/* Default theme styles of the overlay */
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9); }
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation-name: remodal-overlay-opening-keyframes;
+          animation-name: remodal-overlay-opening-keyframes; }
+
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-name: remodal-overlay-closing-keyframes;
+          animation-name: remodal-overlay-closing-keyframes; }
+
+/* Default theme styles of the wrapper */
+.remodal-wrapper {
+  padding: 10px 10px 0; }
+
+/* Default theme styles of the modal dialog */
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 35px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff; }
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.remodal.remodal-is-opening {
+  -webkit-animation-name: remodal-opening-keyframes;
+          animation-name: remodal-opening-keyframes; }
+
+.remodal.remodal-is-closing {
+  -webkit-animation-name: remodal-closing-keyframes;
+          animation-name: remodal-closing-keyframes; }
+
+/* Vertical align of the modal dialog */
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle; }
+
+/* Close button */
+.remodal-close {
+  position: absolute;
   top: 0;
   left: 0;
-  margin: 30px 10px 0; }
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #95979c;
+  border: 0;
+  outline: 0;
+  background: transparent; }
 
-.popup-btn-close {
+.remodal-close:hover,
+.remodal-close:focus {
+  color: #2b2e38; }
+
+.remodal-close:before {
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-size: 25px;
+  line-height: 35px;
   position: absolute;
-  top: 8px;
-  right: 14px;
-  color: #4EBD79;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer; }
+  top: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  content: "\00d7";
+  text-align: center; }
+
+/* Dialog buttons */
+.remodal-confirm,
+.remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+  outline: 0; }
+
+.remodal-confirm {
+  color: #fff;
+  background: #81c784; }
+
+.remodal-confirm:hover,
+.remodal-confirm:focus {
+  background: #66bb6a; }
+
+.remodal-cancel {
+  color: #fff;
+  background: #e57373; }
+
+.remodal-cancel:hover,
+.remodal-cancel:focus {
+  background: #ef5350; }
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* Keyframes
+   ========================================================================== */
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 0; }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 0; }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
+
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    opacity: 0; } }
+
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    opacity: 0; } }
+
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 700px; } }
+
+/* IE8
+   ========================================================================== */
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38; }
+
+.lt-ie9 .remodal {
+  width: 700px; }
 
 /* =============================================== *	HTML5 VIDEO BACKGROUND
 	This is the important part
@@ -741,9 +1004,10 @@ p.small {
 .video-hero--content {
   position: relative;
   text-align: center;
-  margin-top: 83px;
+  margin: 83px auto;
   padding: 2.5% 0;
   color: #FFF;
+  max-width: 38em;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
 
 .byline {
@@ -783,7 +1047,7 @@ p.small {
   padding: 0.5em 0; }
 
 .blurb {
-  max-width: 42em;
+  max-width: 25em;
   padding-top: 1em;
   text-align: center;
   margin: 0 auto; }
@@ -812,6 +1076,10 @@ p.small {
 
 .caption {
   font-style: italic; }
+
+.home-employers {
+  margin-top: 2em;
+  font-size: 1.0625em; }
 
 span.kicker {
   text-transform: uppercase;
@@ -1143,6 +1411,19 @@ time {
     padding: 0 1em;
     width: 33.333333%; } }
 
+/* Grid Modified 2/3 */
+@media all and (min-width: 46.8em) {
+  .gi.gi-90 {
+    float: left;
+    padding: 0 1em;
+    width: 86%; } }
+
+@media all and (min-width: 46.8em) {
+  .gi.gi-10 {
+    float: left;
+    padding: 0 1em;
+    width: 12%; } }
+
 /* Grid 4up block */
 .g-opposites .gi {
   float: left; }
@@ -1189,11 +1470,11 @@ time {
     max-width: 6.5em;
     padding: 1em; }
   .g-job-listing .gi.job-info {
-    width: 77%; }
+    width: 30%; }
   .g-job-listing .gi.job-location {
-    width: 45%; }
+    width: 30%; }
   .g-job-listing .gi.job-type {
-    width: 35%; } }
+    width: 18%; } }
 
 @media all and (min-width: 50em) {
   .g-job-listing > .gi:nth-of-type(4n+1) {
@@ -1202,13 +1483,13 @@ time {
     clear: none; }
   .g-job-listing .gi.job-info {
     margin-top: 1em;
-    width: 44%; }
+    width: 30%; }
   .g-job-listing .gi.job-location {
     margin-top: 1em;
-    width: 22%; }
+    width: 27%; }
   .g-job-listing .gi.job-type {
     margin-top: 2em;
-    width: 17%;
+    width: 24%;
     text-align: right; } }
 
 @media all and (min-width: 73em) {
@@ -1426,6 +1707,32 @@ time {
   font-size: 0.85em;
   color: #999; }
 
+.callout--block-home {
+  text-align: center;
+  padding: 1em; }
+
+.callout--block-home .callout--block-value {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "proxima-nova", sans-serif;
+  letter-spacing: -1;
+  line-height: 1;
+  color: #362442; }
+
+.callout--block-home .callout--block-quantify {
+  margin-top: 0.5em;
+  text-transform: normal;
+  font-weight: normal;
+  font-size: 0.85em;
+  color: #999; }
+
+.callout--block-home hr {
+  padding: 0 0 0 0;
+  margin: 2% 0; }
+
+.callout--block-home p {
+  font-size: 0.85em; }
+
 .headline {
   line-height: 1.2; }
 
@@ -1557,7 +1864,7 @@ time {
 
 .block-card--blue {
   position: relative;
-  background: #4A90E2;
+  background: #2B5588;
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -1626,14 +1933,19 @@ p.package-type {
 .block-clump {
   margin: 0 auto;
   text-align: center;
-  max-width: 40em;
   padding: 1em;
   overflow: hidden; }
 
 .block-clump li {
   float: left;
-  width: 30%;
+  width: 92%;
   margin: 0.5em; }
+
+@media only screen and (min-width: 30em) {
+  .block-clump {
+    max-width: 40em; }
+  .block-clump li {
+    width: 30%; } }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
@@ -1676,6 +1988,17 @@ p.package-type {
   .btn.ghost:hover, .btn.ghost:focus {
     border: 1px solid #7AAA13;
     color: #7AAA13; }
+  .btn.ghost-white {
+    width: 100%;
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1.5em 3em;
+    margin: 1em 0; }
+  .btn.ghost-white:hover, .btn.ghost-white:focus {
+    border: 1px solid #8EC617;
+    color: #8EC617; }
   .btn.alt-caps {
     width: 100%;
     background: #4A90E2;
@@ -2528,7 +2851,7 @@ Dropdown nav
   background: url(../images/facepile.png) repeat #8EC617;
   color: #fff;
   line-height: 1.2;
-  padding: 2em; }
+  padding: 3em; }
 
 .prefooter .btn {
   vertical-align: middle;
@@ -2603,6 +2926,12 @@ span.recency-badge {
   background: #362442;
   color: #C3BDC6; }
 
+.job--listings.filter.light {
+  padding-top: 1em;
+  margin-bottom: -1em;
+  background: none;
+  color: #C3BDC6; }
+
 .job--listings .search-controls li {
   width: 100%; }
 
@@ -2610,7 +2939,7 @@ span.recency-badge {
   .job--listings .search-controls li {
     margin-right: 1em; }
   .job--listings .search-controls li.wide {
-    width: 31%; }
+    width: 30%; }
   .job--listings .search-controls li.narrow {
     width: 15%; }
   .job--listings .search-controls li.last {
@@ -2621,8 +2950,12 @@ span.recency-badge {
   top: 1em; }
 
 .filters {
-  padding: 1em;
-  text-align: right; }
+  text-align: left; }
+
+@media all and (min-width: 50em) {
+  .filters {
+    padding: 1em;
+    text-align: right; } }
 
 .filters li {
   margin: 0 2.5%; }
@@ -2785,6 +3118,9 @@ td.third {
   line-height: 1;
   width: 35%; }
 
+td.half {
+  padding: 1em; }
+
 td.account-table-info a {
   color: #7AAA13; }
 
@@ -2805,7 +3141,8 @@ td.account-table-info a {
     min-width: 200px; } }
 
 .quote--large {
-  margin-top: 3em;
+  margin-top: 0;
+  margin-bottom: 3em;
   clear: both;
   text-align: center;
   overflow: hidden;
@@ -2815,17 +3152,21 @@ td.account-table-info a {
   padding: 2em 1em;
   min-height: 20em; }
 
+.quote--large h5 {
+  color: #fff; }
+
 .quote--large blockquote {
   margin: 0 auto;
   max-width: 40em;
   font-size: 1.4375em;
   color: #fff;
   border: none;
-  padding-top: 5%; }
+  padding: 2% 0; }
 
 .quote--large cite {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 0.85em;
   font-style: normal;
   display: block;
   padding: 1em 0; }

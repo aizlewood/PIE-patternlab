@@ -30,10 +30,18 @@
 	{{> organisms-footer }}
 </div>
 
-<div class="popup">
-	{{> organisms-modal-bump }}
+
+
+<div class="remodal" data-remodal-id="modal-stats" data-remodal-options="hashTracking: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+	{{> organisms-modal-stats }}
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
 </div>
 
-<div class="popup">
-	{{> organisms-modal-stats }}
+<div class="remodal" data-remodal-id="modal-bump" data-remodal-options="hashTracking: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+	{{> organisms-modal-bump }}
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
 </div>

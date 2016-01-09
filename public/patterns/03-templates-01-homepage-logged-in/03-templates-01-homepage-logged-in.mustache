@@ -2,6 +2,7 @@
 
 	&lt;div class=&quot;video&quot;&gt;	
 		&lt;!-- Start video hero --&gt;
+		
 		&lt;div class=&quot;video-hero&quot;&gt;
 	{{&gt; organisms-header-homepage-logged-in }}		
 			&lt;div class=&quot;video-bg demo-video&quot;&gt;
@@ -12,106 +13,158 @@
 				&lt;/video&gt;
 			&lt;/div&gt;
 			&lt;div class=&quot;video-overlay&quot;&gt;&lt;/div&gt;
-			&lt;div class=&quot;page-width&quot;&gt;
-				&lt;div class=&quot;video-hero--content&quot;&gt;
-					&lt;h2 class=&quot;white&quot;&gt;Find your perfect job&lt;/h2&gt;
-					&lt;p&gt;Full width video hero&lt;/p&gt;
 
-		&lt;div class=&quot;lc&quot;&gt;
-			&lt;div class=&quot;block action&quot;&gt;
-				&lt;div class=&quot;middle&quot;&gt;
-					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
-				&lt;/div&gt;
+			&lt;div class=&quot;page-width&quot;&gt;
+
+
+						&lt;div class=&quot;video-hero--content&quot;&gt;
+
+							&lt;h1 class=&quot;white&quot;&gt;The &lt;span class=&quot;green&quot;&gt;go-to&lt;/span&gt; for careers in International Education&lt;/h2&gt;
+
+							&lt;br&gt;
+
+							&lt;div class=&quot;g g-2up&quot;&gt;
+
+								&lt;div class=&quot;gi&quot;&gt;
+									&lt;div class=&quot;middle&quot;&gt;
+										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost-white&quot;&gt;Find a Job&lt;/a&gt;&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+								&lt;div class=&quot;gi&quot;&gt;
+									&lt;div class=&quot;middle&quot;&gt;
+										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost-white&quot;&gt;Post a Job&lt;/a&gt;&lt;/p&gt;
+									&lt;/div&gt;	
+								&lt;/div&gt;
+
+							&lt;/div&gt;
+									
+						&lt;/div&gt;
+
+
+
+
 			&lt;/div&gt;
-		&lt;/div&gt;	
-		
-				&lt;/div&gt;						
-			&lt;/div&gt;
+
 		&lt;/div&gt;
 		&lt;!-- End video hero --&gt;
 	&lt;/div&gt;
 
 &lt;div role=&quot;main&quot;&gt;
-	&lt;div class=&quot;inner space-triple&quot;&gt;
+	&lt;div class=&quot;inner space-double&quot;&gt;
 
 		&lt;div class=&quot;g g-1up&quot;&gt;
 			&lt;div class=&quot;gi&quot;&gt;
-				&lt;h4 class=&quot;middle&quot;&gt;Find the perfect job from employers like these&lt;/h4&gt;
+				&lt;h4 class=&quot;middle&quot;&gt;Start your search now&lt;/h4&gt;
+				{{&gt; molecules-job-listings-filter-light }}
+
 			&lt;/div&gt;
 		&lt;/div&gt;
+
+		{{&gt; organisms-job-listing }}
 
 
 		&lt;div class=&quot;g g-6up space-double&quot;&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;&lt;img src=&quot;{{ img.square.src }}&quot; alt=&quot;{{ img.square.alt }}&quot; /&gt;&lt;/div&gt;
+				&lt;h4 class=&quot;middle&quot;&gt;Find your perfect job from employers like these&lt;/h4&gt;	
+				&lt;br&gt;	
+		{{# clients}}
+			&lt;div class=&quot;gi&quot;&gt;{{&gt; atoms-landscape-16x9 }} &lt;/div&gt;
+		{{/ clients}}
 		&lt;/div&gt;
 
 		&lt;div class=&quot;lc&quot;&gt;
 			&lt;div class=&quot;block action&quot;&gt;
 				&lt;div class=&quot;middle&quot;&gt;
-					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;	
-			
-	&lt;/div&gt;	
-
-	&lt;div class=&quot;inner&quot;&gt;
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;half&quot;&gt;&lt;br /&gt;{{&gt; molecules-topshelf-title }}&lt;/div&gt;
-			&lt;div class=&quot;half right&quot;&gt;&lt;/div&gt;
-		&lt;/div&gt;		
-		{{&gt; organisms-job-listing }}
-
-		&lt;div class=&quot;lc&quot;&gt;
-			&lt;div class=&quot;block action&quot;&gt;
-				&lt;div class=&quot;middle&quot;&gt;
-					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Browse all jobs&lt;/a&gt;&lt;/p&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;	
 
-	&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- End Inner --&gt;	
 
 	&lt;/div&gt;&lt;!-- End Main --&gt;
 
+{{# quote}}
 	{{&gt; organisms-quote-large }}
-
+{{/ quote}}
 
 	&lt;div role=&quot;main&quot;&gt;
 	&lt;div class=&quot;inner&quot;&gt;
 
-		&lt;div class=&quot;g g-1up space-triple&quot;&gt;
-			&lt;div class=&quot;gi&quot;&gt;
-				&lt;h4 class=&quot;middle&quot;&gt;Employers, find the perfect candidate&lt;/h4&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;	
+		&lt;h4 class=&quot;middle&quot;&gt;Employers, find your perfect candidate&lt;/h4&gt;
 
-		&lt;!--Grid 4up--&gt;
-		&lt;div class=&quot;g g-4up&quot;&gt;
-			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
-			&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-callout-block }}&lt;/div&gt;
-		&lt;/div&gt;
+		&lt;!--Grid 2up--&gt;
+		&lt;div class=&quot;g g-2up&quot;&gt;
+			&lt;div class=&quot;gi&quot;&gt;
+
+			&lt;div class=&quot;home-employers&quot;&gt;
+				&lt;p&gt;With years of experience connecting International Education and recruitment employers with the right candidates, we know what you need to get your position filled. &lt;/p&gt;
+				&lt;p&gt;With a streamlined job posting process and access to hundreds of candidates, The PIE Jobs is the go-to site for your recruitment needs.&lt;/p&gt;
+			&lt;/div&gt;
 
 
 		&lt;div class=&quot;lc&quot;&gt;
 			&lt;div class=&quot;block action&quot;&gt;
 				&lt;div class=&quot;middle&quot;&gt;
-					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Call to Action&lt;/a&gt;&lt;/p&gt;
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn ghost&quot;&gt;Post your Job&lt;/a&gt;&lt;/p&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;	
+
+			&lt;/div&gt;
+			
+			&lt;div class=&quot;gi&quot;&gt;
+
+				&lt;div class=&quot;g g-2up&quot;&gt;
+
+					&lt;div class=&quot;gi&quot;&gt;
+						&lt;div class=&quot;callout--block-home&quot;&gt;
+							&lt;div class=&quot;callout--block-value&quot;&gt;&pound;99&lt;/div&gt;
+							&lt;div class=&quot;callout--block-quantify caps&quot;&gt;for 2 weeks&lt;/div&gt;
+							&lt;hr&gt;
+							&lt;p&gt;Get your job seen by potential employees for two weeks straight&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;	
+
+					&lt;div class=&quot;gi&quot;&gt;
+						&lt;div class=&quot;callout--block-home&quot;&gt;
+							&lt;div class=&quot;callout--block-value&quot;&gt;64&lt;/div&gt;
+							&lt;div class=&quot;callout--block-quantify caps&quot;&gt;active employers&lt;/div&gt;
+							&lt;hr&gt;
+							&lt;p&gt;Get access to jobs from the leading names in International Education&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;	
+
+
+					&lt;div class=&quot;gi&quot;&gt;
+						&lt;div class=&quot;callout--block-home&quot;&gt;
+							&lt;div class=&quot;callout--block-value&quot;&gt;234&lt;/div&gt;
+							&lt;div class=&quot;callout--block-quantify caps&quot;&gt;active candidates&lt;/div&gt;
+							&lt;hr&gt;
+							&lt;p&gt;The PIE Jobs is the go-to place for active job seekers in International Education&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;	
+
+
+					&lt;div class=&quot;gi&quot;&gt;
+						&lt;div class=&quot;callout--block-home&quot;&gt;
+							&lt;div class=&quot;callout--block-value&quot;&gt;BUMP&lt;/div&gt;
+							&lt;div class=&quot;callout--block-quantify caps&quot;&gt;your ad anytime&lt;/div&gt;
+							&lt;hr&gt;
+							&lt;p&gt;In a rush? Need to be seen? Bump up your listing to the top of the pile for only &pound;75&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;	
+				&lt;/div&gt;
+			
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 	&lt;/div&gt;	
 
 
 	&lt;/div&gt;&lt;!--End role=main--&gt;
 
+
+	{{&gt; organisms-prefooter }}
 	{{&gt; organisms-footer }}
 &lt;/div&gt;

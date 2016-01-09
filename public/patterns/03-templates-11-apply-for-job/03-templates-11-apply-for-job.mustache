@@ -19,7 +19,7 @@
 					&lt;div class=&quot;gi&quot;&gt;&lt;/div&gt;
 					&lt;div class=&quot;gi&quot;&gt;&lt;/div&gt;
 					&lt;div class=&quot;gi inlined&quot;&gt;
-						&lt;button class=&quot;btn alt star popup-trigger&quot;&gt;&lt;img src=&quot;../../images/star-outlined.svg&quot;&gt; Bookmark this Job&lt;/button&gt;
+						&lt;button class=&quot;btn alt star&quot;&gt;&lt;img src=&quot;../../images/star-outlined.svg&quot;&gt; Bookmark this Job&lt;/button&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
 
@@ -35,7 +35,7 @@
 					{{&gt; atoms-time }}
 					{{&gt; organisms-article-body }}
 					
-					&lt;p&gt;&lt;button class=&quot;btn caps popup-trigger&quot;&gt;Apply for this Job&lt;/button&gt;&lt;/p&gt;
+					&lt;p&gt;&lt;button data-remodal-target=&quot;modal-apply&quot; class=&quot;btn caps&quot;&gt;Apply for this Job&lt;/button&gt;&lt;/p&gt;
 
 				&lt;/article&gt;&lt;!--end .article--&gt;
 
@@ -78,7 +78,9 @@
 	{{&gt; organisms-footer }}
 &lt;/div&gt;
 
-
-&lt;div class=&quot;popup&quot;&gt;
+&lt;div class=&quot;remodal&quot; data-remodal-id=&quot;modal-apply&quot; data-remodal-options=&quot;hashTracking: false&quot;&gt;
+  &lt;button data-remodal-action=&quot;close&quot; class=&quot;remodal-close&quot;&gt;&lt;/button&gt;
 	{{&gt; organisms-modal-apply }}
+  &lt;br&gt;
+  &lt;button data-remodal-action=&quot;cancel&quot; class=&quot;remodal-cancel&quot;&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;

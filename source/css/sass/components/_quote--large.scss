@@ -1,5 +1,6 @@
 .quote--large {
-	margin-top: $space-triple;
+	margin-top: 0;
+	margin-bottom: $space-triple;
 	clear: both;
 	text-align: center;
 	overflow: hidden;
@@ -10,18 +11,23 @@
 	min-height: 20em;
 }
 
+.quote--large h5 {
+	color: $white;
+}
+
 .quote--large blockquote {
 	margin: 0 auto;
 	max-width: 40em;
 	font-size: $font-size-large;
 	color: $white;
 	border: none;
-	padding-top: 5%;
+	padding: 2% 0;
 }
 
 .quote--large cite {
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-size: $font-size-small;
 	font-style: normal;
 	display: block;
 	padding: $space 0;

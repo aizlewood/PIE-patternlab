@@ -12,7 +12,7 @@
 }
 
 .blurb {
-	max-width: 42em;
+	max-width: 25em;
 	padding-top: $space;
 	text-align: center;
 	margin: 0 auto;
@@ -49,6 +49,11 @@
 //Caption 
 .caption {
 	font-style: italic;
+}
+
+.home-employers {
+	margin-top: $space-double;
+	font-size: $font-size-med-2;
 }
 
 //Kicker 

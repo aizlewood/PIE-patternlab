@@ -397,6 +397,24 @@
 	}
 }
 
+
+/* Grid Modified 2/3 */
+.gi.gi-90 {
+	@media all and (min-width: $bp-med) {
+		float: left;
+		padding: 0 $space;
+		width: 86%;
+	}
+}
+
+.gi.gi-10 {
+	@media all and (min-width: $bp-med) {
+		float: left;
+		padding: 0 $space;
+		width: 12%;
+	}
+}
+
 /* Grid 4up block */
 .g-opposites {
 	.gi {
@@ -476,15 +494,15 @@
 		}		
 
 		.gi.job-info {
-			width: 77%;
+			width: 30%;
 		}		
 
 		.gi.job-location {
-			width: 45%;
+			width: 30%;
 		}		
 
 		.gi.job-type {
-			width: 35%;
+			width: 18%;
 		}	
 
 	}
@@ -503,17 +521,17 @@
 
 		.gi.job-info {
 			margin-top: $space;
-			width: 44%;
+			width: 30%;
 		}		
 
 		.gi.job-location {
 			margin-top: $space;
-			width: 22%;
+			width: 27%;
 		}		
 
 		.gi.job-type {
 			margin-top: $space-double;
-			width: 17%;
+			width: 24%;
 			text-align: right;
 		}	
 

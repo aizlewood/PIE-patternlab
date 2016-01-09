@@ -2,6 +2,7 @@
 
 	<div class="video">	
 		<!-- Start video hero -->
+		
 		<div class="video-hero">
 	{{> organisms-header-homepage-logged-in }}		
 			<div class="video-bg demo-video">
@@ -12,106 +13,158 @@
 				</video>
 			</div>
 			<div class="video-overlay"></div>
-			<div class="page-width">
-				<div class="video-hero--content">
-					<h2 class="white">Find your perfect job</h2>
-					<p>Full width video hero</p>
 
-		<div class="lc">
-			<div class="block action">
-				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
-				</div>
+			<div class="page-width">
+
+
+						<div class="video-hero--content">
+
+							<h1 class="white">The <span class="green">go-to</span> for careers in International Education</h2>
+
+							<br>
+
+							<div class="g g-2up">
+
+								<div class="gi">
+									<div class="middle">
+										<p><a href="#" class="btn ghost-white">Find a Job</a></p>
+									</div>
+								</div>
+
+								<div class="gi">
+									<div class="middle">
+										<p><a href="#" class="btn ghost-white">Post a Job</a></p>
+									</div>	
+								</div>
+
+							</div>
+									
+						</div>
+
+
+
+
 			</div>
-		</div>	
-		
-				</div>						
-			</div>
+
 		</div>
 		<!-- End video hero -->
 	</div>
 
 <div role="main">
-	<div class="inner space-triple">
+	<div class="inner space-double">
 
 		<div class="g g-1up">
 			<div class="gi">
-				<h4 class="middle">Find the perfect job from employers like these</h4>
+				<h4 class="middle">Start your search now</h4>
+				{{> molecules-job-listings-filter-light }}
+
 			</div>
 		</div>
+
+		{{> organisms-job-listing }}
 
 
 		<div class="g g-6up space-double">
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
-			<div class="gi"><img src="{{ img.square.src }}" alt="{{ img.square.alt }}" /></div>
+				<h4 class="middle">Find your perfect job from employers like these</h4>	
+				<br>	
+		{{# clients}}
+			<div class="gi">{{> atoms-landscape-16x9 }} </div>
+		{{/ clients}}
 		</div>
 
 		<div class="lc">
 			<div class="block action">
 				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
-				</div>
-			</div>
-		</div>	
-			
-	</div>	
-
-	<div class="inner">
-		<div class="row">
-			<div class="half"><br />{{> molecules-topshelf-title }}</div>
-			<div class="half right"></div>
-		</div>		
-		{{> organisms-job-listing }}
-
-		<div class="lc">
-			<div class="block action">
-				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
+					<p><a href="#" class="btn ghost">Browse all jobs</a></p>
 				</div>
 			</div>
 		</div>	
 
-	</div>
+	</div><!-- End Inner -->	
 
 	</div><!-- End Main -->
 
+{{# quote}}
 	{{> organisms-quote-large }}
-
+{{/ quote}}
 
 	<div role="main">
 	<div class="inner">
 
-		<div class="g g-1up space-triple">
-			<div class="gi">
-				<h4 class="middle">Employers, find the perfect candidate</h4>
-			</div>
-		</div>	
+		<h4 class="middle">Employers, find your perfect candidate</h4>
 
-		<!--Grid 4up-->
-		<div class="g g-4up">
-			<div class="gi">{{> molecules-callout-block }}</div>
-			<div class="gi">{{> molecules-callout-block }}</div>
-			<div class="gi">{{> molecules-callout-block }}</div>
-			<div class="gi">{{> molecules-callout-block }}</div>
-		</div>
+		<!--Grid 2up-->
+		<div class="g g-2up">
+			<div class="gi">
+
+			<div class="home-employers">
+				<p>With years of experience connecting International Education and recruitment employers with the right candidates, we know what you need to get your position filled. </p>
+				<p>With a streamlined job posting process and access to hundreds of candidates, The PIE Jobs is the go-to site for your recruitment needs.</p>
+			</div>
 
 
 		<div class="lc">
 			<div class="block action">
 				<div class="middle">
-					<p><a href="#" class="btn ghost">Call to Action</a></p>
+					<p><a href="#" class="btn ghost">Post your Job</a></p>
 				</div>
 			</div>
 		</div>	
+
+			</div>
+			
+			<div class="gi">
+
+				<div class="g g-2up">
+
+					<div class="gi">
+						<div class="callout--block-home">
+							<div class="callout--block-value">£99</div>
+							<div class="callout--block-quantify caps">for 2 weeks</div>
+							<hr>
+							<p>Get your job seen by potential employees for two weeks straight</p>
+						</div>
+					</div>	
+
+					<div class="gi">
+						<div class="callout--block-home">
+							<div class="callout--block-value">64</div>
+							<div class="callout--block-quantify caps">active employers</div>
+							<hr>
+							<p>Get access to jobs from the leading names in International Education</p>
+						</div>
+					</div>	
+
+
+					<div class="gi">
+						<div class="callout--block-home">
+							<div class="callout--block-value">234</div>
+							<div class="callout--block-quantify caps">active candidates</div>
+							<hr>
+							<p>The PIE Jobs is the go-to place for active job seekers in International Education</p>
+						</div>
+					</div>	
+
+
+					<div class="gi">
+						<div class="callout--block-home">
+							<div class="callout--block-value">BUMP</div>
+							<div class="callout--block-quantify caps">your ad anytime</div>
+							<hr>
+							<p>In a rush? Need to be seen? Bump up your listing to the top of the pile for only £75</p>
+						</div>
+					</div>	
+				</div>
+			
+			</div>
+		</div>
 
 	</div>	
 
 
 	</div><!--End role=main-->
 
+
+	{{> organisms-prefooter }}
 	{{> organisms-footer }}
 </div>

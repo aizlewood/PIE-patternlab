@@ -51,7 +51,22 @@
 	&.ghost:hover, &.ghost:focus {
 		border: 1px solid $brand-green-dark;	
 		color: $brand-green-dark;
+	}
+
+	&.ghost-white {
+		width: 100%;
+		background: transparent;
+		text-transform: uppercase;
+		color: $white;
+		border: 1px solid $white;		
+		padding: $pad-and-half $pad-triple;
+		margin: $space 0;
 	}	
+
+	&.ghost-white:hover, &.ghost-white:focus {
+		border: 1px solid $brand-green;	
+		color: $brand-green;
+	}		
 
 	&.alt-caps {
 		width: 100%;

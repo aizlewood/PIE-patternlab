@@ -92,8 +92,9 @@
 .video-hero--content {
 	position: relative;
 	text-align: center;
-	margin-top: 83px;
+	margin: 83px auto;
 	padding: 2.5% 0;
 	color: #FFF;
+	max-width: 38em;
 	text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }

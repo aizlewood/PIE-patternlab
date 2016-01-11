@@ -1,5 +1,5 @@
 .employer-logo {
-	
+
 }
 
 .job-info {
@@ -19,6 +19,10 @@
 	color: $mid;
 }
 
+.job-block:hover .job-info a {
+    text-decoration: underline;
+}
+
 span.recency-badge {
 	background: url("../images/bell.svg") no-repeat -30%;
 	text-transform: uppercase;
@@ -36,8 +40,8 @@ span.recency-badge {
 @media all and (max-width: $bp-med) {
 	.job-location {
 		display: none;
-	}	
-}	
+	}
+}
 
 .job-location-detail {
 	background: url("../images/location.svg") no-repeat 0%;
@@ -52,5 +56,5 @@ span.recency-badge {
 @media all and (max-width: $bp-med) {
 	.job-type {
 		margin-top: 0;
-	}	
-}	
+	}
+}

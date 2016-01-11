@@ -5,6 +5,12 @@
 	padding: $space;
 }
 
+@media only screen and (min-width: 30em) {
+    .stats {
+        min-height:100px;
+    }
+}
+
 .stats .stats-context {
 	text-transform: uppercase;
 	font-weight: normal;
@@ -23,6 +29,6 @@
 .stats .stats-quantify {
 	text-transform: uppercase;
 	font-weight: normal;
-	color: $mid;	
+	color: $mid;
 	font-size: $font-size-small-2;
 }

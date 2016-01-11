@@ -46,7 +46,7 @@
 	font-size: $font-size-large;
 }
 
-//Caption 
+//Caption
 .caption {
 	font-style: italic;
 }
@@ -56,7 +56,7 @@
 	font-size: $font-size-med-2;
 }
 
-//Kicker 
+//Kicker
 span.kicker {
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -104,4 +104,11 @@ time {
 			margin-bottom: 0;
 		}
 	}
+}
+
+
+.modal-loading {
+    background: url(../images/ajax-loader.gif) no-repeat;
+    background-position:top center;
+    padding-top:30px;
 }

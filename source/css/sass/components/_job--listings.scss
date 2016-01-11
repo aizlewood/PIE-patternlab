@@ -49,15 +49,19 @@
 }
 
 
-// Job search filter list 
+// Job search filter list
 
 @media all and (min-width: $bp-med) {
 	.job--listings .search-controls li {
 		margin-right: $space;
 	}
 
-	.job--listings .search-controls li.wide {
-		width: 30%;
+    .job--listings .search-controls li.wide {
+        width: 30%;
+    }
+
+	.job--listings .search-controls li.xwide {
+		width: 46%;
 	}
 
 	.job--listings .search-controls li.narrow {
@@ -66,28 +70,28 @@
 
 	.job--listings .search-controls li.last {
 		margin-right: 0;
-	}	
+	}
 }
 
 @media all and (min-width: $bp-large) {
 
 }
 
-//Job search filter title 
+//Job search filter title
 .utility-nav--label {
 	position: relative;
 	top: 1em;
 }
 
-//Job search filter checkboxes 
+//Job search filter checkboxes
 .filters {
-	text-align: left;	
+	text-align: left;
 }
 
 @media all and (min-width: $bp-large) {
 	.filters {
-		padding: $space;		
-		text-align: right;	
+		padding: $space;
+		text-align: right;
 	}
 }
 

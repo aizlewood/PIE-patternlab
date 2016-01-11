@@ -10,7 +10,7 @@ fieldset {
 	border: 0;
 	padding: 0;
 	margin: 0;
-	//display: table-cell; //for firefox
+	display: table-cell; //for firefox
 }
 
 label {
@@ -49,12 +49,12 @@ input, select, textarea {
    -webkit-appearance: none;
 }
 
-input[type=text], 
-input[type=search], 
-input[type=url], 
-input[type=number], 
-input[type=newsletter], 
-input[type=email], 
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=number],
+input[type=newsletter],
+input[type=email],
 textarea {
 	-webkit-appearance: none;
 
@@ -75,12 +75,12 @@ textarea {
 	}
 }
 
-.ondark input[type=text], 
-.ondark input[type=search], 
-.ondark input[type=url], 
-.ondark input[type=number], 
-.ondark input[type=newsletter], 
-.ondark input[type=email], 
+.ondark input[type=text],
+.ondark input[type=search],
+.ondark input[type=url],
+.ondark input[type=number],
+.ondark input[type=newsletter],
+.ondark input[type=email],
 .ondark input,
 .ondark select,
 .field-container.ondark select,
@@ -127,7 +127,7 @@ input[type="search"]::-webkit-search-decoration {
 	fieldset, .inline-container {
 		position: relative;
 	}
-	
+
 	input[type=submit], button, .btn {
 		font-size: $font-size-small-2;
 		padding: 1.33rem 1.45rem;

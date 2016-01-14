@@ -30,14 +30,22 @@
 }
 
 //Price text
+.tax-price,
 .total-price {
-	font-family: $font-header;
-	font-weight: bold;
-	letter-spacing: -0.05em;
-	font-size: $font-size-large-2;
-	line-height: 1;
-	margin-bottom: 0.25em;
-	text-align: left;
+    font-family: $font-header;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    font-size: $font-size-large-2;
+    line-height: 1;
+    margin-bottom: 0.25em;
+    text-align: left;
+}
+
+.tax-price {
+    font-size: $font-size-large;
+    margin-bottom: 0.5em;
+    padding-bottom: $space-half;
+    border-bottom: 1px solid $price-border;
 }
 
 //Pullquote

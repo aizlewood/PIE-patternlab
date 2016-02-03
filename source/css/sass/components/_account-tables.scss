@@ -2,8 +2,8 @@
     $Table
 \*------------------------------------*/
 table.account {
-	border-collapse: collapse; 
-	border-spacing: 0; 
+	border-collapse: collapse;
+	border-spacing: 0;
 	border: 0px solid $grey-light-1;
 	width: 100%;
 }
@@ -47,6 +47,10 @@ td.half {
     padding:1em;
 }
 
+td.two-thirds {
+    width:66.66%
+}
+
 td.account-table-info a {
 	color: $brand-green-dark;
 }
@@ -72,50 +76,50 @@ td.account-table-info a {
 		line-height: 1;
 		width: 100%;
 		min-width: 200px;
-	}	
-}	
+	}
+}
 
 // @media only screen and (max-width: 35em) {
 
 // 	/* Force table to not be like tables anymore */
-// 	table, thead, tbody, th, td, tr { 
-// 		display: block; 
+// 	table, thead, tbody, th, td, tr {
+// 		display: block;
 // 	}
-	
+
 // 	/* Hide table headers (but not display: none;, for accessibility) */
-// 	thead tr { 
+// 	thead tr {
 // 		position: absolute;
 // 		top: -9999px;
 // 		left: -9999px;
 // 	}
-	
+
 // 	tr { border: 1px solid #ccc; }
-	
-// 	td { 
+
+// 	td {
 // 		/* Behave  like a "row" */
 // 		border: none;
-// 		border-bottom: 1px solid #eee; 
+// 		border-bottom: 1px solid #eee;
 // 		position: relative;
-// 		padding-left: 50%; 
+// 		padding-left: 50%;
 // 	}
 
 // 	td.third,
 // 	td.account-table-info {
 // 		line-height: 1;
 // 		width: auto;
-// 	}	
-	
-// 	td:before { 
+// 	}
+
+// 	td:before {
 // 		/* Now like a table header */
 // 		position: absolute;
 // 		/* Top/left values mimic padding */
 // 		top: 6px;
 // 		left: 6px;
-// 		width: 45%; 
-// 		padding-right: 10px; 
+// 		width: 45%;
+// 		padding-right: 10px;
 // 		white-space: nowrap;
 // 	}
-	
+
 // 	/*
 // 	Label the data
 // 	*/

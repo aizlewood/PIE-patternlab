@@ -114,6 +114,16 @@ time {
 	}
 }
 
+/**
+ * T&C
+ */
+.terms {
+    ol { counter-reset: item }
+    li { display: block;  margin:20px 0;  }
+    li:before { content: counters(item, ".") ". "; counter-increment: item; font-weight:bold; padding-right: 10px;}
+    li li:before { content: counters(item, ".") " "; counter-increment: item; font-weight:bold; padding-right: 10px;}
+}
+
 
 .modal-loading {
     background: url(../images/ajax-loader.gif) no-repeat;

@@ -1,0 +1,12 @@
+.form-error--msg {
+    color: rgb(240, 68, 77);
+    background-color: rgb(255, 203, 203);
+    border: 1px solid rgb(228, 166, 175);
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin:$space-and-half  0;
+    display:block;
+}
+.form-error--msg p {
+    margin:0;
+}
